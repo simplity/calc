@@ -1,0 +1,13 @@
+eclipse.preferences.version=1
+encoding//src/engine/java=UTF-8
+encoding//src/expr/java=UTF-8
+encoding//src/fn/java=UTF-8
+encoding//src/main/java=UTF-8
+encoding//src/main/resources=UTF-8
+encoding//src/parser/java=UTF-8
+encoding//src/rule/java=UTF-8
+encoding//src/schema/java=UTF-8
+encoding//src/test/java=UTF-8
+encoding//src/test/resources=UTF-8
+encoding//target/generated-sources/antlr4=UTF-8
+encoding/<project>=UTF-8

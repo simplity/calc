@@ -1,0 +1,87 @@
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] -----------------------------< calc:calc >------------------------------
+[INFO] Building Calc 0.0.1-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- clean:3.2.0:clean (default-clean) @ calc ---
+[INFO] Deleting c:\d\git\calc\target
+[INFO] 
+[INFO] --- jacoco:0.8.8:prepare-agent (default) @ calc ---
+[INFO] argLine set to -javaagent:C:\\Users\\bhand\\.m2\\repository\\org\\jacoco\\org.jacoco.agent\\0.8.8\\org.jacoco.agent-0.8.8-runtime.jar=destfile=c:\\d\\git\\calc\\target\\jacoco.exec
+[INFO] 
+[INFO] --- antlr4:4.13.1:antlr4 (antlr) @ calc ---
+[INFO] ANTLR 4: Processing source directory c:\d\git\calc\src\main\antlr4
+[INFO] Processing grammar: Calc.g4
+[INFO] 
+[INFO] --- build-helper:3.5.0:add-source (add-source) @ calc ---
+[INFO] Source directory: c:\d\git\calc\target\generated-sources\antlr4 added.
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ calc ---
+[INFO] Copying 4 resources from src\main\resources to target\classes
+[INFO] 
+[INFO] --- compiler:3.14.0:compile (default-compile) @ calc ---
+[INFO] Recompiling the module because of changed source code.
+[INFO] Compiling 46 source files with javac [debug release 21] to target\classes
+[INFO] -------------------------------------------------------------
+[ERROR] COMPILATION ERROR : 
+[INFO] -------------------------------------------------------------
+[ERROR] /c:/d/git/calc/src/main/java/org/simplity/calc/impl/AstBuilder.java:[24,36] cannot find symbol
+  symbol:   class LiteralExpression
+  location: class org.simplity.calc.impl.AstBuilder
+[ERROR] /c:/d/git/calc/src/main/java/org/simplity/calc/impl/AstBuilder.java:[27,36] cannot find symbol
+  symbol:   class LiteralExpression
+  location: class org.simplity.calc.impl.AstBuilder
+[ERROR] /c:/d/git/calc/src/main/java/org/simplity/calc/impl/AstBuilder.java:[32,36] cannot find symbol
+  symbol:   class LiteralExpression
+  location: class org.simplity.calc.impl.AstBuilder
+[ERROR] /c:/d/git/calc/src/main/java/org/simplity/calc/impl/AstBuilder.java:[49,32] cannot find symbol
+  symbol:   variable ADD
+  location: class org.simplity.calc.grammar.CalcParser
+[ERROR] /c:/d/git/calc/src/main/java/org/simplity/calc/impl/AstBuilder.java:[52,32] cannot find symbol
+  symbol:   variable SUB
+  location: class org.simplity.calc.grammar.CalcParser
+[ERROR] /c:/d/git/calc/src/main/java/org/simplity/calc/impl/AstBuilder.java:[55,32] cannot find symbol
+  symbol:   variable MUL
+  location: class org.simplity.calc.grammar.CalcParser
+[ERROR] /c:/d/git/calc/src/main/java/org/simplity/calc/impl/AstBuilder.java:[58,32] cannot find symbol
+  symbol:   variable DIV
+  location: class org.simplity.calc.grammar.CalcParser
+[INFO] 7 errors 
+[INFO] -------------------------------------------------------------
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  2.500 s
+[INFO] Finished at: 2025-06-14T13:54:09+05:30
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.14.0:compile (default-compile) on project calc: Compilation failure: Compilation failure: 
+[ERROR] /c:/d/git/calc/src/main/java/org/simplity/calc/impl/AstBuilder.java:[24,36] cannot find symbol
+[ERROR]   symbol:   class LiteralExpression
+[ERROR]   location: class org.simplity.calc.impl.AstBuilder
+[ERROR] /c:/d/git/calc/src/main/java/org/simplity/calc/impl/AstBuilder.java:[27,36] cannot find symbol
+[ERROR]   symbol:   class LiteralExpression
+[ERROR]   location: class org.simplity.calc.impl.AstBuilder
+[ERROR] /c:/d/git/calc/src/main/java/org/simplity/calc/impl/AstBuilder.java:[32,36] cannot find symbol
+[ERROR]   symbol:   class LiteralExpression
+[ERROR]   location: class org.simplity.calc.impl.AstBuilder
+[ERROR] /c:/d/git/calc/src/main/java/org/simplity/calc/impl/AstBuilder.java:[49,32] cannot find symbol
+[ERROR]   symbol:   variable ADD
+[ERROR]   location: class org.simplity.calc.grammar.CalcParser
+[ERROR] /c:/d/git/calc/src/main/java/org/simplity/calc/impl/AstBuilder.java:[52,32] cannot find symbol
+[ERROR]   symbol:   variable SUB
+[ERROR]   location: class org.simplity.calc.grammar.CalcParser
+[ERROR] /c:/d/git/calc/src/main/java/org/simplity/calc/impl/AstBuilder.java:[55,32] cannot find symbol
+[ERROR]   symbol:   variable MUL
+[ERROR]   location: class org.simplity.calc.grammar.CalcParser
+[ERROR] /c:/d/git/calc/src/main/java/org/simplity/calc/impl/AstBuilder.java:[58,32] cannot find symbol
+[ERROR]   symbol:   variable DIV
+[ERROR]   location: class org.simplity.calc.grammar.CalcParser
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
