@@ -137,5 +137,10 @@ final class CalcEngine implements ICalcEngine {
 			this.cache.put(valName, value);
 
 		}
+
+		@Override
+		public boolean hasValue(String variableName) {
+			return this.cache.containsKey(variableName);
+		}
 	}
 }

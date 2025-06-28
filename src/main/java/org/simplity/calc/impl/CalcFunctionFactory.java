@@ -7,39 +7,59 @@ import org.simplity.calc.api.IValue;
 import org.simplity.calc.api.ValueType;
 
 /**
- * Responsible for creating required instance of ICalcFunction<?>
+ * A factory for creating instances of {@link ICalcFunction}.
+ * <p>
+ * This class bundles a function's execution logic (an
+ * {@link IEvaluatorFunction} lambda) with its essential metadata (return type,
+ * parameter signature) into a single, concrete {@code ICalcFunction} object.
+ *
+ * @author Simplity Technologies
+ * @since 1.0
  */
-public class CalcFunctionFactory {
+public final class CalcFunctionFactory {
 	/**
-	 * creates an instance of {@link ICalcFunction}
+	 * Private constructor to prevent instantiation of this utility class.
+	 */
+	private CalcFunctionFactory() {
+		// Not meant to be instantiated
+	}
+
+	/**
+	 * Creates an instance of {@link ICalcFunction}.
 	 *
-	 * @param function   to be called to evaluate. This should be a function that
-	 *                   receives
-	 * @param returnType
-	 * @param argTypes   value types of the arguments to be used to call this
-	 *                   function. null or empty list if the function accepts no
-	 *                   arguments
-	 * @param isVarArgs  true if the function treats the last argument as a varArg.
-	 *                   That is the last argument can repeat 0 or more times
-	 * @return non-null instance
+	 * @param function   The lambda function that implements the execution logic.
+	 *                   Cannot be null.
+	 * @param returnType The fixed {@link ValueType} that this function always
+	 *                   returns. Cannot be null.
+	 * @param argTypes   An array defining the function's parameter signature. See
+	 *                   {@link ICalcFunction} for the conventions. Cannot be null,
+	 *                   but can be an empty array for a no-argument function.
+	 * @param isVarArgs  {@code true} if the function is variadic, {@code false}
+	 *                   otherwise.
+	 * @return a non-null, concrete instance of {@code ICalcFunction}.
 	 */
 	public static ICalcFunction newCalcFunction(IEvaluatorFunction function, ValueType returnType, ValueType[] argTypes,
 			boolean isVarArgs) {
 		return new CalcFunction(function, returnType, argTypes, isVarArgs);
 	}
 
+	/**
+	 * A private, immutable, concrete implementation of the ICalcFunction interface.
+	 * It serves as a simple data container for a function's properties and its
+	 * execution logic.
+	 */
 	private static class CalcFunction implements ICalcFunction {
 		private final IEvaluatorFunction function;
 		private final ValueType[] argTypes;
 		private final boolean lastOneIsVararg;
-		private final ValueType valueType;
+		private final ValueType returnType;
 
-		protected CalcFunction(IEvaluatorFunction function, ValueType valueType, ValueType[] argTypes,
+		protected CalcFunction(IEvaluatorFunction function, ValueType returnType, ValueType[] argTypes,
 				boolean lastOneIsVararg) {
 			this.function = function;
 			this.argTypes = argTypes;
 			this.lastOneIsVararg = lastOneIsVararg;
-			this.valueType = valueType;
+			this.returnType = returnType;
 		}
 
 		@Override
@@ -54,7 +74,7 @@ public class CalcFunctionFactory {
 
 		@Override
 		public ValueType getReturnType() {
-			return this.valueType;
+			return this.returnType;
 		}
 
 		@Override

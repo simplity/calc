@@ -5,8 +5,16 @@ package org.simplity.calc.api;
  */
 public interface ICalcContext {
 	/**
+	 * check if this variable has a ready value in the context cache.
+	 *
+	 * @param variableName
+	 * @return true if the variable has a ready value, false otherwise.
+	 */
+	boolean hasValue(String variableName);
+
+	/**
 	 * get the value for this variable. It is retrieved from the current cache,
-	 * failing which it is calculated based on the associated rul.
+	 * failing which it is calculated based on the associated rule.
 	 *
 	 * @param variableName
 	 * @return non-null value

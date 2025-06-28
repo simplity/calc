@@ -66,8 +66,7 @@ public class IoUtil {
 				return readerToText(new InputStreamReader(stream, "UTF-8"));
 			}
 		} catch (Exception e) {
-			logger.error("Exception while reading resource {} using. Error: {}", fileOrResourceName,
-					e.getMessage());
+			logger.error("Exception while reading resource {} using. Error: {}", fileOrResourceName, e.getMessage());
 		}
 		return null;
 	}
@@ -75,11 +74,12 @@ public class IoUtil {
 	/**
 	 * creates a stream for the resource from file system or using class loader
 	 *
-	 * @param fileOrResourceName
-	 *            should be valid file-path, like c:/a/b/c.xxx, or a resource
-	 *            path like /a/b/c.xxx
+	 * @param fileOrResourceName should be valid file-path, like c:/a/b/c.xxx, or a
+	 *                           resource path like /a/b/c.xxx
 	 * @return stream, or null in case of any trouble creating one
 	 */
+
+	@SuppressWarnings("resource")
 	public static InputStream getStream(String fileOrResourceName) {
 		/*
 		 * in production, it is a resource, and hence we try that first

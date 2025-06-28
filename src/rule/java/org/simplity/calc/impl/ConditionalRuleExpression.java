@@ -10,6 +10,7 @@ import org.simplity.calc.api.ValueType;
  * expression.
  */
 class ConditionalRuleExpression implements IParsedRule {
+	private final RuleCase[] NO_CASES = {};
 	private final RuleCase[] cases;
 	private final IExpression defaultExpression;
 	private final ValueType valueType;
@@ -20,7 +21,7 @@ class ConditionalRuleExpression implements IParsedRule {
 	 * @param defaultExpression
 	 */
 	ConditionalRuleExpression(RuleCase[] ruleCases, IExpression defaultExpression, ValueType valueType) {
-		this.cases = ruleCases;
+		this.cases = ruleCases == null ? this.NO_CASES : ruleCases;
 		this.defaultExpression = defaultExpression;
 		this.valueType = valueType;
 	}
@@ -45,6 +46,25 @@ class ConditionalRuleExpression implements IParsedRule {
 	@Override
 	public ValueType getValueType() {
 		return this.valueType;
+	}
+
+	@Override
+	public boolean dryrun(IDryrunContext ctx) {
+
+		boolean ok = this.defaultExpression.dryrun(ctx);
+		if (!ok) {
+			return false;
+		}
+		for (RuleCase c : this.cases) {
+			ok = c.condition.dryrun(ctx);
+			if (ok) {
+				ok = c.expression.dryrun(ctx);
+			}
+			if (!ok) {
+				return false;
+			}
+		}
+		return true;
 	}
 
 	/**

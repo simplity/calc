@@ -9,35 +9,26 @@ import org.simplity.calc.impl.ValueFactory;
  * Represents a dynamically-typed, immutable value within the calculation
  * engine.
  * <p>
- * IValue is a container for one of the core data types supported by the engine,
- * such as numbers, strings, booleans, and dates. The specific type of the
- * contained value is identified by the {@link ValueType} enum. This design
+ * IValue is a container for one of the core data types supported by the engine.
+ * The specific type is identified by the {@link ValueType} enum. This design
  * allows for handling mixed-type data in collections and function arguments in
  * a uniform way.
- * <p>
- * This interface simulates a "discriminated union" or "sum type," a common
- * pattern for handling a closed set of possible types. Implementations of this
- * interface are expected to be **immutable**.
  *
  * <h3>Usage Pattern</h3> The primary way to interact with an {@code IValue} is
- * through its specific, type-safe accessors (e.g., {@link #getNumberValue()},
- * {@link #getStringValue()}). These methods provide runtime safety by throwing
- * an {@link IllegalStateException} if the requested type does not match the
- * actual stored type.
+ * through its specific, type-safe accessors like {@link #getNumberValue()}.
+ * These methods provide runtime safety by throwing an
+ * {@link IllegalStateException} if the requested type does not match the actual
+ * stored type. The {@link ValueFactory} guarantees that these accessors will
+ * not return null (with the exception of {@code getBooleanValue} which returns
+ * a primitive).
  *
- * <pre>{@code
- * IValue value = context.get("myVariable");
- * try {
- * 	BigDecimal number = value.getNumberValue();
- * // ... operate on the number
- * } catch (IllegalStateException e) {
- * // ... handle the case where the value was not a number
- * }
- * }</pre>
+ * <h3>Immutability and Thread Safety</h3> All implementations of this interface
+ * are designed to be **immutable**. The value they hold is set at construction
+ * time and can never be changed. As a result, all {@code IValue} objects are
+ * inherently **thread-safe**.
  *
- * While a generic {@link #getValue()} method exists, its use is discouraged as
- * it bypasses the safety mechanisms and requires manual, unsafe casting.
- *
+ * @author Simplity Technologies
+ * @since 1.0
  * @see ValueType
  * @see ValueFactory
  */
@@ -55,19 +46,17 @@ public interface IValue {
 	 * Gets the underlying value as a raw {@link Object}.
 	 * <p>
 	 * <b>Warning:</b> This method bypasses the type-safety checks provided by the
-	 * specific accessors. Callers are responsible for checking the
-	 * {@link #getType()} and casting the result, which is error-prone. It is
-	 * strongly recommended to use the type-specific accessors like
-	 * {@link #getNumberValue()} instead.
+	 * specific accessors. It is strongly recommended to use the type-specific
+	 * accessors instead.
 	 *
-	 * @return the underlying value object.
+	 * @return the underlying, non-null value object.
 	 */
 	Object getValue();
 
 	/**
 	 * Returns the value as a {@link BigDecimal}.
 	 *
-	 * @return the value as a {@code BigDecimal}.
+	 * @return the value as a non-null {@code BigDecimal}.
 	 * @throws IllegalStateException if this value is not of type
 	 *                               {@link ValueType#NUMBER}.
 	 */
@@ -76,14 +65,18 @@ public interface IValue {
 	/**
 	 * Returns the value as a {@link String}.
 	 *
-	 * @return the value as a {@code String}.
+	 * @return the value as a non-null {@code String}.
 	 * @throws IllegalStateException if this value is not of type
 	 *                               {@link ValueType#STRING}.
 	 */
 	String getStringValue();
 
 	/**
-	 * Returns the value as a {@link boolean}.
+	 * Returns the value as a primitive {@code boolean}.
+	 * <p>
+	 * <b>Design Note:</b> This method returns a primitive {@code boolean} for
+	 * ergonomic reasons, as it avoids the need for unboxing in client code. This
+	 * implies that a boolean value within the engine can never be null.
 	 *
 	 * @return the value as a {@code boolean}.
 	 * @throws IllegalStateException if this value is not of type
@@ -94,11 +87,9 @@ public interface IValue {
 	/**
 	 * Returns the value as a {@link LocalDate}.
 	 *
-	 * @return the value as a {@code LocalDate}.
+	 * @return the value as a non-null {@code LocalDate}.
 	 * @throws IllegalStateException if this value is not of type
 	 *                               {@link ValueType#DATE}.
 	 */
 	LocalDate getDateValue();
-
-	// Add other accessors as needed, e.g., for lists, objects, etc.
 }

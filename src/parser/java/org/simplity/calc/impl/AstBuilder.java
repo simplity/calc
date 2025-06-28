@@ -23,7 +23,10 @@ import org.simplity.calc.grammar.CalcParser.ExprContext;
  * <p>
  */
 final class AstBuilder extends CalcBaseVisitor<IExpression> {
-
+	/**
+	 * reference to be used while reporting any error
+	 */
+	private String expressionReference;
 	private final IParserContext parserCtx;
 
 	/**
@@ -42,7 +45,17 @@ final class AstBuilder extends CalcBaseVisitor<IExpression> {
 	 * @return The fully constructed and validated {@link IExpression}.
 	 */
 	public IExpression build(ParseTree tree, String variableName) {
+		String expr = tree.getText();
+		expr = expr.substring(0, expr.length() - 5); // remove <EOF> at the end
+		this.expressionReference = "Rule for: " + variableName + "  Expression: " + expr;
 		return this.visit(tree);
+	}
+
+	@Override
+	public IExpression visitParse(CalcParser.ParseContext ctx) {
+		// We override visitParse to specifically visit only the 'expr' child,
+		// ignoring the EOF token. We then return the result of that visit.
+		return this.visit(ctx.expr());
 	}
 
 	@Override
@@ -60,33 +73,39 @@ final class AstBuilder extends CalcBaseVisitor<IExpression> {
 		ValueType rightType = right.getValueType();
 
 		/*
-		 * 3. Look up the correctly overloaded function for this operator
+		 * 3. Look up the overloaded function for this operator
 		 */
 		String op = ctx.op.getText();
-		String functionName = BuiltinFunctions.formatFunctionName(op, leftType, rightType);
+		String functionName = BuiltinFunctions.buildFunctionKey(op, leftType, rightType);
 		ICalcFunction function = this.parserCtx.getFunction(functionName);
-		if (function == null) {
-			throw new IllegalArgumentException("Operator '" + op + "' is not valid between type '"
-					+ leftType.name().toLowerCase() + "' and '" + rightType.name().toLowerCase());
+
+		if (function != null) {
+			return new FunctionExpression(function, new IExpression[] { left, right });
 		}
 
 		/*
-		 * 4. Create the expression node.
+		 * got an error. report it and return a dummy expression of left-type
 		 */
-		return new FunctionExpression(function, new IExpression[] { left, right });
+		String msg = "Operator " + op + " is not valid between type '" + leftType.name().toLowerCase() + "' and '"
+				+ rightType.name().toLowerCase();
+		return this.ExpressionInError(msg, leftType);
 	}
 
 	@Override
 	public IExpression visitUnaryExpr(CalcParser.UnaryExprContext ctx) {
 		IExpression operand = this.visit(ctx.expr());
 		ValueType operandType = operand.getValueType();
+
 		String op = ctx.op.getText();
 		if (op.equals("-")) {
 			if (operandType != ValueType.NUMBER) {
-				throw new IllegalArgumentException(
-						"Unary - is not pplicable for value type '" + operandType.name().toLowerCase() + "'.");
+				String msg = "Unary - is not applicable for value type '" + operandType.name().toLowerCase() + "'.";
+				return this.ExpressionInError(msg, operandType);
 			}
 			op = "unary-";
+		} else if (op.equals("!") && operandType != ValueType.BOOLEAN) {
+			String msg = "Unary ! is not applicable for value type '" + operandType.name().toLowerCase() + "'.";
+			return this.ExpressionInError(msg, operandType);
 		}
 
 		ICalcFunction function = this.parserCtx.getFunction(op);
@@ -95,95 +114,59 @@ final class AstBuilder extends CalcBaseVisitor<IExpression> {
 
 	@Override
 	public IExpression visitFuncExpr(CalcParser.FuncExprContext ctx) {
+
 		String functionName = ctx.ID().getText();
+
 		ICalcFunction function = this.parserCtx.getFunction(functionName);
 
 		/*
-		 * 1: Is this function defined?
+		 * defined?
 		 */
 		if (function == null) {
-			throw new IllegalArgumentException(functionName + " is not a valid function name");
+			return this.ExpressionInError("function:" + functionName + " is not a valid function name",
+					ValueType.NUMBER);
 		}
 
 		/*
 		 * 2: parse the arguments
 		 */
-		int n = ctx.expr().size();
+		final int n = ctx.expr().size();
 		IExpression[] arguments = new IExpression[n];
 		ValueType[] argTypes = new ValueType[n];
-		n = 0;
-		for (ExprContext c : ctx.expr()) {
+
+		for (int i = 0; i < n; i++) {
+			ExprContext c = ctx.expr(i);
 			IExpression exp = this.visit(c);
-			arguments[n] = exp;
-			argTypes[n] = exp.getValueType();
-			n++;
+			arguments[i] = exp;
+			argTypes[i] = exp.getValueType();
 		}
 
-		/*
-		 * 3: do we have the right number of arguments
-		 */
-		boolean isVarArg = function.lastOneIsVararg();
-		ValueType[] expectedTypes = function.getParameterTypes();
-		int min = expectedTypes.length;
-		if (isVarArg) {
-			min--;
-			if (n < min) {
-				throw new IllegalArgumentException("Function '" + functionName + "' requires at least " + min
-						+ " arguments but  " + n + " arguments provided.");
-			}
+		try {
+			return new FunctionExpression(function, arguments);
+		} catch (IllegalArgumentException e) {
+			return this.ExpressionInError("Function: " + functionName + " has invalid arguments. " + e.getMessage(),
+					function.getReturnType());
 
-		} else if (n != min) {
-			throw new IllegalArgumentException("Function '" + functionName + "' requires " + min + " arguments but  "
-					+ n + " arguments provided.");
 		}
+	}
 
-		/*
-		 * 4: what about argument types?
-		 */
-		for (int i = 0; i < min; i++) {
-			ValueType vt = expectedTypes[i];
-			/*
-			 * null implies any type
-			 */
-			if (vt != null && !vt.equals(argTypes[i])) {
-				throw new IllegalArgumentException(
-						"Function '" + functionName + "': argument at position " + (i + 1) + " should be a "
-								+ vt.name().toLowerCase() + " but it is a " + argTypes[i].name().toLowerCase());
-			}
-		}
-
-		/*
-		 * 5: arg type for varargs
-		 */
-		if (n > min) {
-			ValueType vt = expectedTypes[min];
-			if (vt != null) {
-				for (int i = min; i < n; i++) {
-					if (vt.equals(argTypes[i])) {
-						continue;
-					}
-					throw new IllegalArgumentException(
-							"Function '" + functionName + "': argument at position " + (i + 1) + " should be a "
-									+ vt.name().toLowerCase() + " but it is a " + argTypes[i].name().toLowerCase());
-				}
-			}
-		}
-
-		/*
-		 * All Right!!
-		 */
-		return new FunctionExpression(function, arguments);
-
+	/**
+	 * log the error for this message and return a dummy expression of the same
+	 * type, so that the parsing process can continue to look for other problems
+	 */
+	private IExpression ExpressionInError(String message, ValueType valueType) {
+		this.parserCtx.logError(message, "expresion", this.expressionReference);
+		return new LiteralExpression(ValueFactory.newDefaultValue(valueType));
 	}
 
 	@Override
 	public IExpression visitVariableExpr(CalcParser.VariableExprContext ctx) {
 		String variableName = ctx.ID().getText();
-		ValueType type = this.parserCtx.getValueType(variableName);
-		if (type == null) {
-			throw new IllegalArgumentException("Variable '" + variableName + "' is not defined.");
+		Variable variable = this.parserCtx.getVariable(variableName);
+		if (variable == null) {
+			return this.ExpressionInError("Variable '" + variableName + "' is not defined.", ValueType.NUMBER);
 		}
-		return new VariableExpression(variableName, type);
+		return new VariableExpression(variableName, variable.getValueType());
 	}
 
 	@Override
@@ -204,7 +187,8 @@ final class AstBuilder extends CalcBaseVisitor<IExpression> {
 		} else if (ctx.BOOLEAN() != null) {
 			value = ValueFactory.newValue(Boolean.parseBoolean(ctx.BOOLEAN().getText()));
 		} else {
-			throw new IllegalArgumentException("Literal type: " + ctx.getText() + " is not yet implemented");
+			return this.ExpressionInError("Literal type: " + ctx.getText() + " is not yet implemented",
+					ValueType.NUMBER);
 		}
 		return new LiteralExpression(value);
 	}

@@ -10,25 +10,32 @@ import org.simplity.calc.api.IValue;
 import org.simplity.calc.api.ValueType;
 
 /**
- * A central registry for all built-in functions and operators. This class uses
- * the "static inner class singleton" pattern to define each function. This
- * keeps the function implementations organized, stateless, and efficient.
+ * A central registry for all built-in functions and operators.
+ * <p>
+ * This class uses a declarative style to define functions. The execution logic
+ * for each function is defined as a stateless lambda (an
+ * {@link IEvaluatorFunction}). A static initializer block then uses the
+ * {@link CalcFunctionFactory} to create concrete {@link ICalcFunction}
+ * instances, bundling the logic with its signature metadata, and registers them
+ * into a map.
+ *
+ * <h3>Thread Safety</h3> This class is thread-safe. The registry is populated
+ * once in a static initializer and is safely published for read-only access
+ * thereafter.
+ *
+ * @author Simplity Technologies
+ * @since 1.0
  */
 public final class BuiltinFunctions {
-
-	/**
-	 * Unary operators
-	 */
+	private BuiltinFunctions() {
+		// not to be instantiated
+	}
 
 	private static final IEvaluatorFunction NEGATE = (IValue[] args, ICalcContext ctx) -> ValueFactory
 			.newValue(args[0].getNumberValue().negate());
 
 	private static final IEvaluatorFunction NOT = (IValue[] args, ICalcContext ctx) -> ValueFactory
 			.newValue(!args[0].getBooleanValue());
-
-	/**
-	 * binary arithmetic
-	 */
 
 	private static final IEvaluatorFunction ADD = (IValue[] args, ICalcContext ctx) -> ValueFactory
 			.newValue(args[0].getNumberValue().add(args[1].getNumberValue()));
@@ -45,13 +52,11 @@ public final class BuiltinFunctions {
 	private static final IEvaluatorFunction REMAINDER = (IValue[] args, ICalcContext ctx) -> ValueFactory
 			.newValue(args[0].getNumberValue().remainder(args[1].getNumberValue()));
 
-	// Comparators. Need to work on non-numbers
-
 	private static final IEvaluatorFunction EQ = (IValue[] args, ICalcContext ctx) -> ValueFactory
-			.newValue(args[0].getNumberValue().equals(args[1].getNumberValue()));
+			.newValue(args[0].getNumberValue().compareTo(args[1].getNumberValue()) == 0);
 
 	private static final IEvaluatorFunction NEQ = (IValue[] args, ICalcContext ctx) -> ValueFactory
-			.newValue(!args[0].getNumberValue().equals(args[1].getNumberValue()));
+			.newValue(args[0].getNumberValue().compareTo(args[1].getNumberValue()) != 0);
 
 	private static final IEvaluatorFunction GT = (IValue[] args, ICalcContext ctx) -> ValueFactory
 			.newValue(args[0].getNumberValue().compareTo(args[1].getNumberValue()) > 0);
@@ -65,7 +70,6 @@ public final class BuiltinFunctions {
 	private static final IEvaluatorFunction LTE = (IValue[] args, ICalcContext ctx) -> ValueFactory
 			.newValue(args[0].getNumberValue().compareTo(args[1].getNumberValue()) <= 0);
 
-	// boolean binary operators
 	private static final IEvaluatorFunction AND = (IValue[] args, ICalcContext ctx) -> ValueFactory
 			.newValue(args[0].getBooleanValue() && args[1].getBooleanValue());
 
@@ -74,76 +78,83 @@ public final class BuiltinFunctions {
 
 	private static final Map<String, ICalcFunction> REGISTRY = new HashMap<>();
 
-	// pre-define argument types used by the functions
+	// Pre-defined signatures for reuse.
 	private static final ValueType[] NUMBER1 = { ValueType.NUMBER };
 	private static final ValueType[] NUMBER2 = { ValueType.NUMBER, ValueType.NUMBER };
 	private static final ValueType[] BOOL1 = { ValueType.BOOLEAN };
 	private static final ValueType[] BOOL2 = { ValueType.BOOLEAN, ValueType.BOOLEAN };
 
-	// add all the functions to the registry
 	static {
-		/*
-		 * unary. NOTE that unary minus needs a name-change
-		 */
-		register("!", NOT, ValueType.BOOLEAN, BOOL1);
-		register("unary-", NEGATE, ValueType.NUMBER, NUMBER1);
+		// Register Unary Operators
+		register("!", NOT, ValueType.BOOLEAN, BOOL1, false);
+		register("unary-", NEGATE, ValueType.NUMBER, NUMBER1, false);
 
-		// arithmetic binary
+		// Register Arithmetic Binary Operators
+		registerOverloaded("+", ADD, ValueType.NUMBER, NUMBER2, false);
+		registerOverloaded("-", SUBTRACT, ValueType.NUMBER, NUMBER2, false);
+		registerOverloaded("*", MULTIPLY, ValueType.NUMBER, NUMBER2, false);
+		registerOverloaded("/", DIVIDE, ValueType.NUMBER, NUMBER2, false);
+		registerOverloaded("%", REMAINDER, ValueType.NUMBER, NUMBER2, false);
 
-		registerNmericBinary("+", ADD);
-		registerNmericBinary("-", SUBTRACT);
-		registerNmericBinary("*", MULTIPLY);
-		registerNmericBinary("/", DIVIDE);
-		registerNmericBinary("%", REMAINDER);
+		// Register Numeric Comparators
+		registerOverloaded("=", EQ, ValueType.BOOLEAN, NUMBER2, false);
+		registerOverloaded("!=", NEQ, ValueType.BOOLEAN, NUMBER2, false);
+		registerOverloaded(">", GT, ValueType.BOOLEAN, NUMBER2, false);
+		registerOverloaded("<", LT, ValueType.BOOLEAN, NUMBER2, false);
+		registerOverloaded(">=", GTE, ValueType.BOOLEAN, NUMBER2, false);
+		registerOverloaded("<=", LTE, ValueType.BOOLEAN, NUMBER2, false);
 
-		// numeric comparators
-		registerNmericComparator("=", EQ);
-		registerNmericComparator("!=", NEQ);
-		registerNmericComparator(">", GT);
-		registerNmericComparator("<", LT);
-		registerNmericComparator(">=", GTE);
-		registerNmericComparator("<=", LTE);
-
-		// Logical Operators. Note that they are NOT '&&' '||'
-		register("&", AND, ValueType.BOOLEAN, BOOL2);
-		register("|", OR, ValueType.BOOLEAN, BOOL2);
-
+		// Register Logical Operators
+		register("&", AND, ValueType.BOOLEAN, BOOL2, false);
+		register("|", OR, ValueType.BOOLEAN, BOOL2, false);
 	}
 
 	/**
-	 * Binary Operators may be overloaded. A naming convention is used to name the
-	 * function based on the operator symbol and the operand types. This is the
-	 * utility to format the name. It does not check for the validity of the
-	 * operator or the value types
+	 * Builds a conventional key for an overloaded function.
 	 *
-	 * @param operation binary operator symbol.
-	 * @param leftType  non-null valueType of the left operand
-	 * @param rightType non-null valueType of the right operand
-	 * @return formatted name as per the convention.
+	 * @param name     The simple name of the function (e.g., "+").
+	 * @param argTypes The value types of its arguments.
+	 * @return A key string (e.g., "+:number,number").
 	 */
-	public static String formatFunctionName(String operation, ValueType leftType, ValueType rightType) {
-		return operation + ':' + leftType.name().toLowerCase() + ',' + rightType.name().toLowerCase();
+	public static String buildFunctionKey(String name, ValueType... argTypes) {
+		StringBuilder sb = new StringBuilder(name.toLowerCase());
+		if (argTypes.length > 0) {
+			sb.append(':');
+			for (int i = 0; i < argTypes.length; i++) {
+				sb.append(argTypes[i].name().toLowerCase());
+				if (i < argTypes.length - 1) {
+					sb.append(',');
+				}
+			}
+		}
+		return sb.toString();
 	}
 
-	private static void registerNmericBinary(String operator, IEvaluatorFunction fn) {
-		String name = formatFunctionName(operator, ValueType.NUMBER, ValueType.NUMBER);
-		ICalcFunction function = CalcFunctionFactory.newCalcFunction(fn, ValueType.NUMBER, NUMBER2, false);
-		REGISTRY.put(name, function);
+	/**
+	 * A helper to register a simple, non-overloaded function.
+	 */
+	private static void register(String name, IEvaluatorFunction function, ValueType returnType, ValueType[] argTypes,
+			boolean isVararg) {
+		ICalcFunction f = CalcFunctionFactory.newCalcFunction(function, returnType, argTypes, isVararg);
+		REGISTRY.put(name.toLowerCase(), f);
 	}
 
-	private static void registerNmericComparator(String operator, IEvaluatorFunction fn) {
-		String name = formatFunctionName(operator, ValueType.BOOLEAN, ValueType.NUMBER);
-		ICalcFunction function = CalcFunctionFactory.newCalcFunction(fn, ValueType.NUMBER, NUMBER2, false);
-		REGISTRY.put(name, function);
+	/**
+	 * A helper to register an overloaded function, building its key from its name
+	 * and parameter types.
+	 */
+	private static void registerOverloaded(String name, IEvaluatorFunction function, ValueType returnType,
+			ValueType[] argTypes, boolean isVararg) {
+		String key = buildFunctionKey(name, argTypes);
+		register(key, function, returnType, argTypes, isVararg);
 	}
 
-	private static void register(String name, IEvaluatorFunction function, ValueType returnType, ValueType[] argTypes) {
-		ICalcFunction f = CalcFunctionFactory.newCalcFunction(function, returnType, argTypes, false);
-		REGISTRY.put(name, f);
-	}
-
+	/**
+	 * Populates a given map with all the functions defined in this registry.
+	 *
+	 * @param registry The map to populate. Must not be null.
+	 */
 	static void getAll(Map<String, ICalcFunction> registry) {
 		registry.putAll(REGISTRY);
 	}
-
 }

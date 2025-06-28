@@ -32,6 +32,6 @@ class CalcError implements ICalcError {
 
 	@Override
 	public String toString() {
-		return "Error on variable '" + this.variableName + "': " + this.message;
+		return this.message;
 	}
 }

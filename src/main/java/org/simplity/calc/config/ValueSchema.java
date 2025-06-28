@@ -1,54 +1,74 @@
 package org.simplity.calc.config;
 
+import org.simplity.calc.api.ValueType;
+
 /**
- * A flexible POJO representing the set of all possible schema constraints. This
- * object is used to create a specific, efficient IValueValidator instance
- * during bootstrap.
+ * A flexible container for all possible validation constraints that can be
+ * applied to a value.
+ * <p>
+ * This class is designed to be easily deserialized from JSON. The engine uses a
+ * ValueSchema definition to create a specific, efficient validator instance
+ * during the bootstrap process. It is primarily used for validating input data
+ * elements.
  */
 public class ValueSchema {
 	/**
-	 * type of value for which this schema is to be applied Relevance of other
-	 * attribute depends on the value type
+	 * The data type for which this schema is to be applied. The relevance of other
+	 * attributes depends on this type.
+	 * <p>
+	 * <b>Note:</b> This value must match one of the names from the
+	 * {@link ValueType} enum (e.g., "NUMBER", "STRING").
 	 */
 	public String valueType;
+
 	// --- For NUMBER ---
 	/**
-	 * The number of decimal places to round to 0.
+	 * The number of decimal places allowed. Relevant only for
+	 * {@code ValueType.NUMBER}.
 	 */
 	public int nbrDecimalPlaces = 0;
 
 	/**
-	 * The inclusive minimum value allowed for a number.
+	 * The inclusive minimum value allowed. Relevant only for
+	 * {@code ValueType.NUMBER}.
 	 */
 	public Double min;
+
 	/**
-	 * The inclusive maximum value allowed for a number.
+	 * The inclusive maximum value allowed. Relevant only for
+	 * {@code ValueType.NUMBER}.
 	 */
 	public Double max;
 
 	// --- For STRING ---
 	/**
-	 * The minimum character length for a string.
+	 * The minimum character length required. Relevant only for
+	 * {@code ValueType.STRING}.
 	 */
 	public Integer minLength;
+
 	/**
-	 * The maximum character length for a string.
+	 * The maximum character length allowed. Relevant only for
+	 * {@code ValueType.STRING}.
 	 */
 	public Integer maxLength;
+
 	/**
-	 * A valid Java regular expression that the string value must match.
+	 * A valid Java regular expression that the value must match. Relevant only for
+	 * {@code ValueType.STRING}.
 	 */
 	public String regex;
 
 	// --- For DATE ---
 	/**
 	 * The maximum number of days in the past a date can be, relative to the
-	 * execution date.
+	 * execution date. Relevant only for {@code ValueType.DATE}.
 	 */
 	public Integer daysInPast;
+
 	/**
 	 * The maximum number of days in the future a date can be, relative to the
-	 * execution date.
+	 * execution date. Relevant only for {@code ValueType.DATE}.
 	 */
 	public Integer daysInFuture;
 }

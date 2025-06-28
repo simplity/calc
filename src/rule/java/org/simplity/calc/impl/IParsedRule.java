@@ -33,7 +33,7 @@ public interface IParsedRule {
 	ValueType getValueType();
 
 	/**
-	 * APply this rule within a given context to produce a result.
+	 * Apply this rule within a given context to produce a result.
 	 *
 	 * @param ctx The calculation context, providing access to variables and other
 	 *            runtime data. Must not be null.
@@ -41,5 +41,18 @@ public interface IParsedRule {
 	 *         error while evaluting.
 	 */
 	IValue apply(ICalcContext ctx);
+
+	/**
+	 * Dryrun this rule to check if it semantically possible to use the rule. More
+	 * specifically, check if every variable that this rule may be dependent on
+	 * (outer set assuming all possible paths) can be "resolved" or "determined"
+	 * based on the dependencies between the variables. This can can be typically
+	 * achieved by recursively using this method on all sub-expressions.
+	 *
+	 * @param ctx
+	 * @return true if all OK. False on any error, in which case suitable error
+	 *         messages would have been logged into the context
+	 */
+	boolean dryrun(IDryrunContext ctx);
 
 }

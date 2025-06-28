@@ -11,11 +11,7 @@ expr
     | expr op=(EQ|NEQ) expr             #InfixExpr
     | expr op=AND expr                  #InfixExpr
     | expr op=OR expr                   #InfixExpr
-    | atom                              #AtomExpr
-    ;
-
-atom
-    : ID '(' (expr (',' expr)*)? ')'    #FuncExpr
+    | ID '(' (expr (',' expr)*)? ')'    #FuncExpr
     | ID                                #VariableExpr
     | literal                           #LiteralExpr
     | '(' expr ')'                      #ParenExpr
