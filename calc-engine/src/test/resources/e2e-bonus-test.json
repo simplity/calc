@@ -1,0 +1,67 @@
+{
+  "testName": "Senior Employee Bonus Calculation",
+  "config": {
+    "dataElements": {
+      "employee_id": {
+        "type": "required_input",
+        "valueType": "STRING"
+      },
+      "hire_date": {
+        "type": "required_input",
+        "valueType": "DATE"
+      },
+      "base_salary": {
+        "type": "required_input",
+        "valueType": "NUMBER"
+      },
+      "performance_rating": {
+        "type": "required_input",
+        "valueType": "NUMBER"
+      },
+      "is_eligible": {
+        "type": "intermediate",
+        "valueType": "BOOLEAN",
+        "rule": {
+          "defaultExpression": "(today() - hire_date) > 365 & performance_rating >= 3"
+        }
+      },
+      "final_bonus": {
+        "type": "output",
+        "valueType": "NUMBER",
+        "rule": {
+          "defaultExpression": "0",
+          "scenarios": [
+            {
+              "condition": "is_eligible",
+              "expression": "base_salary * 0.1 * performance_rating"
+            }
+          ]
+        }
+      }
+    }
+  },
+  "testRuns": [
+    {
+      "description": "Run 1: Eligible senior employee with high rating",
+      "inputs": {
+        "hire_date": "2022-05-10",
+        "base_salary": "100000",
+        "performance_rating": "4"
+      },
+      "expectedOutputs": {
+        "final_bonus": 40000.0
+      }
+    },
+    {
+      "description": "Run 2: Ineligible new employee",
+      "inputs": {
+        "hire_date": "2024-09-01",
+        "base_salary": "80000",
+        "performance_rating": "5"
+      },
+      "expectedOutputs": {
+        "final_bonus": 0
+      }
+    }
+  ]
+}
