@@ -1,0 +1,147 @@
+package org.simplity.calc.ws;
+
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertNotNull;
+import static org.junit.jupiter.api.Assertions.assertTrue;
+
+import java.io.IOException;
+import java.io.InputStream;
+import java.math.BigDecimal;
+import java.net.URI;
+import java.net.http.HttpRequest;
+import java.net.http.HttpResponse;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+import java.util.stream.Stream;
+
+import org.junit.jupiter.api.AfterAll;
+import org.junit.jupiter.api.BeforeAll;
+import org.junit.jupiter.api.DisplayName;
+import org.junit.jupiter.api.TestInstance;
+import org.junit.jupiter.params.ParameterizedTest;
+import org.junit.jupiter.params.provider.MethodSource;
+import org.simplity.calc.api.ICalcError;
+import org.simplity.calc.engine.api.ICalcEngine;
+import org.simplity.calc.engine.config.CalcConfig;
+import org.simplity.calc.impl.CalcEngineFactory;
+
+import com.fasterxml.jackson.databind.JsonNode;
+import com.fasterxml.jackson.databind.ObjectMapper;
+
+import io.javalin.Javalin;
+import sun.net.www.http.HttpClient;
+
+/**
+ * End-to-end integration test for the Calculation Web Service. This test class
+ * starts a real web server, bootstraps the engine with a configuration from a
+ * test file, makes real HTTP requests, and asserts the JSON response.
+ */
+@TestInstance(TestInstance.Lifecycle.PER_CLASS) // Allows @BeforeAll to be non-static
+class CalculationServiceIT {
+
+	private Javalin app;
+	private HttpClient httpClient;
+	private ObjectMapper jsonMapper;
+	private String serverUrl;
+
+	@BeforeAll
+	void startServer() {
+		// We start the server on a random available port to avoid conflicts
+		this.app = Javalin.create().start(0);
+		this.serverUrl = "http://localhost:" + this.app.port();
+		this.httpClient = HttpClient.newHttpClient();
+		this.jsonMapper = new ObjectMapper();
+	}
+
+	@AfterAll
+	void stopServer() {
+		this.app.stop();
+	}
+
+	@DisplayName("Run E2E Test Case")
+	@ParameterizedTest(name = "{index}: {0}")
+	@MethodSource("provideTestCases")
+	void runEndToEndTest(String testName, TestCase testCase) throws Exception {
+		// 1. For each test case, bootstrap a dedicated engine instance
+		List<ICalcError> errors = new ArrayList<>();
+		ICalcEngine engine = CalcEngineFactory.fromConfigObject(testCase.config, new HashMap<>(), errors);
+		assertTrue(errors.isEmpty(), "Engine bootstrap failed for test: " + testName);
+		assertNotNull(engine, "Engine should not be null");
+
+		// 2. Define the web service endpoint using this specific engine instance
+		this.app.post("/calculate/" + testName, ctx -> {
+			Map<String, String> inputs = ctx.bodyAsClass(Map.class);
+			ctx.json(engine.calculate(inputs));
+		});
+
+		// 3. Execute all test runs defined within this test case file
+		for (TestRun run : testCase.testRuns) {
+			System.out.println("  - Executing run: " + run.description);
+
+			// Prepare the HTTP request
+			String requestBody = this.jsonMapper.writeValueAsString(run.inputs);
+			HttpRequest request = HttpRequest.newBuilder().uri(URI.create(this.serverUrl + "/calculate/" + testName))
+					.header("Content-Type", "application/json").POST(HttpRequest.BodyPublishers.ofString(requestBody))
+					.build();
+
+			// Make the HTTP call
+			HttpResponse<String> response = this.httpClient.send(request, HttpResponse.BodyHandlers.ofString());
+
+			// Assert the response
+			assertEquals(200, response.statusCode());
+
+			JsonNode responseJson = this.jsonMapper.readTree(response.body());
+			assertTrue(responseJson.get("success").asBoolean(), "Calculation should be successful");
+
+			JsonNode outputs = responseJson.get("outputs");
+			assertEquals(run.expectedOutputs.size(), outputs.size(), "Number of output fields should match");
+
+			for (Map.Entry<String, Object> expected : run.expectedOutputs.entrySet()) {
+				String key = expected.getKey();
+				JsonNode actualNode = outputs.get(key);
+				assertNotNull(actualNode, "Expected output '" + key + "' was not found in the response.");
+
+				// Compare numeric values using BigDecimal for precision
+				BigDecimal expectedValue = new BigDecimal(expected.getValue().toString());
+				BigDecimal actualValue = new BigDecimal(actualNode.get("value").asText());
+
+				assertEquals(0, expectedValue.compareTo(actualValue),
+						"Output mismatch for '" + key + "' in run: " + run.description);
+			}
+		}
+	}
+
+	/**
+	 * Data provider method for JUnit. It finds all .json files in the test
+	 * resources, parses them, and provides them to the test method.
+	 */
+	private static Stream<Object[]> provideTestCases() throws Exception {
+		// In a real project, this would scan the "src/test/resources/e2e-tests"
+		// directory for all .json files. For this example, we'll load one manually.
+		String resourcePath = "/e2e-tests/e2e-bonus-test.json";
+		InputStream stream = CalculationServiceIT.class.getResourceAsStream(resourcePath);
+		if (stream == null) {
+			throw new IOException("Test resource not found: " + resourcePath);
+		}
+
+		ObjectMapper mapper = new ObjectMapper();
+		TestCase testCase = mapper.readValue(stream, TestCase.class);
+
+		return Stream.of(testCase.testName, testCase);
+	}
+
+	// --- DTO classes to map the test case JSON file ---
+	static class TestCase {
+		public String testName;
+		public CalcConfig config;
+		public List<TestRun> testRuns;
+	}
+
+	static class TestRun {
+		public String description;
+		public Map<String, String> inputs;
+		public Map<String, Object> expectedOutputs;
+	}
+}

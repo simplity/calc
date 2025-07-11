@@ -1,10 +1,10 @@
 package org.simplity.calc.engine.impl;
 
+import org.simplity.calc.engine.api.DataType;
 import org.simplity.calc.engine.api.ICalcContext;
 import org.simplity.calc.engine.api.ICalcFunction;
 import org.simplity.calc.engine.api.IValue;
-import org.simplity.calc.engine.api.ValueType;
-import org.simplity.calc.engine.impl.IDryrunContext;
+import org.simplity.calc.engine.api.IValueType;
 
 /**
  * An immutable expression that represents a function call. In this engine, all
@@ -29,7 +29,7 @@ import org.simplity.calc.engine.impl.IDryrunContext;
 public final class FunctionExpression implements IExpression {
 	private final ICalcFunction function;
 	private final IExpression[] arguments;
-	private final ValueType returnType;
+	private final IValueType returnType;
 
 	/**
 	 * Constructs a new FunctionExpression and validates it against the function's
@@ -48,7 +48,7 @@ public final class FunctionExpression implements IExpression {
 	}
 
 	private void validate() {
-		final ValueType[] paramTypes = this.function.getParameterTypes();
+		final IValueType[] paramTypes = this.function.getParameterTypes();
 		final int nbrParams = paramTypes.length;
 		final int nbrArgs = this.arguments.length;
 
@@ -83,7 +83,7 @@ public final class FunctionExpression implements IExpression {
 		// Validate the variable arguments
 		if (nbrArgs > minRequiredArgs) {
 			// The vararg type is the LAST one in the parameter types array.
-			final ValueType varArgType = paramTypes[nbrParams - 1];
+			final IValueType varArgType = paramTypes[nbrParams - 1];
 			for (int i = minRequiredArgs; i < nbrArgs; i++) {
 				matchValueType(varArgType, this.arguments[i].getValueType(), i + 1);
 			}
@@ -98,24 +98,24 @@ public final class FunctionExpression implements IExpression {
 	 * value for the {@code expectedType} parameter is treated as a wildcard that
 	 * successfully matches any {@code actualType}.
 	 *
-	 * @param expectedType the required {@link ValueType}, or {@code null} to allow
+	 * @param expectedType the required {@link DataType}, or {@code null} to allow
 	 *                     any type.
-	 * @param actualType   the actual {@link ValueType} of the argument being
+	 * @param actualType   the actual {@link DataType} of the argument being
 	 *                     checked.
 	 * @param position     the one-based argument position, for clear error
 	 *                     reporting.
 	 * @throws IllegalArgumentException if the types are not compatible.
 	 */
-	private static void matchValueType(ValueType expectedType, ValueType actualType, int position) {
+	private static void matchValueType(IValueType expectedType, IValueType actualType, int position) {
 		if (expectedType == null || expectedType == actualType) {
 			return;
 		}
 		throw new IllegalArgumentException("Argument at position " + position + " should be of type "
-				+ expectedType.name() + " but it is of type " + actualType.name());
+				+ expectedType.getDataTypeName() + " but it is of type " + actualType.getDataTypeName());
 	}
 
 	@Override
-	public ValueType getValueType() {
+	public IValueType getValueType() {
 		return this.returnType;
 	}
 
@@ -129,7 +129,7 @@ public final class FunctionExpression implements IExpression {
 	}
 
 	@Override
-	public boolean dryrun(IDryrunContext ctx) {
+	public boolean dryrun(DryrunContext ctx) {
 		for (IExpression e : this.arguments) {
 			if (!e.dryrun(ctx)) {
 				return false;

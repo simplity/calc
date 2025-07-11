@@ -19,17 +19,19 @@
             <groupId>org.antlr</groupId>
             <artifactId>antlr4-runtime</artifactId>
         </dependency>
+        <dependency>
+            <groupId>com.google.code.gson</groupId>
+            <artifactId>gson</artifactId>
+        </dependency>
+             <dependency>
+                <groupId>junit</groupId>
+                <artifactId>junit</artifactId>
+                <scope>test</scope>
+            </dependency>       
     </dependencies>
     
     <build>
         <plugins>
-      <plugin>
-        <artifactId>maven-compiler-plugin</artifactId>
-        <version>3.14.0</version>
-        <configuration>
-            <release>21</release>
-        </configuration>
-      </plugin>
       
       <plugin>
         <artifactId>maven-surefire-plugin</artifactId>
@@ -102,13 +104,11 @@
                   <configuration>
                     <sources>
                       <source>${project.build.directory}/generated-sources/antlr4</source>
-                      <source>src/main/config</source>
                       <source>src/main/engine</source>
                       <source>src/main/expr</source>
                       <source>src/main/fn</source>
-                      <source>src/main/parser</source>
                       <source>src/main/rule</source>
-                      <source>src/main/schema</source>
+                      <source>src/main/validation</source>
                     </sources>
                   </configuration>
                 </execution>

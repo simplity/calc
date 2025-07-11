@@ -21,6 +21,7 @@ literal
     : NUMBER
     | STRING
     | BOOLEAN
+    | enumType=ID '.' enumName=ID                         
     ;
 
 // Lexer Rules (Tokens)

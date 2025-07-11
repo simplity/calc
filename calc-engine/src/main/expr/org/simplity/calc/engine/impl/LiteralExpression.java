@@ -2,8 +2,7 @@ package org.simplity.calc.engine.impl;
 
 import org.simplity.calc.engine.api.ICalcContext;
 import org.simplity.calc.engine.api.IValue;
-import org.simplity.calc.engine.api.ValueType;
-import org.simplity.calc.engine.impl.IDryrunContext;
+import org.simplity.calc.engine.api.IValueType;
 
 /**
  * An immutable expression that represents a constant, literal value (e.g., 5,
@@ -39,8 +38,8 @@ public final class LiteralExpression implements IExpression {
 	 * @return The type of the literal value it holds.
 	 */
 	@Override
-	public ValueType getValueType() {
-		return this.value.getType();
+	public IValueType getValueType() {
+		return this.value.getValueType();
 	}
 
 	/**
@@ -61,7 +60,7 @@ public final class LiteralExpression implements IExpression {
 	 * always returns {@code true}.
 	 */
 	@Override
-	public boolean dryrun(IDryrunContext ctx) {
+	public boolean dryrun(DryrunContext ctx) {
 		return true;
 	}
 }

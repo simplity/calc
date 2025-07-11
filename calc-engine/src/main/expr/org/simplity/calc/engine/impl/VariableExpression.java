@@ -1,27 +1,25 @@
 package org.simplity.calc.engine.impl;
 
+import org.simplity.calc.engine.api.DataType;
 import org.simplity.calc.engine.api.ICalcContext;
 import org.simplity.calc.engine.api.IValue;
-import org.simplity.calc.engine.api.ValueType;
-import org.simplity.calc.engine.impl.IDryrunContext;
+import org.simplity.calc.engine.api.IValueType;
 
 /**
  * An immutable expression that represents a variable to be resolved from a
  * context at runtime.
  * <p>
  * This expression holds the name of a variable. For static analysis to work,
- * the {@link ValueType} of the variable is determined when the expression tree
+ * the {@link DataType} of the variable is determined when the expression tree
  * is built and is stored within this object.
  *
  * <h3>Thread Safety</h3> This class is immutable and therefore inherently
  * thread-safe.
  *
- * @author Simplity Technologies
- * @since 1.0
  */
 public final class VariableExpression implements IExpression {
 	private final String variableName;
-	private final ValueType valueType;
+	private final IValueType valueType;
 
 	/**
 	 * Constructs a new VariableExpression.
@@ -30,7 +28,7 @@ public final class VariableExpression implements IExpression {
 	 *                     to.
 	 * @param valueType    The non-null, predetermined type of this variable.
 	 */
-	public VariableExpression(String variableName, ValueType valueType) {
+	public VariableExpression(String variableName, IValueType valueType) {
 		this.variableName = variableName;
 		this.valueType = valueType;
 	}
@@ -41,7 +39,7 @@ public final class VariableExpression implements IExpression {
 	 * @return The expected type of the variable, as determined at build time.
 	 */
 	@Override
-	public ValueType getValueType() {
+	public IValueType getValueType() {
 		return this.valueType;
 	}
 
@@ -68,7 +66,7 @@ public final class VariableExpression implements IExpression {
 	 * for evaluation within the given dry-run context.
 	 */
 	@Override
-	public boolean dryrun(IDryrunContext ctx) {
+	public boolean dryrun(DryrunContext ctx) {
 		return ctx.isEvaluatable(this.variableName);
 	}
 

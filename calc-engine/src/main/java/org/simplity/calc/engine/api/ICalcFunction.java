@@ -1,5 +1,7 @@
 package org.simplity.calc.engine.api;
 
+import org.simplity.calc.engine.impl.Values;
+
 /**
  * Defines the contract for a function that can be executed by the calculation
  * engine.
@@ -43,20 +45,20 @@ package org.simplity.calc.engine.api;
  * accept an argument of any type (e.g., a generic {@code print()} function), a
  * {@code null} value can be used in the array returned by
  * {@link #getParameterTypes()}. A {@code null} element acts as a wildcard, and
- * the validation logic will accept any {@link ValueType} for that parameter
+ * the validation logic will accept any {@link DataType} for that parameter
  * position.
  *
  * <h3>Implementation Notes</h3> Implementations of this interface should be
  * **stateless and thread-safe singletons**. The engine will typically create
  * one instance of each function and reuse it for all calculations.
  *
- * @author Simplity Technologies
- * @since 1.0
  */
 public interface ICalcFunction {
 
 	/**
 	 * Executes the function's logic with the provided, evaluated arguments.
+	 * Function Interface {@link IEvaluatorFunction} is specifically designed for a
+	 * wrapper class to implement this specific method/function
 	 *
 	 * @param args An array of {@link IValue}s. The engine guarantees that the size
 	 *             and types of this array conform to the function's defined
@@ -64,7 +66,13 @@ public interface ICalcFunction {
 	 * @param ctx  The calculation context, in case the function needs to access
 	 *             other variables or runtime information (e.g., a "today()"
 	 *             function).
-	 * @return The non-null {@link IValue} result of the function's execution.
+	 * @return The non-null {@link IValue} result of the function's execution. If
+	 *         the function encounters any error, it should log the error using
+	 *         {@link ICalcContext#logError(String, String)}, but it should still
+	 *         return a default value of the right type.
+	 *         {@link Values#newDefaultValue(DataType)} provides a default value if
+	 *         required.
+	 *
 	 */
 	IValue call(IValue[] args, ICalcContext ctx);
 
@@ -72,9 +80,9 @@ public interface ICalcFunction {
 	 * Gets the predetermined, fixed data type of the value that this function
 	 * returns.
 	 *
-	 * @return The non-null {@link ValueType} that this function will always return.
+	 * @return The non-null {@link DataType} that this function will always return.
 	 */
-	ValueType getReturnType();
+	IValueType getReturnType();
 
 	/**
 	 * Gets the data types that define the function's parameter signature.
@@ -84,10 +92,10 @@ public interface ICalcFunction {
 	 * array is treated as a wildcard that accepts any value type. See the
 	 * class-level documentation for a detailed explanation.
 	 *
-	 * @return A non-null array of {@link ValueType}s defining the function
+	 * @return A non-null array of {@link DataType}s defining the function
 	 *         signature.
 	 */
-	ValueType[] getParameterTypes();
+	IValueType[] getParameterTypes();
 
 	/**
 	 * Specifies if the last parameter defined in {@link #getParameterTypes()} is

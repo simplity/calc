@@ -21,6 +21,12 @@ public enum ElementType {
 	 * intermediate variables are created as part of the rules/expressions with the
 	 * purpose of ultimately calculating the output fields
 	 */
-	INTERMEDIATE
+	CALCULATED,
+
+	/**
+	 * constants are meaningful names given to a literal constant value for ease of
+	 * documentation. For example slab1_limit
+	 */
+	CONSTANT
 
 }

@@ -1,9 +1,9 @@
 package org.simplity.calc.engine.impl;
 
+import org.simplity.calc.engine.api.DataType;
 import org.simplity.calc.engine.api.ICalcContext;
 import org.simplity.calc.engine.api.IValue;
-import org.simplity.calc.engine.api.ValueType;
-import org.simplity.calc.engine.impl.IDryrunContext;
+import org.simplity.calc.engine.api.IValueType;
 
 /**
  * Represents a compiled, executable expression within the calculation engine.
@@ -48,9 +48,9 @@ public interface IExpression {
 	 * Gets the data type that this expression is expected to evaluate to. This type
 	 * is determined and validated at build-time.
 	 *
-	 * @return The non-null {@link ValueType} of the resulting value.
+	 * @return The non-null {@link DataType} of the resulting value.
 	 */
-	ValueType getValueType();
+	IValueType getValueType();
 
 	/**
 	 * Evaluates this expression within a given context to produce a result.
@@ -77,6 +77,6 @@ public interface IExpression {
 	 *         {@code false} otherwise. If {@code false}, it is expected that a
 	 *         reason for the failure has been logged to the context.
 	 */
-	boolean dryrun(IDryrunContext ctx);
+	boolean dryrun(DryrunContext ctx);
 
 }
