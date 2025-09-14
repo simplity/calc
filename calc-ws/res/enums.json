@@ -1,0 +1,2940 @@
+{
+  "Address__StateCode": [
+    {
+      "value": "01",
+      "label": "Andaman and Nicobar islands",
+      "labelId": "Address__StateCode_01"
+    },
+    {
+      "value": "02",
+      "label": "Andhra Pradesh",
+      "labelId": "Address__StateCode_02"
+    },
+    {
+      "value": "03",
+      "label": "Arunachal Pradesh",
+      "labelId": "Address__StateCode_03"
+    },
+    {
+      "value": "04",
+      "label": "Assam",
+      "labelId": "Address__StateCode_04"
+    },
+    {
+      "value": "05",
+      "label": "Bihar",
+      "labelId": "Address__StateCode_05"
+    },
+    {
+      "value": "06",
+      "label": "Chandigarh",
+      "labelId": "Address__StateCode_06"
+    },
+    {
+      "value": "07",
+      "label": "Dadra Nagar and Haveli",
+      "labelId": "Address__StateCode_07"
+    },
+    {
+      "value": "08",
+      "label": "Daman and Diu",
+      "labelId": "Address__StateCode_08"
+    },
+    {
+      "value": "09",
+      "label": "Delhi",
+      "labelId": "Address__StateCode_09"
+    },
+    {
+      "value": "10",
+      "label": "Goa",
+      "labelId": "Address__StateCode_10"
+    },
+    {
+      "value": "11",
+      "label": "Gujarat",
+      "labelId": "Address__StateCode_11"
+    },
+    {
+      "value": "12",
+      "label": "Haryana",
+      "labelId": "Address__StateCode_12"
+    },
+    {
+      "value": "13",
+      "label": "Himachal Pradesh",
+      "labelId": "Address__StateCode_13"
+    },
+    {
+      "value": "14",
+      "label": "Jammu and Kashmir",
+      "labelId": "Address__StateCode_14"
+    },
+    {
+      "value": "15",
+      "label": "Karnataka",
+      "labelId": "Address__StateCode_15"
+    },
+    {
+      "value": "16",
+      "label": "Kerala",
+      "labelId": "Address__StateCode_16"
+    },
+    {
+      "value": "17",
+      "label": "Lakshadweep",
+      "labelId": "Address__StateCode_17"
+    },
+    {
+      "value": "18",
+      "label": "Madhya Pradesh",
+      "labelId": "Address__StateCode_18"
+    },
+    {
+      "value": "19",
+      "label": "Maharashtra",
+      "labelId": "Address__StateCode_19"
+    },
+    {
+      "value": "20",
+      "label": "Manipur",
+      "labelId": "Address__StateCode_20"
+    },
+    {
+      "value": "21",
+      "label": "meghalaya",
+      "labelId": "Address__StateCode_21"
+    },
+    {
+      "value": "22",
+      "label": "Mizoram",
+      "labelId": "Address__StateCode_22"
+    },
+    {
+      "value": "23",
+      "label": "Nagaland",
+      "labelId": "Address__StateCode_23"
+    },
+    {
+      "value": "24",
+      "label": "Odisha",
+      "labelId": "Address__StateCode_24"
+    },
+    {
+      "value": "25",
+      "label": "Puducherry",
+      "labelId": "Address__StateCode_25"
+    },
+    {
+      "value": "26",
+      "label": "Punjab",
+      "labelId": "Address__StateCode_26"
+    },
+    {
+      "value": "27",
+      "label": "Rajasthan",
+      "labelId": "Address__StateCode_27"
+    },
+    {
+      "value": "28",
+      "label": "Sikkim",
+      "labelId": "Address__StateCode_28"
+    },
+    {
+      "value": "29",
+      "label": "Tamil Nadu",
+      "labelId": "Address__StateCode_29"
+    },
+    {
+      "value": "30",
+      "label": "Tripura",
+      "labelId": "Address__StateCode_30"
+    },
+    {
+      "value": "31",
+      "label": "Uttar Pradesh",
+      "labelId": "Address__StateCode_31"
+    },
+    {
+      "value": "32",
+      "label": "West Bengal",
+      "labelId": "Address__StateCode_32"
+    },
+    {
+      "value": "33",
+      "label": "Chhattisgarh",
+      "labelId": "Address__StateCode_33"
+    },
+    {
+      "value": "34",
+      "label": "Uttarakhand",
+      "labelId": "Address__StateCode_34"
+    },
+    {
+      "value": "35",
+      "label": "Jharkhand",
+      "labelId": "Address__StateCode_35"
+    },
+    {
+      "value": "36",
+      "label": "Telangana",
+      "labelId": "Address__StateCode_36"
+    },
+    {
+      "value": "37",
+      "label": "Ladakh",
+      "labelId": "Address__StateCode_37"
+    },
+    {
+      "value": "99",
+      "label": "Foreign",
+      "labelId": "Address__StateCode_99"
+    }
+  ],
+  "CountryCode": [
+    {
+      "value": "93",
+      "label": "AFGHANISTAN",
+      "labelId": "CountryCode_93"
+    },
+    {
+      "value": "1001",
+      "label": "ÅLAND ISLANDS",
+      "labelId": "CountryCode_1001"
+    },
+    {
+      "value": "355",
+      "label": "ALBANIA",
+      "labelId": "CountryCode_355"
+    },
+    {
+      "value": "213",
+      "label": "ALGERIA",
+      "labelId": "CountryCode_213"
+    },
+    {
+      "value": "684",
+      "label": "AMERICAN SAMOA",
+      "labelId": "CountryCode_684"
+    },
+    {
+      "value": "376",
+      "label": "ANDORRA",
+      "labelId": "CountryCode_376"
+    },
+    {
+      "value": "244",
+      "label": "ANGOLA",
+      "labelId": "CountryCode_244"
+    },
+    {
+      "value": "1264",
+      "label": "ANGUILLA",
+      "labelId": "CountryCode_1264"
+    },
+    {
+      "value": "1010",
+      "label": "ANTARCTICA",
+      "labelId": "CountryCode_1010"
+    },
+    {
+      "value": "1268",
+      "label": "ANTIGUA AND BARBUDA",
+      "labelId": "CountryCode_1268"
+    },
+    {
+      "value": "54",
+      "label": "ARGENTINA",
+      "labelId": "CountryCode_54"
+    },
+    {
+      "value": "374",
+      "label": "ARMENIA",
+      "labelId": "CountryCode_374"
+    },
+    {
+      "value": "297",
+      "label": "ARUBA",
+      "labelId": "CountryCode_297"
+    },
+    {
+      "value": "61",
+      "label": "AUSTRALIA",
+      "labelId": "CountryCode_61"
+    },
+    {
+      "value": "43",
+      "label": "AUSTRIA",
+      "labelId": "CountryCode_43"
+    },
+    {
+      "value": "994",
+      "label": "AZERBAIJAN",
+      "labelId": "CountryCode_994"
+    },
+    {
+      "value": "1242",
+      "label": "BAHAMAS",
+      "labelId": "CountryCode_1242"
+    },
+    {
+      "value": "973",
+      "label": "BAHRAIN",
+      "labelId": "CountryCode_973"
+    },
+    {
+      "value": "880",
+      "label": "BANGLADESH",
+      "labelId": "CountryCode_880"
+    },
+    {
+      "value": "1246",
+      "label": "BARBADOS",
+      "labelId": "CountryCode_1246"
+    },
+    {
+      "value": "375",
+      "label": "BELARUS",
+      "labelId": "CountryCode_375"
+    },
+    {
+      "value": "32",
+      "label": "BELGIUM",
+      "labelId": "CountryCode_32"
+    },
+    {
+      "value": "501",
+      "label": "BELIZE",
+      "labelId": "CountryCode_501"
+    },
+    {
+      "value": "229",
+      "label": "BENIN",
+      "labelId": "CountryCode_229"
+    },
+    {
+      "value": "1441",
+      "label": "BERMUDA",
+      "labelId": "CountryCode_1441"
+    },
+    {
+      "value": "975",
+      "label": "BHUTAN",
+      "labelId": "CountryCode_975"
+    },
+    {
+      "value": "591",
+      "label": "BOLIVIA (PLURINATIONAL STATE OF)",
+      "labelId": "CountryCode_591"
+    },
+    {
+      "value": "1002",
+      "label": "BONAIRE, SINT EUSTATIUS AND SABA",
+      "labelId": "CountryCode_1002"
+    },
+    {
+      "value": "387",
+      "label": "BOSNIA AND HERZEGOVINA",
+      "labelId": "CountryCode_387"
+    },
+    {
+      "value": "267",
+      "label": "BOTSWANA",
+      "labelId": "CountryCode_267"
+    },
+    {
+      "value": "1003",
+      "label": "BOUVET ISLAND",
+      "labelId": "CountryCode_1003"
+    },
+    {
+      "value": "55",
+      "label": "BRAZIL",
+      "labelId": "CountryCode_55"
+    },
+    {
+      "value": "1014",
+      "label": "BRITISH INDIAN OCEAN TERRITORY",
+      "labelId": "CountryCode_1014"
+    },
+    {
+      "value": "673",
+      "label": "BRUNEI DARUSSALAM",
+      "labelId": "CountryCode_673"
+    },
+    {
+      "value": "359",
+      "label": "BULGARIA",
+      "labelId": "CountryCode_359"
+    },
+    {
+      "value": "226",
+      "label": "BURKINA FASO",
+      "labelId": "CountryCode_226"
+    },
+    {
+      "value": "257",
+      "label": "BURUNDI",
+      "labelId": "CountryCode_257"
+    },
+    {
+      "value": "238",
+      "label": "CABO VERDE",
+      "labelId": "CountryCode_238"
+    },
+    {
+      "value": "855",
+      "label": "CAMBODIA",
+      "labelId": "CountryCode_855"
+    },
+    {
+      "value": "237",
+      "label": "CAMEROON",
+      "labelId": "CountryCode_237"
+    },
+    {
+      "value": "1",
+      "label": "CANADA",
+      "labelId": "CountryCode_1"
+    },
+    {
+      "value": "1345",
+      "label": "CAYMAN ISLANDS",
+      "labelId": "CountryCode_1345"
+    },
+    {
+      "value": "236",
+      "label": "CENTRAL AFRICAN REPUBLIC",
+      "labelId": "CountryCode_236"
+    },
+    {
+      "value": "235",
+      "label": "CHAD",
+      "labelId": "CountryCode_235"
+    },
+    {
+      "value": "56",
+      "label": "CHILE",
+      "labelId": "CountryCode_56"
+    },
+    {
+      "value": "86",
+      "label": "CHINA",
+      "labelId": "CountryCode_86"
+    },
+    {
+      "value": "9",
+      "label": "CHRISTMAS ISLAND",
+      "labelId": "CountryCode_9"
+    },
+    {
+      "value": "672",
+      "label": "COCOS (KEELING) ISLANDS",
+      "labelId": "CountryCode_672"
+    },
+    {
+      "value": "57",
+      "label": "COLOMBIA",
+      "labelId": "CountryCode_57"
+    },
+    {
+      "value": "270",
+      "label": "COMOROS",
+      "labelId": "CountryCode_270"
+    },
+    {
+      "value": "242",
+      "label": "CONGO",
+      "labelId": "CountryCode_242"
+    },
+    {
+      "value": "243",
+      "label": "CONGO (DEMOCRATIC REPUBLIC OF THE)",
+      "labelId": "CountryCode_243"
+    },
+    {
+      "value": "682",
+      "label": "COOK ISLANDS",
+      "labelId": "CountryCode_682"
+    },
+    {
+      "value": "506",
+      "label": "COSTA RICA",
+      "labelId": "CountryCode_506"
+    },
+    {
+      "value": "225",
+      "label": "CÔTE D\u0027IVOIRE",
+      "labelId": "CountryCode_225"
+    },
+    {
+      "value": "385",
+      "label": "CROATIA",
+      "labelId": "CountryCode_385"
+    },
+    {
+      "value": "53",
+      "label": "CUBA",
+      "labelId": "CountryCode_53"
+    },
+    {
+      "value": "1015",
+      "label": "CURAÇAO",
+      "labelId": "CountryCode_1015"
+    },
+    {
+      "value": "357",
+      "label": "CYPRUS",
+      "labelId": "CountryCode_357"
+    },
+    {
+      "value": "420",
+      "label": "CZECHIA",
+      "labelId": "CountryCode_420"
+    },
+    {
+      "value": "45",
+      "label": "DENMARK",
+      "labelId": "CountryCode_45"
+    },
+    {
+      "value": "253",
+      "label": "DJIBOUTI",
+      "labelId": "CountryCode_253"
+    },
+    {
+      "value": "1767",
+      "label": "DOMINICA",
+      "labelId": "CountryCode_1767"
+    },
+    {
+      "value": "1809",
+      "label": "DOMINICAN REPUBLIC",
+      "labelId": "CountryCode_1809"
+    },
+    {
+      "value": "593",
+      "label": "ECUADOR",
+      "labelId": "CountryCode_593"
+    },
+    {
+      "value": "20",
+      "label": "EGYPT",
+      "labelId": "CountryCode_20"
+    },
+    {
+      "value": "503",
+      "label": "EL SALVADOR",
+      "labelId": "CountryCode_503"
+    },
+    {
+      "value": "240",
+      "label": "EQUATORIAL GUINEA",
+      "labelId": "CountryCode_240"
+    },
+    {
+      "value": "291",
+      "label": "ERITREA",
+      "labelId": "CountryCode_291"
+    },
+    {
+      "value": "372",
+      "label": "ESTONIA",
+      "labelId": "CountryCode_372"
+    },
+    {
+      "value": "251",
+      "label": "ETHIOPIA",
+      "labelId": "CountryCode_251"
+    },
+    {
+      "value": "500",
+      "label": "FALKLAND ISLANDS (MALVINAS)",
+      "labelId": "CountryCode_500"
+    },
+    {
+      "value": "298",
+      "label": "FAROE ISLANDS",
+      "labelId": "CountryCode_298"
+    },
+    {
+      "value": "679",
+      "label": "FIJI",
+      "labelId": "CountryCode_679"
+    },
+    {
+      "value": "358",
+      "label": "FINLAND",
+      "labelId": "CountryCode_358"
+    },
+    {
+      "value": "33",
+      "label": "FRANCE",
+      "labelId": "CountryCode_33"
+    },
+    {
+      "value": "594",
+      "label": "FRENCH GUIANA",
+      "labelId": "CountryCode_594"
+    },
+    {
+      "value": "689",
+      "label": "FRENCH POLYNESIA",
+      "labelId": "CountryCode_689"
+    },
+    {
+      "value": "1004",
+      "label": "FRENCH SOUTHERN TERRITORIES",
+      "labelId": "CountryCode_1004"
+    },
+    {
+      "value": "241",
+      "label": "GABON",
+      "labelId": "CountryCode_241"
+    },
+    {
+      "value": "220",
+      "label": "GAMBIA",
+      "labelId": "CountryCode_220"
+    },
+    {
+      "value": "995",
+      "label": "GEORGIA",
+      "labelId": "CountryCode_995"
+    },
+    {
+      "value": "49",
+      "label": "GERMANY",
+      "labelId": "CountryCode_49"
+    },
+    {
+      "value": "233",
+      "label": "GHANA",
+      "labelId": "CountryCode_233"
+    },
+    {
+      "value": "350",
+      "label": "GIBRALTAR",
+      "labelId": "CountryCode_350"
+    },
+    {
+      "value": "30",
+      "label": "GREECE",
+      "labelId": "CountryCode_30"
+    },
+    {
+      "value": "299",
+      "label": "GREENLAND",
+      "labelId": "CountryCode_299"
+    },
+    {
+      "value": "1473",
+      "label": "GRENADA",
+      "labelId": "CountryCode_1473"
+    },
+    {
+      "value": "590",
+      "label": "GUADELOUPE",
+      "labelId": "CountryCode_590"
+    },
+    {
+      "value": "1671",
+      "label": "GUAM",
+      "labelId": "CountryCode_1671"
+    },
+    {
+      "value": "502",
+      "label": "GUATEMALA",
+      "labelId": "CountryCode_502"
+    },
+    {
+      "value": "1481",
+      "label": "GUERNSEY",
+      "labelId": "CountryCode_1481"
+    },
+    {
+      "value": "224",
+      "label": "GUINEA",
+      "labelId": "CountryCode_224"
+    },
+    {
+      "value": "245",
+      "label": "GUINEA-BISSAU",
+      "labelId": "CountryCode_245"
+    },
+    {
+      "value": "592",
+      "label": "GUYANA",
+      "labelId": "CountryCode_592"
+    },
+    {
+      "value": "509",
+      "label": "HAITI",
+      "labelId": "CountryCode_509"
+    },
+    {
+      "value": "1005",
+      "label": "HEARD ISLAND AND MCDONALD ISLANDS",
+      "labelId": "CountryCode_1005"
+    },
+    {
+      "value": "6",
+      "label": "HOLY SEE",
+      "labelId": "CountryCode_6"
+    },
+    {
+      "value": "504",
+      "label": "HONDURAS",
+      "labelId": "CountryCode_504"
+    },
+    {
+      "value": "852",
+      "label": "HONG KONG",
+      "labelId": "CountryCode_852"
+    },
+    {
+      "value": "36",
+      "label": "HUNGARY",
+      "labelId": "CountryCode_36"
+    },
+    {
+      "value": "354",
+      "label": "ICELAND",
+      "labelId": "CountryCode_354"
+    },
+    {
+      "value": "91",
+      "label": "INDIA",
+      "labelId": "CountryCode_91"
+    },
+    {
+      "value": "62",
+      "label": "INDONESIA",
+      "labelId": "CountryCode_62"
+    },
+    {
+      "value": "98",
+      "label": "IRAN (ISLAMIC REPUBLIC OF)",
+      "labelId": "CountryCode_98"
+    },
+    {
+      "value": "964",
+      "label": "IRAQ",
+      "labelId": "CountryCode_964"
+    },
+    {
+      "value": "353",
+      "label": "IRELAND",
+      "labelId": "CountryCode_353"
+    },
+    {
+      "value": "1624",
+      "label": "ISLE OF MAN",
+      "labelId": "CountryCode_1624"
+    },
+    {
+      "value": "972",
+      "label": "ISRAEL",
+      "labelId": "CountryCode_972"
+    },
+    {
+      "value": "5",
+      "label": "ITALY",
+      "labelId": "CountryCode_5"
+    },
+    {
+      "value": "1876",
+      "label": "JAMAICA",
+      "labelId": "CountryCode_1876"
+    },
+    {
+      "value": "81",
+      "label": "JAPAN",
+      "labelId": "CountryCode_81"
+    },
+    {
+      "value": "1534",
+      "label": "JERSEY",
+      "labelId": "CountryCode_1534"
+    },
+    {
+      "value": "962",
+      "label": "JORDAN",
+      "labelId": "CountryCode_962"
+    },
+    {
+      "value": "7",
+      "label": "KAZAKHSTAN",
+      "labelId": "CountryCode_7"
+    },
+    {
+      "value": "254",
+      "label": "KENYA",
+      "labelId": "CountryCode_254"
+    },
+    {
+      "value": "686",
+      "label": "KIRIBATI",
+      "labelId": "CountryCode_686"
+    },
+    {
+      "value": "850",
+      "label": "KOREA(DEMOCRATIC PEOPLE\u0027S REPUBLIC OF)",
+      "labelId": "CountryCode_850"
+    },
+    {
+      "value": "82",
+      "label": "KOREA (REPUBLIC OF)",
+      "labelId": "CountryCode_82"
+    },
+    {
+      "value": "965",
+      "label": "KUWAIT",
+      "labelId": "CountryCode_965"
+    },
+    {
+      "value": "996",
+      "label": "KYRGYZSTAN",
+      "labelId": "CountryCode_996"
+    },
+    {
+      "value": "856",
+      "label": "LAO PEOPLE\u0027S DEMOCRATIC REPUBLIC",
+      "labelId": "CountryCode_856"
+    },
+    {
+      "value": "371",
+      "label": "LATVIA",
+      "labelId": "CountryCode_371"
+    },
+    {
+      "value": "961",
+      "label": "LEBANON",
+      "labelId": "CountryCode_961"
+    },
+    {
+      "value": "266",
+      "label": "LESOTHO",
+      "labelId": "CountryCode_266"
+    },
+    {
+      "value": "231",
+      "label": "LIBERIA",
+      "labelId": "CountryCode_231"
+    },
+    {
+      "value": "218",
+      "label": "LIBYA",
+      "labelId": "CountryCode_218"
+    },
+    {
+      "value": "423",
+      "label": "LIECHTENSTEIN",
+      "labelId": "CountryCode_423"
+    },
+    {
+      "value": "370",
+      "label": "LITHUANIA",
+      "labelId": "CountryCode_370"
+    },
+    {
+      "value": "352",
+      "label": "LUXEMBOURG",
+      "labelId": "CountryCode_352"
+    },
+    {
+      "value": "853",
+      "label": "MACAO",
+      "labelId": "CountryCode_853"
+    },
+    {
+      "value": "389",
+      "label": "MACEDONIA(THE FORMER YUGOSLAV REPUBLIC OF)",
+      "labelId": "CountryCode_389"
+    },
+    {
+      "value": "261",
+      "label": "MADAGASCAR",
+      "labelId": "CountryCode_261"
+    },
+    {
+      "value": "265",
+      "label": "MALAWI",
+      "labelId": "CountryCode_265"
+    },
+    {
+      "value": "60",
+      "label": "MALAYSIA",
+      "labelId": "CountryCode_60"
+    },
+    {
+      "value": "960",
+      "label": "MALDIVES",
+      "labelId": "CountryCode_960"
+    },
+    {
+      "value": "223",
+      "label": "MALI",
+      "labelId": "CountryCode_223"
+    },
+    {
+      "value": "356",
+      "label": "MALTA",
+      "labelId": "CountryCode_356"
+    },
+    {
+      "value": "692",
+      "label": "MARSHALL ISLANDS",
+      "labelId": "CountryCode_692"
+    },
+    {
+      "value": "596",
+      "label": "MARTINIQUE",
+      "labelId": "CountryCode_596"
+    },
+    {
+      "value": "222",
+      "label": "MAURITANIA",
+      "labelId": "CountryCode_222"
+    },
+    {
+      "value": "230",
+      "label": "MAURITIUS",
+      "labelId": "CountryCode_230"
+    },
+    {
+      "value": "269",
+      "label": "MAYOTTE",
+      "labelId": "CountryCode_269"
+    },
+    {
+      "value": "52",
+      "label": "MEXICO",
+      "labelId": "CountryCode_52"
+    },
+    {
+      "value": "691",
+      "label": "MICRONESIA (FEDERATED STATES OF)",
+      "labelId": "CountryCode_691"
+    },
+    {
+      "value": "373",
+      "label": "MOLDOVA (REPUBLIC OF)",
+      "labelId": "CountryCode_373"
+    },
+    {
+      "value": "377",
+      "label": "MONACO",
+      "labelId": "CountryCode_377"
+    },
+    {
+      "value": "976",
+      "label": "MONGOLIA",
+      "labelId": "CountryCode_976"
+    },
+    {
+      "value": "382",
+      "label": "MONTENEGRO",
+      "labelId": "CountryCode_382"
+    },
+    {
+      "value": "1664",
+      "label": "MONTSERRAT",
+      "labelId": "CountryCode_1664"
+    },
+    {
+      "value": "212",
+      "label": "MOROCCO",
+      "labelId": "CountryCode_212"
+    },
+    {
+      "value": "258",
+      "label": "MOZAMBIQUE",
+      "labelId": "CountryCode_258"
+    },
+    {
+      "value": "95",
+      "label": "MYANMAR",
+      "labelId": "CountryCode_95"
+    },
+    {
+      "value": "264",
+      "label": "NAMIBIA",
+      "labelId": "CountryCode_264"
+    },
+    {
+      "value": "674",
+      "label": "NAURU",
+      "labelId": "CountryCode_674"
+    },
+    {
+      "value": "977",
+      "label": "NEPAL",
+      "labelId": "CountryCode_977"
+    },
+    {
+      "value": "31",
+      "label": "NETHERLANDS",
+      "labelId": "CountryCode_31"
+    },
+    {
+      "value": "687",
+      "label": "NEW CALEDONIA",
+      "labelId": "CountryCode_687"
+    },
+    {
+      "value": "64",
+      "label": "NEW ZEALAND",
+      "labelId": "CountryCode_64"
+    },
+    {
+      "value": "505",
+      "label": "NICARAGUA",
+      "labelId": "CountryCode_505"
+    },
+    {
+      "value": "227",
+      "label": "NIGER",
+      "labelId": "CountryCode_227"
+    },
+    {
+      "value": "234",
+      "label": "NIGERIA",
+      "labelId": "CountryCode_234"
+    },
+    {
+      "value": "683",
+      "label": "NIUE",
+      "labelId": "CountryCode_683"
+    },
+    {
+      "value": "15",
+      "label": "NORFOLK ISLAND",
+      "labelId": "CountryCode_15"
+    },
+    {
+      "value": "1670",
+      "label": "NORTHERN MARIANA ISLANDS",
+      "labelId": "CountryCode_1670"
+    },
+    {
+      "value": "47",
+      "label": "NORWAY",
+      "labelId": "CountryCode_47"
+    },
+    {
+      "value": "968",
+      "label": "OMAN",
+      "labelId": "CountryCode_968"
+    },
+    {
+      "value": "92",
+      "label": "PAKISTAN",
+      "labelId": "CountryCode_92"
+    },
+    {
+      "value": "680",
+      "label": "PALAU",
+      "labelId": "CountryCode_680"
+    },
+    {
+      "value": "970",
+      "label": "PALESTINE, STATE OF",
+      "labelId": "CountryCode_970"
+    },
+    {
+      "value": "507",
+      "label": "PANAMA",
+      "labelId": "CountryCode_507"
+    },
+    {
+      "value": "675",
+      "label": "PAPUA NEW GUINEA",
+      "labelId": "CountryCode_675"
+    },
+    {
+      "value": "595",
+      "label": "PARAGUAY",
+      "labelId": "CountryCode_595"
+    },
+    {
+      "value": "51",
+      "label": "PERU",
+      "labelId": "CountryCode_51"
+    },
+    {
+      "value": "63",
+      "label": "PHILIPPINES",
+      "labelId": "CountryCode_63"
+    },
+    {
+      "value": "1011",
+      "label": "PITCAIRN",
+      "labelId": "CountryCode_1011"
+    },
+    {
+      "value": "48",
+      "label": "POLAND",
+      "labelId": "CountryCode_48"
+    },
+    {
+      "value": "14",
+      "label": "PORTUGAL",
+      "labelId": "CountryCode_14"
+    },
+    {
+      "value": "1787",
+      "label": "PUERTO RICO",
+      "labelId": "CountryCode_1787"
+    },
+    {
+      "value": "974",
+      "label": "QATAR",
+      "labelId": "CountryCode_974"
+    },
+    {
+      "value": "262",
+      "label": "RÉUNION",
+      "labelId": "CountryCode_262"
+    },
+    {
+      "value": "40",
+      "label": "ROMANIA",
+      "labelId": "CountryCode_40"
+    },
+    {
+      "value": "8",
+      "label": "RUSSIAN FEDERATION",
+      "labelId": "CountryCode_8"
+    },
+    {
+      "value": "250",
+      "label": "RWANDA",
+      "labelId": "CountryCode_250"
+    },
+    {
+      "value": "1006",
+      "label": "SAINT BARTHÉLEMY",
+      "labelId": "CountryCode_1006"
+    },
+    {
+      "value": "290",
+      "label": "SAINT HELENA, ASCENSION AND TRISTAN DA CUNHA",
+      "labelId": "CountryCode_290"
+    },
+    {
+      "value": "1869",
+      "label": "SAINT KITTS AND NEVIS",
+      "labelId": "CountryCode_1869"
+    },
+    {
+      "value": "1758",
+      "label": "SAINT LUCIA",
+      "labelId": "CountryCode_1758"
+    },
+    {
+      "value": "1007",
+      "label": "SAINT MARTIN (FRENCH PART)",
+      "labelId": "CountryCode_1007"
+    },
+    {
+      "value": "508",
+      "label": "SAINT PIERRE AND MIQUELON",
+      "labelId": "CountryCode_508"
+    },
+    {
+      "value": "1784",
+      "label": "SAINT VINCENT AND THE GRENADINES",
+      "labelId": "CountryCode_1784"
+    },
+    {
+      "value": "685",
+      "label": "SAMOA",
+      "labelId": "CountryCode_685"
+    },
+    {
+      "value": "378",
+      "label": "SAN MARINO",
+      "labelId": "CountryCode_378"
+    },
+    {
+      "value": "239",
+      "label": "SAO TOME AND PRINCIPE",
+      "labelId": "CountryCode_239"
+    },
+    {
+      "value": "966",
+      "label": "SAUDI ARABIA",
+      "labelId": "CountryCode_966"
+    },
+    {
+      "value": "221",
+      "label": "SENEGAL",
+      "labelId": "CountryCode_221"
+    },
+    {
+      "value": "381",
+      "label": "SERBIA",
+      "labelId": "CountryCode_381"
+    },
+    {
+      "value": "248",
+      "label": "SEYCHELLES",
+      "labelId": "CountryCode_248"
+    },
+    {
+      "value": "232",
+      "label": "SIERRA LEONE",
+      "labelId": "CountryCode_232"
+    },
+    {
+      "value": "65",
+      "label": "SINGAPORE",
+      "labelId": "CountryCode_65"
+    },
+    {
+      "value": "1721",
+      "label": "SINT MAARTEN (DUTCH PART)",
+      "labelId": "CountryCode_1721"
+    },
+    {
+      "value": "421",
+      "label": "SLOVAKIA",
+      "labelId": "CountryCode_421"
+    },
+    {
+      "value": "386",
+      "label": "SLOVENIA",
+      "labelId": "CountryCode_386"
+    },
+    {
+      "value": "677",
+      "label": "SOLOMON ISLANDS",
+      "labelId": "CountryCode_677"
+    },
+    {
+      "value": "252",
+      "label": "SOMALIA",
+      "labelId": "CountryCode_252"
+    },
+    {
+      "value": "28",
+      "label": "SOUTH AFRICA",
+      "labelId": "CountryCode_28"
+    },
+    {
+      "value": "1008",
+      "label": "SOUTH GEORGIA AND THE SOUTH SANDWICH ISLANDS",
+      "labelId": "CountryCode_1008"
+    },
+    {
+      "value": "211",
+      "label": "SOUTH SUDAN",
+      "labelId": "CountryCode_211"
+    },
+    {
+      "value": "35",
+      "label": "SPAIN",
+      "labelId": "CountryCode_35"
+    },
+    {
+      "value": "94",
+      "label": "SRI LANKA",
+      "labelId": "CountryCode_94"
+    },
+    {
+      "value": "249",
+      "label": "SUDAN",
+      "labelId": "CountryCode_249"
+    },
+    {
+      "value": "597",
+      "label": "SURINAME",
+      "labelId": "CountryCode_597"
+    },
+    {
+      "value": "1012",
+      "label": "SVALBARD AND JAN MAYEN",
+      "labelId": "CountryCode_1012"
+    },
+    {
+      "value": "268",
+      "label": "SWAZILAND",
+      "labelId": "CountryCode_268"
+    },
+    {
+      "value": "46",
+      "label": "SWEDEN",
+      "labelId": "CountryCode_46"
+    },
+    {
+      "value": "41",
+      "label": "SWITZERLAND",
+      "labelId": "CountryCode_41"
+    },
+    {
+      "value": "963",
+      "label": "SYRIAN ARAB REPUBLIC",
+      "labelId": "CountryCode_963"
+    },
+    {
+      "value": "886",
+      "label": "TAIWAN",
+      "labelId": "CountryCode_886"
+    },
+    {
+      "value": "992",
+      "label": "TAJIKISTAN",
+      "labelId": "CountryCode_992"
+    },
+    {
+      "value": "255",
+      "label": "TANZANIA, UNITED REPUBLIC OF",
+      "labelId": "CountryCode_255"
+    },
+    {
+      "value": "66",
+      "label": "THAILAND",
+      "labelId": "CountryCode_66"
+    },
+    {
+      "value": "670",
+      "label": "TIMOR-LESTE (EAST TIMOR)",
+      "labelId": "CountryCode_670"
+    },
+    {
+      "value": "228",
+      "label": "TOGO",
+      "labelId": "CountryCode_228"
+    },
+    {
+      "value": "690",
+      "label": "TOKELAU",
+      "labelId": "CountryCode_690"
+    },
+    {
+      "value": "676",
+      "label": "TONGA",
+      "labelId": "CountryCode_676"
+    },
+    {
+      "value": "1868",
+      "label": "TRINIDAD AND TOBAGO",
+      "labelId": "CountryCode_1868"
+    },
+    {
+      "value": "216",
+      "label": "TUNISIA",
+      "labelId": "CountryCode_216"
+    },
+    {
+      "value": "90",
+      "label": "TURKEY",
+      "labelId": "CountryCode_90"
+    },
+    {
+      "value": "993",
+      "label": "TURKMENISTAN",
+      "labelId": "CountryCode_993"
+    },
+    {
+      "value": "1649",
+      "label": "TURKS AND CAICOS ISLANDS",
+      "labelId": "CountryCode_1649"
+    },
+    {
+      "value": "688",
+      "label": "TUVALU",
+      "labelId": "CountryCode_688"
+    },
+    {
+      "value": "256",
+      "label": "UGANDA",
+      "labelId": "CountryCode_256"
+    },
+    {
+      "value": "380",
+      "label": "UKRAINE",
+      "labelId": "CountryCode_380"
+    },
+    {
+      "value": "971",
+      "label": "UNITED ARAB EMIRATES",
+      "labelId": "CountryCode_971"
+    },
+    {
+      "value": "44",
+      "label": "UNITED KINGDOM OF GREAT BRITAIN AND NORTHERN IRELAND",
+      "labelId": "CountryCode_44"
+    },
+    {
+      "value": "2",
+      "label": "UNITED STATES OF AMERICA",
+      "labelId": "CountryCode_2"
+    },
+    {
+      "value": "1009",
+      "label": "UNITED STATES MINOR OUTLYING ISLANDS",
+      "labelId": "CountryCode_1009"
+    },
+    {
+      "value": "598",
+      "label": "URUGUAY",
+      "labelId": "CountryCode_598"
+    },
+    {
+      "value": "998",
+      "label": "UZBEKISTAN",
+      "labelId": "CountryCode_998"
+    },
+    {
+      "value": "678",
+      "label": "VANUATU",
+      "labelId": "CountryCode_678"
+    },
+    {
+      "value": "58",
+      "label": "VENEZUELA (BOLIVARIAN REPUBLIC OF)",
+      "labelId": "CountryCode_58"
+    },
+    {
+      "value": "84",
+      "label": "VIET NAM",
+      "labelId": "CountryCode_84"
+    },
+    {
+      "value": "1284",
+      "label": "VIRGIN ISLANDS (BRITISH)",
+      "labelId": "CountryCode_1284"
+    },
+    {
+      "value": "1340",
+      "label": "VIRGIN ISLANDS (U.S.)",
+      "labelId": "CountryCode_1340"
+    },
+    {
+      "value": "681",
+      "label": "WALLIS AND FUTUNA",
+      "labelId": "CountryCode_681"
+    },
+    {
+      "value": "1013",
+      "label": "WESTERN SAHARA",
+      "labelId": "CountryCode_1013"
+    },
+    {
+      "value": "967",
+      "label": "YEMEN",
+      "labelId": "CountryCode_967"
+    },
+    {
+      "value": "260",
+      "label": "ZAMBIA",
+      "labelId": "CountryCode_260"
+    },
+    {
+      "value": "263",
+      "label": "ZIMBABWE",
+      "labelId": "CountryCode_263"
+    },
+    {
+      "value": "9999",
+      "label": "OTHERS",
+      "labelId": "CountryCode_9999"
+    }
+  ],
+  "PersonalInfo__EmployerCategory": [
+    {
+      "value": "CGOV",
+      "label": "Central Government",
+      "labelId": "PersonalInfo__EmployerCategory_CGOV"
+    },
+    {
+      "value": "SGOV",
+      "label": "State Government",
+      "labelId": "PersonalInfo__EmployerCategory_SGOV"
+    },
+    {
+      "value": "PSU",
+      "label": "Public Sector Unit",
+      "labelId": "PersonalInfo__EmployerCategory_PSU"
+    },
+    {
+      "value": "PE",
+      "label": "Pensioners - Central Government",
+      "labelId": "PersonalInfo__EmployerCategory_PE"
+    },
+    {
+      "value": "PESG",
+      "label": "Pensioners - State Government",
+      "labelId": "PersonalInfo__EmployerCategory_PESG"
+    },
+    {
+      "value": "PEPS",
+      "label": "Pensioners - Public sector undertaking",
+      "labelId": "PersonalInfo__EmployerCategory_PEPS"
+    },
+    {
+      "value": "PEO",
+      "label": "Pensioners - Others",
+      "labelId": "PersonalInfo__EmployerCategory_PEO"
+    },
+    {
+      "value": "OTH",
+      "label": "Others",
+      "labelId": "PersonalInfo__EmployerCategory_OTH"
+    },
+    {
+      "value": "NA",
+      "label": "Not Applicable",
+      "labelId": "PersonalInfo__EmployerCategory_NA"
+    }
+  ],
+  "FilingStatus__ReturnFileSec": [
+    {
+      "value": "11",
+      "label": "139(1)-On or before due date",
+      "labelId": "FilingStatus__ReturnFileSec_11"
+    },
+    {
+      "value": "12",
+      "label": "139(4)-After due date",
+      "labelId": "FilingStatus__ReturnFileSec_12"
+    },
+    {
+      "value": "13",
+      "label": "142(1)",
+      "labelId": "FilingStatus__ReturnFileSec_13"
+    },
+    {
+      "value": "14",
+      "label": "148",
+      "labelId": "FilingStatus__ReturnFileSec_14"
+    },
+    {
+      "value": "16",
+      "label": "153C",
+      "labelId": "FilingStatus__ReturnFileSec_16"
+    },
+    {
+      "value": "17",
+      "label": "139(5)-Revised",
+      "labelId": "FilingStatus__ReturnFileSec_17"
+    },
+    {
+      "value": "18",
+      "label": "139(9)",
+      "labelId": "FilingStatus__ReturnFileSec_18"
+    },
+    {
+      "value": "20",
+      "label": "119(2)(b)-After condonation of delay",
+      "labelId": "FilingStatus__ReturnFileSec_20"
+    }
+  ],
+  "UsrDeductUndChapVIAType__Section80DDBUsrType": [
+    {
+      "value": "1",
+      "label": "Self or dependent",
+      "labelId": "UsrDeductUndChapVIAType__Section80DDBUsrType_1"
+    },
+    {
+      "value": "2",
+      "label": "Self or Dependent - Senior Citizen",
+      "labelId": "UsrDeductUndChapVIAType__Section80DDBUsrType_2"
+    }
+  ],
+  "UsrDeductUndChapVIAType__NameOfSpecDisease80DDB": [
+    {
+      "value": "a",
+      "label": "Dementia",
+      "labelId": "UsrDeductUndChapVIAType__NameOfSpecDisease80DDB_a"
+    },
+    {
+      "value": "b",
+      "label": "Dystonia Musculorum Deformans",
+      "labelId": "UsrDeductUndChapVIAType__NameOfSpecDisease80DDB_b"
+    },
+    {
+      "value": "c",
+      "label": "Motor Neuron Disease",
+      "labelId": "UsrDeductUndChapVIAType__NameOfSpecDisease80DDB_c"
+    },
+    {
+      "value": "d",
+      "label": "Ataxia",
+      "labelId": "UsrDeductUndChapVIAType__NameOfSpecDisease80DDB_d"
+    },
+    {
+      "value": "e",
+      "label": "Chorea",
+      "labelId": "UsrDeductUndChapVIAType__NameOfSpecDisease80DDB_e"
+    },
+    {
+      "value": "f",
+      "label": "Hemiballismus",
+      "labelId": "UsrDeductUndChapVIAType__NameOfSpecDisease80DDB_f"
+    },
+    {
+      "value": "g",
+      "label": "Aphasia",
+      "labelId": "UsrDeductUndChapVIAType__NameOfSpecDisease80DDB_g"
+    },
+    {
+      "value": "h",
+      "label": "Parkinsons Disease",
+      "labelId": "UsrDeductUndChapVIAType__NameOfSpecDisease80DDB_h"
+    },
+    {
+      "value": "i",
+      "label": "Malignant Cancers",
+      "labelId": "UsrDeductUndChapVIAType__NameOfSpecDisease80DDB_i"
+    },
+    {
+      "value": "j",
+      "label": "Full Blown Acquired Immuno-Deficiency Syndrome (AIDS)",
+      "labelId": "UsrDeductUndChapVIAType__NameOfSpecDisease80DDB_j"
+    },
+    {
+      "value": "k",
+      "label": "Chronic Renal failure",
+      "labelId": "UsrDeductUndChapVIAType__NameOfSpecDisease80DDB_k"
+    },
+    {
+      "value": "l",
+      "label": "Hematological disorders",
+      "labelId": "UsrDeductUndChapVIAType__NameOfSpecDisease80DDB_l"
+    },
+    {
+      "value": "m",
+      "label": "Hemophilia",
+      "labelId": "UsrDeductUndChapVIAType__NameOfSpecDisease80DDB_m"
+    },
+    {
+      "value": "n",
+      "label": "Thalassaemia",
+      "labelId": "UsrDeductUndChapVIAType__NameOfSpecDisease80DDB_n"
+    }
+  ],
+  "Schedule80DD__NatureOfDisability": [
+    {
+      "value": "1",
+      "label": "Dependent person with disability",
+      "labelId": "Schedule80DD__NatureOfDisability_1"
+    },
+    {
+      "value": "2",
+      "label": "Dependent person with severe disability",
+      "labelId": "Schedule80DD__NatureOfDisability_2"
+    }
+  ],
+  "Schedule80DD__TypeOfDisability": [
+    {
+      "value": "1",
+      "label": "autism, cerebral palsy, or multiple disabilities",
+      "labelId": "Schedule80DD__TypeOfDisability_1"
+    },
+    {
+      "value": "2",
+      "label": "others",
+      "labelId": "Schedule80DD__TypeOfDisability_2"
+    }
+  ],
+  "Schedule80DD__DependentType": [
+    {
+      "value": "1",
+      "label": "Spouse",
+      "labelId": "Schedule80DD__DependentType_1"
+    },
+    {
+      "value": "2",
+      "label": "Son",
+      "labelId": "Schedule80DD__DependentType_2"
+    },
+    {
+      "value": "3",
+      "label": "Daughter",
+      "labelId": "Schedule80DD__DependentType_3"
+    },
+    {
+      "value": "4",
+      "label": "Father",
+      "labelId": "Schedule80DD__DependentType_4"
+    },
+    {
+      "value": "5",
+      "label": "Mother",
+      "labelId": "Schedule80DD__DependentType_5"
+    },
+    {
+      "value": "6",
+      "label": "Brother",
+      "labelId": "Schedule80DD__DependentType_6"
+    },
+    {
+      "value": "7",
+      "label": "Sister",
+      "labelId": "Schedule80DD__DependentType_7"
+    }
+  ],
+  "Schedule80U__NatureOfDisability": [
+    {
+      "value": "1",
+      "label": "Self with disability",
+      "labelId": "Schedule80U__NatureOfDisability_1"
+    },
+    {
+      "value": "2",
+      "label": "Self with severe disability",
+      "labelId": "Schedule80U__NatureOfDisability_2"
+    }
+  ],
+  "Schedule80U__TypeOfDisability": [
+    {
+      "value": "1",
+      "label": "autism, cerebral palsy, or multiple disabilities",
+      "labelId": "Schedule80U__TypeOfDisability_1"
+    },
+    {
+      "value": "2",
+      "label": "others",
+      "labelId": "Schedule80U__TypeOfDisability_2"
+    }
+  ],
+  "ScheduleEA10_13A__Placeofwork": [
+    {
+      "value": "1",
+      "label": "Metro",
+      "labelId": "ScheduleEA10_13A__Placeofwork_1"
+    },
+    {
+      "value": "2",
+      "label": "Non-Metro",
+      "labelId": "ScheduleEA10_13A__Placeofwork_2"
+    }
+  ],
+  "Verification__Capacity": [
+    {
+      "value": "S",
+      "label": "Self",
+      "labelId": "Verification__Capacity_S"
+    },
+    {
+      "value": "R",
+      "label": "Representative",
+      "labelId": "Verification__Capacity_R"
+    }
+  ],
+  "clauseiv7provisio139iType__clauseiv7provisio139iNature": [
+    {
+      "value": "1",
+      "label": "the aggregate of tax deducted at source and tax collected at source during the previous year, in the case of the person, is twenty-five thousand rupees or more(fifty thousand for resident senior citizen)",
+      "labelId": "clauseiv7provisio139iType__clauseiv7provisio139iNature_1"
+    },
+    {
+      "value": "2",
+      "label": "the deposit in one or more savings bank account of the person, in aggregate, is fifty lakh rupees or more, in the previous year",
+      "labelId": "clauseiv7provisio139iType__clauseiv7provisio139iNature_2"
+    }
+  ],
+  "AddressDetail__StateCode": [
+    {
+      "value": "01",
+      "label": "Andaman and Nicobar islands",
+      "labelId": "AddressDetail__StateCode_01"
+    },
+    {
+      "value": "02",
+      "label": "Andhra Pradesh",
+      "labelId": "AddressDetail__StateCode_02"
+    },
+    {
+      "value": "03",
+      "label": "Arunachal Pradesh",
+      "labelId": "AddressDetail__StateCode_03"
+    },
+    {
+      "value": "04",
+      "label": "Assam",
+      "labelId": "AddressDetail__StateCode_04"
+    },
+    {
+      "value": "05",
+      "label": "Bihar",
+      "labelId": "AddressDetail__StateCode_05"
+    },
+    {
+      "value": "06",
+      "label": "Chandigarh",
+      "labelId": "AddressDetail__StateCode_06"
+    },
+    {
+      "value": "07",
+      "label": "Dadra Nagar and Haveli",
+      "labelId": "AddressDetail__StateCode_07"
+    },
+    {
+      "value": "08",
+      "label": "Daman and Diu",
+      "labelId": "AddressDetail__StateCode_08"
+    },
+    {
+      "value": "09",
+      "label": "Delhi",
+      "labelId": "AddressDetail__StateCode_09"
+    },
+    {
+      "value": "10",
+      "label": "Goa",
+      "labelId": "AddressDetail__StateCode_10"
+    },
+    {
+      "value": "11",
+      "label": "Gujarat",
+      "labelId": "AddressDetail__StateCode_11"
+    },
+    {
+      "value": "12",
+      "label": "Haryana",
+      "labelId": "AddressDetail__StateCode_12"
+    },
+    {
+      "value": "13",
+      "label": "Himachal Pradesh",
+      "labelId": "AddressDetail__StateCode_13"
+    },
+    {
+      "value": "14",
+      "label": "Jammu and Kashmir",
+      "labelId": "AddressDetail__StateCode_14"
+    },
+    {
+      "value": "15",
+      "label": "Karnataka",
+      "labelId": "AddressDetail__StateCode_15"
+    },
+    {
+      "value": "16",
+      "label": "Kerala",
+      "labelId": "AddressDetail__StateCode_16"
+    },
+    {
+      "value": "17",
+      "label": "Lakshadweep",
+      "labelId": "AddressDetail__StateCode_17"
+    },
+    {
+      "value": "18",
+      "label": "Madhya Pradesh",
+      "labelId": "AddressDetail__StateCode_18"
+    },
+    {
+      "value": "19",
+      "label": "Maharashtra",
+      "labelId": "AddressDetail__StateCode_19"
+    },
+    {
+      "value": "20",
+      "label": "Manipur",
+      "labelId": "AddressDetail__StateCode_20"
+    },
+    {
+      "value": "21",
+      "label": "meghalaya",
+      "labelId": "AddressDetail__StateCode_21"
+    },
+    {
+      "value": "22",
+      "label": "Mizoram",
+      "labelId": "AddressDetail__StateCode_22"
+    },
+    {
+      "value": "23",
+      "label": "Nagaland",
+      "labelId": "AddressDetail__StateCode_23"
+    },
+    {
+      "value": "24",
+      "label": "Odisha",
+      "labelId": "AddressDetail__StateCode_24"
+    },
+    {
+      "value": "25",
+      "label": "Puducherry",
+      "labelId": "AddressDetail__StateCode_25"
+    },
+    {
+      "value": "26",
+      "label": "Punjab",
+      "labelId": "AddressDetail__StateCode_26"
+    },
+    {
+      "value": "27",
+      "label": "Rajasthan",
+      "labelId": "AddressDetail__StateCode_27"
+    },
+    {
+      "value": "28",
+      "label": "Sikkim",
+      "labelId": "AddressDetail__StateCode_28"
+    },
+    {
+      "value": "29",
+      "label": "Tamil Nadu",
+      "labelId": "AddressDetail__StateCode_29"
+    },
+    {
+      "value": "30",
+      "label": "Tripura",
+      "labelId": "AddressDetail__StateCode_30"
+    },
+    {
+      "value": "31",
+      "label": "Uttar Pradesh",
+      "labelId": "AddressDetail__StateCode_31"
+    },
+    {
+      "value": "32",
+      "label": "West Bengal",
+      "labelId": "AddressDetail__StateCode_32"
+    },
+    {
+      "value": "33",
+      "label": "Chhattisgarh",
+      "labelId": "AddressDetail__StateCode_33"
+    },
+    {
+      "value": "34",
+      "label": "Uttarakhand",
+      "labelId": "AddressDetail__StateCode_34"
+    },
+    {
+      "value": "35",
+      "label": "Jharkhand",
+      "labelId": "AddressDetail__StateCode_35"
+    },
+    {
+      "value": "36",
+      "label": "Telangana",
+      "labelId": "AddressDetail__StateCode_36"
+    },
+    {
+      "value": "37",
+      "label": "Ladakh",
+      "labelId": "AddressDetail__StateCode_37"
+    }
+  ],
+  "TDSonOthThanSal__TDSSection": [
+    {
+      "value": "92A",
+      "label": "192- Salary-Payment to Government employees other than Indian Government employees",
+      "labelId": "TDSonOthThanSal__TDSSection_92A"
+    },
+    {
+      "value": "92B",
+      "label": "192- Salary-Payment to employees other than Government employees",
+      "labelId": "TDSonOthThanSal__TDSSection_92B"
+    },
+    {
+      "value": "92C",
+      "label": "192- Salary-Payment to Indian Government employees",
+      "labelId": "TDSonOthThanSal__TDSSection_92C"
+    },
+    {
+      "value": "192A",
+      "label": "192A/2AA- TDS on PF withdrawal",
+      "labelId": "TDSonOthThanSal__TDSSection_192A"
+    },
+    {
+      "value": "193",
+      "label": "193- Interest on Securities",
+      "labelId": "TDSonOthThanSal__TDSSection_193"
+    },
+    {
+      "value": "194",
+      "label": "194- Dividends",
+      "labelId": "TDSonOthThanSal__TDSSection_194"
+    },
+    {
+      "value": "94A",
+      "label": "194A- Interest other than \u0027Interest on securities\u0027",
+      "labelId": "TDSonOthThanSal__TDSSection_94A"
+    },
+    {
+      "value": "94B",
+      "label": "194B- Winning from lottery or crossword puzzle",
+      "labelId": "TDSonOthThanSal__TDSSection_94B"
+    },
+    {
+      "value": "94BA",
+      "label": "194BA- Winnings from online games",
+      "labelId": "TDSonOthThanSal__TDSSection_94BA"
+    },
+    {
+      "value": "4BB",
+      "label": "194BB- Winning from horse race",
+      "labelId": "TDSonOthThanSal__TDSSection_4BB"
+    },
+    {
+      "value": "94C",
+      "label": "194C- Payments to contractors and sub-contractors",
+      "labelId": "TDSonOthThanSal__TDSSection_94C"
+    },
+    {
+      "value": "94D",
+      "label": "194D- Insurance commission",
+      "labelId": "TDSonOthThanSal__TDSSection_94D"
+    },
+    {
+      "value": "4DA",
+      "label": "194DA- Payment in respect of life insurance policy",
+      "labelId": "TDSonOthThanSal__TDSSection_4DA"
+    },
+    {
+      "value": "94E",
+      "label": "194E- Payments to non-resident sportsmen or sports associations",
+      "labelId": "TDSonOthThanSal__TDSSection_94E"
+    },
+    {
+      "value": "4EE",
+      "label": "194EE- Payments in respect of deposits under National Savings",
+      "labelId": "TDSonOthThanSal__TDSSection_4EE"
+    },
+    {
+      "value": "4F",
+      "label": "194F/94F- Payments on account of repurchase of units by Mutual Fund or Unit Trust of India",
+      "labelId": "TDSonOthThanSal__TDSSection_4F"
+    },
+    {
+      "value": "4G",
+      "label": "194G/94G- Commission, price, etc. on sale of lottery tickets",
+      "labelId": "TDSonOthThanSal__TDSSection_4G"
+    },
+    {
+      "value": "4H",
+      "label": "194H/94H- Commission or brokerage",
+      "labelId": "TDSonOthThanSal__TDSSection_4H"
+    },
+    {
+      "value": "4-IA",
+      "label": "194I(a)/4IA- Rent on hiring of plant and machinery",
+      "labelId": "TDSonOthThanSal__TDSSection_4-IA"
+    },
+    {
+      "value": "4-IB",
+      "label": "194I(b)/4IB - Rent on other than plant and machinery",
+      "labelId": "TDSonOthThanSal__TDSSection_4-IB"
+    },
+    {
+      "value": "4IA",
+      "label": "194IA/9IA- TDS on Sale of immovable property",
+      "labelId": "TDSonOthThanSal__TDSSection_4IA"
+    },
+    {
+      "value": "4IB",
+      "label": "194IB/9IB- Payment of rent by certain individuals or Hindu undivided",
+      "labelId": "TDSonOthThanSal__TDSSection_4IB"
+    },
+    {
+      "value": "4IC",
+      "label": "194IC- Payment under specified agreement",
+      "labelId": "TDSonOthThanSal__TDSSection_4IC"
+    },
+    {
+      "value": "94J-A",
+      "label": "194J(a)/4JA - Fees for technical services",
+      "labelId": "TDSonOthThanSal__TDSSection_94J-A"
+    },
+    {
+      "value": "94J-B",
+      "label": "194J(b)/4JB- Fees for professional  services or royalty etc",
+      "labelId": "TDSonOthThanSal__TDSSection_94J-B"
+    },
+    {
+      "value": "94K",
+      "label": "194K- Income payable to a resident assessee in respect of units of a specified mutual fund or of the units of the Unit Trust of India",
+      "labelId": "TDSonOthThanSal__TDSSection_94K"
+    },
+    {
+      "value": "4LA",
+      "label": "194LA- Payment of compensation on acquisition of certain immovable",
+      "labelId": "TDSonOthThanSal__TDSSection_4LA"
+    },
+    {
+      "value": "4LB",
+      "label": "194LB- Income by way of Interest from Infrastructure Debt fund",
+      "labelId": "TDSonOthThanSal__TDSSection_4LB"
+    },
+    {
+      "value": "4LC1",
+      "label": "194LC/LC1- 194LC (2)(i) and (ia) Income under clause (i) and (ia) of sub-section (2) of section 194LC",
+      "labelId": "TDSonOthThanSal__TDSSection_4LC1"
+    },
+    {
+      "value": "4LC2",
+      "label": "194LC/LC2- 194LC (2)(ib) Income under clause (ib) of sub-section (2) of section 194LC",
+      "labelId": "TDSonOthThanSal__TDSSection_4LC2"
+    },
+    {
+      "value": "4LC3",
+      "label": "194LC/LC3- 194LC (2)(ic) Income under clause (ic) of sub-section (2) of section 194LC",
+      "labelId": "TDSonOthThanSal__TDSSection_4LC3"
+    },
+    {
+      "value": "4BA1",
+      "label": "194LBA(a)/BA1- Certain income in the form of interest from units of a business trust to a resident unit holder",
+      "labelId": "TDSonOthThanSal__TDSSection_4BA1"
+    },
+    {
+      "value": "4BA2",
+      "label": "194LBA(b)/BA2- Certain income in the form of dividend from units of a business trust to a resident unit holder",
+      "labelId": "TDSonOthThanSal__TDSSection_4BA2"
+    },
+    {
+      "value": "LBA1",
+      "label": "194LBA(a)/BA1- 194LBA(a) income referred to in section 10(23FC)(a) from units of a business trust-NR",
+      "labelId": "TDSonOthThanSal__TDSSection_LBA1"
+    },
+    {
+      "value": "LBA2",
+      "label": "194LBA(b)/BA2-194LBA(b) Income referred to in section 10(23FC)(b) from units of a business trust-NR",
+      "labelId": "TDSonOthThanSal__TDSSection_LBA2"
+    },
+    {
+      "value": "LBA3",
+      "label": "194LBA(c)/BA3- 194LBA(c) Income referred to in section 10(23FCA) from units of a business trust-NR",
+      "labelId": "TDSonOthThanSal__TDSSection_LBA3"
+    },
+    {
+      "value": "LBB",
+      "label": "194LBB- Income in respect of units of investment fund",
+      "labelId": "TDSonOthThanSal__TDSSection_LBB"
+    },
+    {
+      "value": "94R",
+      "label": "194R- Benefits or perquisites of business or profession",
+      "labelId": "TDSonOthThanSal__TDSSection_94R"
+    },
+    {
+      "value": "94S",
+      "label": "194S- Payment of consideration for transfer of virtual digital asset by persons other than specified persons",
+      "labelId": "TDSonOthThanSal__TDSSection_94S"
+    },
+    {
+      "value": "94B-P",
+      "label": "Proviso to section 194B/4BP- Winnings from lotteries and crossword puzzles where consideration is made in kind or cash is not sufficient to meet the tax liability and tax has been paid before such winnings are released",
+      "labelId": "TDSonOthThanSal__TDSSection_94B-P"
+    },
+    {
+      "value": "94R-P",
+      "label": "First Proviso to sub-section(1) of section 194R/4RP- Benefits or perquisites of business or profession where such benefit is provided in kind or where part in cash is not sufficient to meet tax liability and tax required to be deducted is paid before such benefit is released",
+      "labelId": "TDSonOthThanSal__TDSSection_94R-P"
+    },
+    {
+      "value": "94S-P",
+      "label": "Proviso to sub- section(1) of section 194S/4SP- Payment for transfer of virtual digital asset where payment is in kind or in exchange of another virtual digital asset and tax required to be deducted is paid before such payment is released",
+      "labelId": "TDSonOthThanSal__TDSSection_94S-P"
+    },
+    {
+      "value": "LBC",
+      "label": "194LBC- Income in respect of investment in securitization trust",
+      "labelId": "TDSonOthThanSal__TDSSection_LBC"
+    },
+    {
+      "value": "4LD",
+      "label": "194LD- TDS on interest on bonds / government securities",
+      "labelId": "TDSonOthThanSal__TDSSection_4LD"
+    },
+    {
+      "value": "94M",
+      "label": "194M- Payment of certain sums by certain individuals or HUF",
+      "labelId": "TDSonOthThanSal__TDSSection_94M"
+    },
+    {
+      "value": "94N",
+      "label": "194N- Payment of certain amounts in cash other than cases covered by first proviso or third proviso",
+      "labelId": "TDSonOthThanSal__TDSSection_94N"
+    },
+    {
+      "value": "94N-F",
+      "label": "194N/4NF -First Proviso Payment of certain amounts in cash to non-filers except in case of co-operativesocieties",
+      "labelId": "TDSonOthThanSal__TDSSection_94N-F"
+    },
+    {
+      "value": "94N-C",
+      "label": "194N/4NC- Third Proviso Payment of certain amounts in cash to co-operative societies not covered by first proviso",
+      "labelId": "TDSonOthThanSal__TDSSection_94N-C"
+    },
+    {
+      "value": "94N-FT",
+      "label": "194N/NFT- First Proviso read with Third Proviso Payment of certain amount in cash to non-filers being co-operative societies",
+      "labelId": "TDSonOthThanSal__TDSSection_94N-FT"
+    },
+    {
+      "value": "94O",
+      "label": "194O- Payment of certain sums by e-commerce operator to e-commerce participant.",
+      "labelId": "TDSonOthThanSal__TDSSection_94O"
+    },
+    {
+      "value": "94P",
+      "label": "194P- Deduction of tax in case of specified senior citizen",
+      "labelId": "TDSonOthThanSal__TDSSection_94P"
+    },
+    {
+      "value": "94Q",
+      "label": "194Q- Deduction of tax at source on payment of certain sum for purchase of goods",
+      "labelId": "TDSonOthThanSal__TDSSection_94Q"
+    },
+    {
+      "value": "195",
+      "label": "195- Other sums payable to a non-resident",
+      "labelId": "TDSonOthThanSal__TDSSection_195"
+    },
+    {
+      "value": "96A",
+      "label": "196A- Income in respect of units of non-residents",
+      "labelId": "TDSonOthThanSal__TDSSection_96A"
+    },
+    {
+      "value": "96B",
+      "label": "196B- Payments in respect of units to an offshore fund",
+      "labelId": "TDSonOthThanSal__TDSSection_96B"
+    },
+    {
+      "value": "96C",
+      "label": "196C- Income from foreign currency bonds or shares of Indian",
+      "labelId": "TDSonOthThanSal__TDSSection_96C"
+    },
+    {
+      "value": "96D",
+      "label": "196D- Income of foreign institutional investors from securities",
+      "labelId": "TDSonOthThanSal__TDSSection_96D"
+    },
+    {
+      "value": "96DA",
+      "label": "196D(1A)/6DA- Income of specified fund from securities",
+      "labelId": "TDSonOthThanSal__TDSSection_96DA"
+    },
+    {
+      "value": "94BA-P",
+      "label": "194BA(2)/BAP-Sub-section (2) of section 194BA Net Winnings from online games where the net winnings are made in kind or cash is not sufficient to meet the tax liability and tax has been paid before such net winnings are released",
+      "labelId": "TDSonOthThanSal__TDSSection_94BA-P"
+    }
+  ],
+  "TDSonOthThanSal__DeductedYr": [
+    {
+      "value": "2024",
+      "label": "2024-25",
+      "labelId": "TDSonOthThanSal__DeductedYr_2024"
+    },
+    {
+      "value": "2023",
+      "label": "2023-24",
+      "labelId": "TDSonOthThanSal__DeductedYr_2023"
+    },
+    {
+      "value": "2022",
+      "label": "2022-23",
+      "labelId": "TDSonOthThanSal__DeductedYr_2022"
+    },
+    {
+      "value": "2021",
+      "label": "2021-22",
+      "labelId": "TDSonOthThanSal__DeductedYr_2021"
+    },
+    {
+      "value": "2020",
+      "label": "2020-21",
+      "labelId": "TDSonOthThanSal__DeductedYr_2020"
+    },
+    {
+      "value": "2019",
+      "label": "2019-20",
+      "labelId": "TDSonOthThanSal__DeductedYr_2019"
+    },
+    {
+      "value": "2018",
+      "label": "2018-19",
+      "labelId": "TDSonOthThanSal__DeductedYr_2018"
+    },
+    {
+      "value": "2017",
+      "label": "2017-18",
+      "labelId": "TDSonOthThanSal__DeductedYr_2017"
+    },
+    {
+      "value": "2016",
+      "label": "2016-17",
+      "labelId": "TDSonOthThanSal__DeductedYr_2016"
+    },
+    {
+      "value": "2015",
+      "label": "2015-16",
+      "labelId": "TDSonOthThanSal__DeductedYr_2015"
+    },
+    {
+      "value": "2014",
+      "label": "2014-15",
+      "labelId": "TDSonOthThanSal__DeductedYr_2014"
+    },
+    {
+      "value": "2013",
+      "label": "2013-14",
+      "labelId": "TDSonOthThanSal__DeductedYr_2013"
+    },
+    {
+      "value": "2012",
+      "label": "2012-13",
+      "labelId": "TDSonOthThanSal__DeductedYr_2012"
+    },
+    {
+      "value": "2011",
+      "label": "2011-12",
+      "labelId": "TDSonOthThanSal__DeductedYr_2011"
+    },
+    {
+      "value": "2010",
+      "label": "2010-11",
+      "labelId": "TDSonOthThanSal__DeductedYr_2010"
+    },
+    {
+      "value": "2009",
+      "label": "2009-10",
+      "labelId": "TDSonOthThanSal__DeductedYr_2009"
+    },
+    {
+      "value": "2008",
+      "label": "2008-09",
+      "labelId": "TDSonOthThanSal__DeductedYr_2008"
+    }
+  ],
+  "TDS3Details__TDSSection": [
+    {
+      "value": "92A",
+      "label": "192- Salary-Payment to Government employees other than Indian Government employees",
+      "labelId": "TDS3Details__TDSSection_92A"
+    },
+    {
+      "value": "92B",
+      "label": "192- Salary-Payment to employees other than Government employees",
+      "labelId": "TDS3Details__TDSSection_92B"
+    },
+    {
+      "value": "92C",
+      "label": "192- Salary-Payment to Indian Government employees",
+      "labelId": "TDS3Details__TDSSection_92C"
+    },
+    {
+      "value": "192A",
+      "label": "192A/2AA- TDS on PF withdrawal",
+      "labelId": "TDS3Details__TDSSection_192A"
+    },
+    {
+      "value": "193",
+      "label": "193- Interest on Securities",
+      "labelId": "TDS3Details__TDSSection_193"
+    },
+    {
+      "value": "194",
+      "label": "194- Dividends",
+      "labelId": "TDS3Details__TDSSection_194"
+    },
+    {
+      "value": "94A",
+      "label": "194A- Interest other than \u0027Interest on securities\u0027",
+      "labelId": "TDS3Details__TDSSection_94A"
+    },
+    {
+      "value": "94B",
+      "label": "194B- Winning from lottery or crossword puzzle",
+      "labelId": "TDS3Details__TDSSection_94B"
+    },
+    {
+      "value": "94BA",
+      "label": "194BA- Winnings from online games",
+      "labelId": "TDS3Details__TDSSection_94BA"
+    },
+    {
+      "value": "4BB",
+      "label": "194BB- Winning from horse race",
+      "labelId": "TDS3Details__TDSSection_4BB"
+    },
+    {
+      "value": "94C",
+      "label": "194C- Payments to contractors and sub-contractors",
+      "labelId": "TDS3Details__TDSSection_94C"
+    },
+    {
+      "value": "94D",
+      "label": "194D- Insurance commission",
+      "labelId": "TDS3Details__TDSSection_94D"
+    },
+    {
+      "value": "4DA",
+      "label": "194DA- Payment in respect of life insurance policy",
+      "labelId": "TDS3Details__TDSSection_4DA"
+    },
+    {
+      "value": "94E",
+      "label": "194E- Payments to non-resident sportsmen or sports associations",
+      "labelId": "TDS3Details__TDSSection_94E"
+    },
+    {
+      "value": "4EE",
+      "label": "194EE- Payments in respect of deposits under National Savings",
+      "labelId": "TDS3Details__TDSSection_4EE"
+    },
+    {
+      "value": "4F",
+      "label": "194F/94F- Payments on account of repurchase of units by Mutual Fund or Unit Trust of India",
+      "labelId": "TDS3Details__TDSSection_4F"
+    },
+    {
+      "value": "4G",
+      "label": "194G/94G- Commission, price, etc. on sale of lottery tickets",
+      "labelId": "TDS3Details__TDSSection_4G"
+    },
+    {
+      "value": "4H",
+      "label": "194H/94H- Commission or brokerage",
+      "labelId": "TDS3Details__TDSSection_4H"
+    },
+    {
+      "value": "4-IA",
+      "label": "194I(a)/4IA- Rent on hiring of plant and machinery",
+      "labelId": "TDS3Details__TDSSection_4-IA"
+    },
+    {
+      "value": "4-IB",
+      "label": "194I(b)/4IB - Rent on other than plant and machinery",
+      "labelId": "TDS3Details__TDSSection_4-IB"
+    },
+    {
+      "value": "4IA",
+      "label": "194IA/9IA- TDS on Sale of immovable property",
+      "labelId": "TDS3Details__TDSSection_4IA"
+    },
+    {
+      "value": "4IB",
+      "label": "194IB/9IB- Payment of rent by certain individuals or Hindu undivided",
+      "labelId": "TDS3Details__TDSSection_4IB"
+    },
+    {
+      "value": "4IC",
+      "label": "194IC- Payment under specified agreement",
+      "labelId": "TDS3Details__TDSSection_4IC"
+    },
+    {
+      "value": "94J-A",
+      "label": "194J(a)/4JA - Fees for technical services",
+      "labelId": "TDS3Details__TDSSection_94J-A"
+    },
+    {
+      "value": "94J-B",
+      "label": "194J(b)/4JB- Fees for professional  services or royalty etc",
+      "labelId": "TDS3Details__TDSSection_94J-B"
+    },
+    {
+      "value": "94K",
+      "label": "194K- Income payable to a resident assessee in respect of units of a specified mutual fund or of the units of the Unit Trust of India",
+      "labelId": "TDS3Details__TDSSection_94K"
+    },
+    {
+      "value": "4LA",
+      "label": "194LA- Payment of compensation on acquisition of certain immovable",
+      "labelId": "TDS3Details__TDSSection_4LA"
+    },
+    {
+      "value": "4LB",
+      "label": "194LB- Income by way of Interest from Infrastructure Debt fund",
+      "labelId": "TDS3Details__TDSSection_4LB"
+    },
+    {
+      "value": "4LC1",
+      "label": "194LC/LC1- 194LC (2)(i) and (ia) Income under clause (i) and (ia) of sub-section (2) of section 194LC",
+      "labelId": "TDS3Details__TDSSection_4LC1"
+    },
+    {
+      "value": "4LC2",
+      "label": "194LC/LC2- 194LC (2)(ib) Income under clause (ib) of sub-section (2) of section 194LC",
+      "labelId": "TDS3Details__TDSSection_4LC2"
+    },
+    {
+      "value": "4LC3",
+      "label": "194LC/LC3- 194LC (2)(ic) Income under clause (ic) of sub-section (2) of section 194LC",
+      "labelId": "TDS3Details__TDSSection_4LC3"
+    },
+    {
+      "value": "4BA1",
+      "label": "194LBA(a)/BA1- Certain income in the form of interest from units of a business trust to a resident unit holder",
+      "labelId": "TDS3Details__TDSSection_4BA1"
+    },
+    {
+      "value": "4BA2",
+      "label": "194LBA(b)/BA2- Certain income in the form of dividend from units of a business trust to a resident unit holder",
+      "labelId": "TDS3Details__TDSSection_4BA2"
+    },
+    {
+      "value": "LBA1",
+      "label": "194LBA(a)/BA1- 194LBA(a) income referred to in section 10(23FC)(a) from units of a business trust-NR",
+      "labelId": "TDS3Details__TDSSection_LBA1"
+    },
+    {
+      "value": "LBA2",
+      "label": "194LBA(b)/BA2-194LBA(b) Income referred to in section 10(23FC)(b) from units of a business trust-NR",
+      "labelId": "TDS3Details__TDSSection_LBA2"
+    },
+    {
+      "value": "LBA3",
+      "label": "194LBA(c)/BA3- 194LBA(c) Income referred to in section 10(23FCA) from units of a business trust-NR",
+      "labelId": "TDS3Details__TDSSection_LBA3"
+    },
+    {
+      "value": "LBB",
+      "label": "194LBB- Income in respect of units of investment fund",
+      "labelId": "TDS3Details__TDSSection_LBB"
+    },
+    {
+      "value": "94R",
+      "label": "194R- Benefits or perquisites of business or profession",
+      "labelId": "TDS3Details__TDSSection_94R"
+    },
+    {
+      "value": "94S",
+      "label": "194S- Payment of consideration for transfer of virtual digital asset by persons other than specified persons",
+      "labelId": "TDS3Details__TDSSection_94S"
+    },
+    {
+      "value": "94B-P",
+      "label": "Proviso to section 194B/4BP- Winnings from lotteries and crossword puzzles where consideration is made in kind or cash is not sufficient to meet the tax liability and tax has been paid before such winnings are released",
+      "labelId": "TDS3Details__TDSSection_94B-P"
+    },
+    {
+      "value": "94R-P",
+      "label": "First Proviso to sub-section(1) of section 194R/4RP- Benefits or perquisites of business or profession where such benefit is provided in kind or where part in cash is not sufficient to meet tax liability and tax required to be deducted is paid before such benefit is released",
+      "labelId": "TDS3Details__TDSSection_94R-P"
+    },
+    {
+      "value": "94S-P",
+      "label": "Proviso to sub- section(1) of section 194S/4SP- Payment for transfer of virtual digital asset where payment is in kind or in exchange of another virtual digital asset and tax required to be deducted is paid before such payment is released",
+      "labelId": "TDS3Details__TDSSection_94S-P"
+    },
+    {
+      "value": "LBC",
+      "label": "194LBC- Income in respect of investment in securitization trust",
+      "labelId": "TDS3Details__TDSSection_LBC"
+    },
+    {
+      "value": "4LD",
+      "label": "194LD- TDS on interest on bonds / government securities",
+      "labelId": "TDS3Details__TDSSection_4LD"
+    },
+    {
+      "value": "94M",
+      "label": "194M- Payment of certain sums by certain individuals or HUF",
+      "labelId": "TDS3Details__TDSSection_94M"
+    },
+    {
+      "value": "94N",
+      "label": "194N- Payment of certain amounts in cash other than cases covered by first proviso or third proviso",
+      "labelId": "TDS3Details__TDSSection_94N"
+    },
+    {
+      "value": "94N-F",
+      "label": "194N/4NF -First Proviso Payment of certain amounts in cash to non-filers except in case of co-operativesocieties",
+      "labelId": "TDS3Details__TDSSection_94N-F"
+    },
+    {
+      "value": "94N-C",
+      "label": "194N/4NC- Third Proviso Payment of certain amounts in cash to co-operative societies not covered by first proviso",
+      "labelId": "TDS3Details__TDSSection_94N-C"
+    },
+    {
+      "value": "94N-FT",
+      "label": "194N/NFT- First Proviso read with Third Proviso Payment of certain amount in cash to non-filers being co-operative societies",
+      "labelId": "TDS3Details__TDSSection_94N-FT"
+    },
+    {
+      "value": "94O",
+      "label": "194O- Payment of certain sums by e-commerce operator to e-commerce participant.",
+      "labelId": "TDS3Details__TDSSection_94O"
+    },
+    {
+      "value": "94P",
+      "label": "194P- Deduction of tax in case of specified senior citizen",
+      "labelId": "TDS3Details__TDSSection_94P"
+    },
+    {
+      "value": "94Q",
+      "label": "194Q- Deduction of tax at source on payment of certain sum for purchase of goods",
+      "labelId": "TDS3Details__TDSSection_94Q"
+    },
+    {
+      "value": "195",
+      "label": "195- Other sums payable to a non-resident",
+      "labelId": "TDS3Details__TDSSection_195"
+    },
+    {
+      "value": "96A",
+      "label": "196A- Income in respect of units of non-residents",
+      "labelId": "TDS3Details__TDSSection_96A"
+    },
+    {
+      "value": "96B",
+      "label": "196B- Payments in respect of units to an offshore fund",
+      "labelId": "TDS3Details__TDSSection_96B"
+    },
+    {
+      "value": "96C",
+      "label": "196C- Income from foreign currency bonds or shares of Indian",
+      "labelId": "TDS3Details__TDSSection_96C"
+    },
+    {
+      "value": "96D",
+      "label": "196D- Income of foreign institutional investors from securities",
+      "labelId": "TDS3Details__TDSSection_96D"
+    },
+    {
+      "value": "96DA",
+      "label": "196D(1A)/6DA- Income of specified fund from securities",
+      "labelId": "TDS3Details__TDSSection_96DA"
+    },
+    {
+      "value": "94BA-P",
+      "label": "194BA(2)/BAP-Sub-section (2) of section 194BA Net Winnings from online games where the net winnings are made in kind or cash is not sufficient to meet the tax liability and tax has been paid before such net winnings are released",
+      "labelId": "TDS3Details__TDSSection_94BA-P"
+    }
+  ],
+  "TDS3Details__DeductedYr": [
+    {
+      "value": "2024",
+      "label": "2024-25",
+      "labelId": "TDS3Details__DeductedYr_2024"
+    },
+    {
+      "value": "2023",
+      "label": "2023-24",
+      "labelId": "TDS3Details__DeductedYr_2023"
+    },
+    {
+      "value": "2022",
+      "label": "2022-23",
+      "labelId": "TDS3Details__DeductedYr_2022"
+    },
+    {
+      "value": "2021",
+      "label": "2021-22",
+      "labelId": "TDS3Details__DeductedYr_2021"
+    },
+    {
+      "value": "2020",
+      "label": "2020-21",
+      "labelId": "TDS3Details__DeductedYr_2020"
+    },
+    {
+      "value": "2019",
+      "label": "2019-20",
+      "labelId": "TDS3Details__DeductedYr_2019"
+    },
+    {
+      "value": "2018",
+      "label": "2018-19",
+      "labelId": "TDS3Details__DeductedYr_2018"
+    },
+    {
+      "value": "2017",
+      "label": "2017-18",
+      "labelId": "TDS3Details__DeductedYr_2017"
+    }
+  ],
+  "BankDetailType__AccountType": [
+    {
+      "value": "SB",
+      "label": "Savings Account",
+      "labelId": "BankDetailType__AccountType_SB"
+    },
+    {
+      "value": "CA",
+      "label": "Current Account",
+      "labelId": "BankDetailType__AccountType_CA"
+    },
+    {
+      "value": "CC",
+      "label": "Cash Credit Account",
+      "labelId": "BankDetailType__AccountType_CC"
+    },
+    {
+      "value": "OD",
+      "label": "Over draft account",
+      "labelId": "BankDetailType__AccountType_OD"
+    },
+    {
+      "value": "NRO",
+      "label": "Non Resident Account",
+      "labelId": "BankDetailType__AccountType_NRO"
+    },
+    {
+      "value": "OTH",
+      "label": "Other",
+      "labelId": "BankDetailType__AccountType_OTH"
+    }
+  ],
+  "BankDetailType__UseForRefund": [
+    {
+      "value": "true",
+      "labelId": "BankDetailType__UseForRefund_true"
+    },
+    {
+      "value": "false",
+      "labelId": "BankDetailType__UseForRefund_false"
+    }
+  ],
+  "AllwncExemptUs10DtlsType__SalNatureDesc": [
+    {
+      "value": "10(5)",
+      "label": "Sec 10(5)-Leave Travel concession/assistance",
+      "labelId": "AllwncExemptUs10DtlsType__SalNatureDesc_10(5)"
+    },
+    {
+      "value": "10(6)",
+      "label": "Sec 10(6)-Remuneration received as an official, by whatever name called, of an embassy, high commission etc.",
+      "labelId": "AllwncExemptUs10DtlsType__SalNatureDesc_10(6)"
+    },
+    {
+      "value": "10(7)",
+      "label": "Sec 10(7)-Allowances or perquisites paid or allowed as such outside India by the Government to a citizen of India for rendering service outside India",
+      "labelId": "AllwncExemptUs10DtlsType__SalNatureDesc_10(7)"
+    },
+    {
+      "value": "10(10)",
+      "label": "Sec 10(10)-Death-cum-retirement gratuity received",
+      "labelId": "AllwncExemptUs10DtlsType__SalNatureDesc_10(10)"
+    },
+    {
+      "value": "10(10A)",
+      "label": "Sec 10(10A)-Commuted value of pension received",
+      "labelId": "AllwncExemptUs10DtlsType__SalNatureDesc_10(10A)"
+    },
+    {
+      "value": "10(10AA)",
+      "label": "Sec 10(10AA)-Earned leave encashment on Retirement",
+      "labelId": "AllwncExemptUs10DtlsType__SalNatureDesc_10(10AA)"
+    },
+    {
+      "value": "10(10B)(i)",
+      "label": "Sec 10(10B)-First proviso - Compensation limit notified by CG in the Official Gazette",
+      "labelId": "AllwncExemptUs10DtlsType__SalNatureDesc_10(10B)(i)"
+    },
+    {
+      "value": "10(10B)(ii)",
+      "label": "Sec 10(10B)-Second proviso - Compensation under scheme approved by the Central Government",
+      "labelId": "AllwncExemptUs10DtlsType__SalNatureDesc_10(10B)(ii)"
+    },
+    {
+      "value": "10(10C)",
+      "label": "Sec 10(10C)- Amount received/receivable on voluntary retirement or termination of service",
+      "labelId": "AllwncExemptUs10DtlsType__SalNatureDesc_10(10C)"
+    },
+    {
+      "value": "10(10CC)",
+      "label": "Sec 10(10CC)-Tax paid by employer on non-monetary perquisite",
+      "labelId": "AllwncExemptUs10DtlsType__SalNatureDesc_10(10CC)"
+    },
+    {
+      "value": "10(13A)",
+      "label": "Sec 10(13A)-Allowance to meet expenditure incurred on house rent",
+      "labelId": "AllwncExemptUs10DtlsType__SalNatureDesc_10(13A)"
+    },
+    {
+      "value": "10(14)(i)",
+      "label": "Sec 10(14)(i)- Prescribed Allowances or benefits (not in a nature of perquisite) specifically granted to meet expenses wholly, necessarily and exclusively and to the extent actually incurred, in performance of duties of office or employment",
+      "labelId": "AllwncExemptUs10DtlsType__SalNatureDesc_10(14)(i)"
+    },
+    {
+      "value": "10(14)(ii)",
+      "label": "Sec 10(14)(ii) -Prescribed Allowances or benefits granted to meet personal expenses in performance of duties of office or employment or to compensate him for increased cost of living.",
+      "labelId": "AllwncExemptUs10DtlsType__SalNatureDesc_10(14)(ii)"
+    },
+    {
+      "value": "10(14)(i)(115BAC)",
+      "label": "Sec 10(14)(i) -Allowances referred in sub-clauses (a) to (c) of sub-rule (1) in Rule 2BB",
+      "labelId": "AllwncExemptUs10DtlsType__SalNatureDesc_10(14)(i)(115BAC)"
+    },
+    {
+      "value": "10(14)(ii)(115BAC)",
+      "label": "Sec 10(14)(ii) -Transport allowance granted to certain physically handicapped assessee",
+      "labelId": "AllwncExemptUs10DtlsType__SalNatureDesc_10(14)(ii)(115BAC)"
+    },
+    {
+      "value": "EIC",
+      "label": "Exempt income received by a judge covered under the payment of salaries to Supreme Court/High Court judges Act /Rules",
+      "labelId": "AllwncExemptUs10DtlsType__SalNatureDesc_EIC"
+    },
+    {
+      "value": "OTH",
+      "label": "Any Other",
+      "labelId": "AllwncExemptUs10DtlsType__SalNatureDesc_OTH"
+    }
+  ],
+  "OtherSourceIncome__OthSrcNatureDesc": [
+    {
+      "value": "SAV",
+      "label": "Interest from Saving Account",
+      "labelId": "OtherSourceIncome__OthSrcNatureDesc_SAV"
+    },
+    {
+      "value": "IFD",
+      "label": "Interest from Deposit(Bank/Post Office/Cooperative Society)",
+      "labelId": "OtherSourceIncome__OthSrcNatureDesc_IFD"
+    },
+    {
+      "value": "TAX",
+      "label": "Interest from Income Tax Refund",
+      "labelId": "OtherSourceIncome__OthSrcNatureDesc_TAX"
+    },
+    {
+      "value": "FAP",
+      "label": "Family pension",
+      "labelId": "OtherSourceIncome__OthSrcNatureDesc_FAP"
+    },
+    {
+      "value": "DIV",
+      "label": "Dividend",
+      "labelId": "OtherSourceIncome__OthSrcNatureDesc_DIV"
+    },
+    {
+      "value": "10(11)(iP)",
+      "label": "Interest accrued on contributions to provident fund to the extent taxable as per first proviso to section 10(11)",
+      "labelId": "OtherSourceIncome__OthSrcNatureDesc_10(11)(iP)"
+    },
+    {
+      "value": "10(11)(iiP)",
+      "label": "Interest accrued on contributions to provident fund to the extent taxable as per second proviso to section 10(11)",
+      "labelId": "OtherSourceIncome__OthSrcNatureDesc_10(11)(iiP)"
+    },
+    {
+      "value": "10(12)(iP)",
+      "label": "Interest accrued on contributions to provident fund to the extent taxable as per first proviso to section 10(12)",
+      "labelId": "OtherSourceIncome__OthSrcNatureDesc_10(12)(iP)"
+    },
+    {
+      "value": "10(12)(iiP)",
+      "label": "Interest accrued on contributions to provident fund to the extent taxable as per second proviso to section 10(12)",
+      "labelId": "OtherSourceIncome__OthSrcNatureDesc_10(12)(iiP)"
+    },
+    {
+      "value": "NOT89A",
+      "label": "Income from retirement benefit account maintained in a notified country u/s 89A",
+      "labelId": "OtherSourceIncome__OthSrcNatureDesc_NOT89A"
+    },
+    {
+      "value": "OTHNOT89A",
+      "label": "Income from retirement benefit account maintained in a country other than a country notified u/s 89A",
+      "labelId": "OtherSourceIncome__OthSrcNatureDesc_OTHNOT89A"
+    },
+    {
+      "value": "OTH",
+      "label": "Any Other",
+      "labelId": "OtherSourceIncome__OthSrcNatureDesc_OTH"
+    }
+  ],
+  "NOT89AType__NOT89ACountrycode": [
+    {
+      "value": "US",
+      "label": "United States",
+      "labelId": "NOT89AType__NOT89ACountrycode_US"
+    },
+    {
+      "value": "UK",
+      "label": "United Kingdom",
+      "labelId": "NOT89AType__NOT89ACountrycode_UK"
+    },
+    {
+      "value": "CA",
+      "label": "Canada",
+      "labelId": "NOT89AType__NOT89ACountrycode_CA"
+    }
+  ],
+  "ExemptIncAgriOthUs10Type__NatureDesc": [
+    {
+      "value": "AGRI",
+      "label": "Agriculture Income (\u003c\u003d Rs.5000)",
+      "labelId": "ExemptIncAgriOthUs10Type__NatureDesc_AGRI"
+    },
+    {
+      "value": "10(10BC)",
+      "label": "Sec 10(10BC)-Any amount from the Central/State Govt./local authority by way of compensation on account of any disaster",
+      "labelId": "ExemptIncAgriOthUs10Type__NatureDesc_10(10BC)"
+    },
+    {
+      "value": "10(10D)",
+      "label": "Sec 10(10D)- Any sum received under a life insurance policy, including the sum allocated by way of bonus on such policy except sum as mentioned in sub-clause (a) to (d) of Sec.10(10D)",
+      "labelId": "ExemptIncAgriOthUs10Type__NatureDesc_10(10D)"
+    },
+    {
+      "value": "10(11)",
+      "label": "Sec 10(11)-Statuory Provident Fund received",
+      "labelId": "ExemptIncAgriOthUs10Type__NatureDesc_10(11)"
+    },
+    {
+      "value": "10(12)",
+      "label": "Sec 10(12)-Recognised Provident Fund received",
+      "labelId": "ExemptIncAgriOthUs10Type__NatureDesc_10(12)"
+    },
+    {
+      "value": "10(12C)",
+      "label": "Sec 10(12C)-Any payment from the Agniveer Corpus Fund to a person enrolled under the Agnipath Scheme, or to his nominee.",
+      "labelId": "ExemptIncAgriOthUs10Type__NatureDesc_10(12C)"
+    },
+    {
+      "value": "10(13)",
+      "label": "Sec 10(13)-Approved superannuation fund received",
+      "labelId": "ExemptIncAgriOthUs10Type__NatureDesc_10(13)"
+    },
+    {
+      "value": "10(16)",
+      "label": "Sec 10(16)-Scholarships granted to meet the cost of education",
+      "labelId": "ExemptIncAgriOthUs10Type__NatureDesc_10(16)"
+    },
+    {
+      "value": "10(17)",
+      "label": "Sec 10(17)-Allowance MP/MLA/MLC",
+      "labelId": "ExemptIncAgriOthUs10Type__NatureDesc_10(17)"
+    },
+    {
+      "value": "10(17A)",
+      "label": "Sec 10(17A)-Award instituted by Government",
+      "labelId": "ExemptIncAgriOthUs10Type__NatureDesc_10(17A)"
+    },
+    {
+      "value": "10(18)",
+      "label": "Sec 10(18)-Pension received by winner of \"Param Vir Chakra\" or \"Maha Vir Chakra\" or \"Vir Chakra\" or such other gallantry award",
+      "labelId": "ExemptIncAgriOthUs10Type__NatureDesc_10(18)"
+    },
+    {
+      "value": "DMDP",
+      "label": "Defense medical disability pension",
+      "labelId": "ExemptIncAgriOthUs10Type__NatureDesc_DMDP"
+    },
+    {
+      "value": "10(19)",
+      "label": "Sec 10(19)-Armed Forces Family pension in case of death during operational duty",
+      "labelId": "ExemptIncAgriOthUs10Type__NatureDesc_10(19)"
+    },
+    {
+      "value": "10(26)",
+      "label": "Sec 10(26)-Any income as referred to in section 10(26)",
+      "labelId": "ExemptIncAgriOthUs10Type__NatureDesc_10(26)"
+    },
+    {
+      "value": "10(26AAA)",
+      "label": "Sec 10(26AAA)-Any income as referred to in section 10(26AAA)",
+      "labelId": "ExemptIncAgriOthUs10Type__NatureDesc_10(26AAA)"
+    },
+    {
+      "value": "OTH",
+      "label": "Any Other",
+      "labelId": "ExemptIncAgriOthUs10Type__NatureDesc_OTH"
+    }
+  ]
+}

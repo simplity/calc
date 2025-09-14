@@ -1,0 +1,95 @@
+{
+  "FilingStatus__clauseiv7provisio139iDtls": {
+    "dataType": "string"
+  },
+  "ITR1_IncomeDeductions__IncomeNotified89AType": {
+    "dataType": "string"
+  },
+  "ITR1_IncomeDeductions__AllwncExemptUs10__AllwncExemptUs10Dtls": {
+    "dataType": "string"
+  },
+  "ITR1_IncomeDeductions__OthersInc__OthersIncDtlsOthSrc": {
+    "dataType": "string"
+  },
+  "ITR1_IncomeDeductions__ExemptIncAgriOthUs10__ExemptIncAgriOthUs10Dtls": {
+    "dataType": "string"
+  },
+  "BankAccountDtls__AddtnlBankDetails": {
+    "dataType": "string"
+  },
+  "Schedule80G__Don100Percent__DoneeWithPan": {
+    "dataType": "string"
+  },
+  "Schedule80G__Don50PercentNoApprReqd__DoneeWithPan": {
+    "dataType": "string"
+  },
+  "Schedule80G__Don100PercentApprReqd__DoneeWithPan": {
+    "dataType": "string"
+  },
+  "Schedule80G__Don50PercentApprReqd__DoneeWithPan": {
+    "dataType": "string"
+  },
+  "Schedule80GGA__DonationDtlsSciRsrchRuralDev": {
+    "dataType": "object",
+    "typeDefinition": "Schedule80GGA__DonationDtlsSciRsrchRuralDev"
+  },
+  "Schedule80GGC__Schedule80GGCDetails": {
+    "dataType": "object",
+    "typeDefinition": "Schedule80GGC__Schedule80GGCDetails"
+  },
+  "Schedule80D__Sec80DSelfFamSrCtznHealth__Sec80DSelfFamHIDtls__Sch80DInsDtls": {
+    "dataType": "string"
+  },
+  "Schedule80D__Sec80DSelfFamSrCtznHealth__Sec80DSelfFamSrCtznHIDtls__Sch80DInsDtls": {
+    "dataType": "string"
+  },
+  "Schedule80D__Sec80DSelfFamSrCtznHealth__Sec80DParentsHIDtls__Sch80DInsDtls": {
+    "dataType": "string"
+  },
+  "Schedule80D__Sec80DSelfFamSrCtznHealth__Sec80DParentsSrCtznHIDtls__Sch80DInsDtls": {
+    "dataType": "string"
+  },
+  "Schedule80E__Schedule80EDtls": {
+    "dataType": "object",
+    "typeDefinition": "Schedule80E__Schedule80EDtls"
+  },
+  "Schedule80EE__Schedule80EEDtls": {
+    "dataType": "object",
+    "typeDefinition": "Schedule80EE__Schedule80EEDtls"
+  },
+  "Schedule80EEA__Schedule80EEADtls": {
+    "dataType": "object",
+    "typeDefinition": "Schedule80EEA__Schedule80EEADtls"
+  },
+  "Schedule80EEB__Schedule80EEBDtls": {
+    "dataType": "object",
+    "typeDefinition": "Schedule80EEB__Schedule80EEBDtls"
+  },
+  "Schedule80C__Schedule80CDtls": {
+    "dataType": "object",
+    "typeDefinition": "Schedule80C__Schedule80CDtls"
+  },
+  "ScheduleUs24B__ScheduleUs24BDtls": {
+    "dataType": "object",
+    "typeDefinition": "ScheduleUs24B__ScheduleUs24BDtls"
+  },
+  "TDSonSalaries__TDSonSalary": {
+    "dataType": "string"
+  },
+  "TDSonOthThanSals__TDSonOthThanSal": {
+    "dataType": "string"
+  },
+  "ScheduleTDS3Dtls__TDS3Details": {
+    "dataType": "string"
+  },
+  "ScheduleTCS__TCS": {
+    "dataType": "object",
+    "typeDefinition": "ScheduleTCS__TCS"
+  },
+  "TaxPayments__TaxPayment": {
+    "dataType": "string"
+  },
+  "OtherSourceIncome__NOT89A": {
+    "dataType": "string"
+  }
+}

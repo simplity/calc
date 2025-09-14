@@ -1,0 +1,12 @@
+**Pending Features**
+- variable syntax should allow '.' and '[n]' in variable names
+    - variable.valriable
+    - variable[variable]
+    
+- built-in functions
+    - column_sum()
+    - column_average()
+    - column_max()
+    - column_min()
+    - column_count()
+    - column_concat()

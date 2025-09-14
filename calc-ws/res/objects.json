@@ -1,0 +1,2498 @@
+{
+  "CreationInfo": {
+    "IntermediaryCity": {
+      "name": "IntermediaryCity",
+      "type": {
+        "dataType": "string"
+      }
+    },
+    "JSONCreationDate": {
+      "name": "JSONCreationDate",
+      "type": {
+        "dataType": "string"
+      }
+    },
+    "Digest": {
+      "name": "Digest",
+      "type": {
+        "dataType": "string"
+      }
+    },
+    "SWVersionNo": {
+      "name": "SWVersionNo",
+      "type": {
+        "dataType": "string"
+      }
+    },
+    "SWCreatedBy": {
+      "name": "SWCreatedBy",
+      "type": {
+        "dataType": "string"
+      }
+    },
+    "JSONCreatedBy": {
+      "name": "JSONCreatedBy",
+      "type": {
+        "dataType": "string"
+      }
+    }
+  },
+  "Form_ITR1": {
+    "SchemaVer": {
+      "name": "SchemaVer",
+      "type": {
+        "dataType": "string"
+      }
+    },
+    "Description": {
+      "name": "Description",
+      "type": {
+        "dataType": "string"
+      }
+    },
+    "FormVer": {
+      "name": "FormVer",
+      "type": {
+        "dataType": "string"
+      }
+    },
+    "AssessmentYear": {
+      "name": "AssessmentYear",
+      "type": {
+        "dataType": "string"
+      }
+    },
+    "FormName": {
+      "name": "FormName",
+      "type": {
+        "dataType": "string"
+      }
+    }
+  },
+  "AssesseeName": {
+    "SurNameOrOrgName": {
+      "name": "SurNameOrOrgName",
+      "type": {
+        "dataType": "string"
+      }
+    },
+    "FirstName": {
+      "name": "FirstName",
+      "type": {
+        "dataType": "string"
+      }
+    },
+    "MiddleName": {
+      "name": "MiddleName",
+      "type": {
+        "dataType": "string"
+      }
+    }
+  },
+  "Address": {
+    "MobileNo": {
+      "name": "MobileNo",
+      "type": {
+        "dataType": "number"
+      }
+    },
+    "ZipCode": {
+      "name": "ZipCode",
+      "type": {
+        "dataType": "string"
+      }
+    },
+    "StateCode": {
+      "name": "StateCode",
+      "type": {
+        "dataType": "enum",
+        "typeDefinition": "Address__StateCode"
+      }
+    },
+    "RoadOrStreet": {
+      "name": "RoadOrStreet",
+      "type": {
+        "dataType": "string"
+      }
+    },
+    "ResidenceName": {
+      "name": "ResidenceName",
+      "type": {
+        "dataType": "string"
+      }
+    },
+    "CountryCode": {
+      "name": "CountryCode",
+      "type": {
+        "dataType": "enum",
+        "typeDefinition": "CountryCode"
+      }
+    },
+    "LocalityOrArea": {
+      "name": "LocalityOrArea",
+      "type": {
+        "dataType": "string"
+      }
+    },
+    "ResidenceNo": {
+      "name": "ResidenceNo",
+      "type": {
+        "dataType": "string"
+      }
+    },
+    "CityOrTownOrDistrict": {
+      "name": "CityOrTownOrDistrict",
+      "type": {
+        "dataType": "string"
+      }
+    },
+    "EmailAddress": {
+      "name": "EmailAddress",
+      "type": {
+        "dataType": "string"
+      }
+    },
+    "PinCode": {
+      "name": "PinCode",
+      "type": {
+        "dataType": "number"
+      }
+    },
+    "CountryCodeMobile": {
+      "name": "CountryCodeMobile",
+      "type": {
+        "dataType": "number"
+      }
+    }
+  },
+  "PersonalInfo": {
+    "EmployerCategory": {
+      "name": "EmployerCategory",
+      "type": {
+        "dataType": "enum",
+        "typeDefinition": "PersonalInfo__EmployerCategory"
+      }
+    },
+    "Address": {
+      "name": "Address",
+      "type": {
+        "dataType": "object",
+        "typeDefinition": "Address"
+      }
+    },
+    "DOB": {
+      "name": "DOB",
+      "type": {
+        "dataType": "string"
+      }
+    },
+    "AadhaarCardNo": {
+      "name": "AadhaarCardNo",
+      "type": {
+        "dataType": "string"
+      }
+    },
+    "AssesseeName": {
+      "name": "AssesseeName",
+      "type": {
+        "dataType": "object",
+        "typeDefinition": "AssesseeName"
+      }
+    },
+    "PAN": {
+      "name": "PAN",
+      "type": {
+        "dataType": "string"
+      }
+    }
+  },
+  "FilingStatus": {
+    "IncrExpAggAmt1LkElctrctyPrYrFlg": {
+      "name": "IncrExpAggAmt1LkElctrctyPrYrFlg",
+      "type": {
+        "dataType": "string"
+      }
+    },
+    "IncrExpAggAmt2LkTrvFrgnCntryFlg": {
+      "name": "IncrExpAggAmt2LkTrvFrgnCntryFlg",
+      "type": {
+        "dataType": "string"
+      }
+    },
+    "SeventhProvisio139": {
+      "name": "SeventhProvisio139",
+      "type": {
+        "dataType": "string"
+      }
+    },
+    "OrigRetFiledDate": {
+      "name": "OrigRetFiledDate",
+      "type": {
+        "dataType": "string"
+      }
+    },
+    "OptOutNewTaxRegime": {
+      "name": "OptOutNewTaxRegime",
+      "type": {
+        "dataType": "string"
+      }
+    },
+    "AmtSeventhProvisio139ii": {
+      "name": "AmtSeventhProvisio139ii",
+      "type": {
+        "dataType": "number"
+      }
+    },
+    "AmtSeventhProvisio139iii": {
+      "name": "AmtSeventhProvisio139iii",
+      "type": {
+        "dataType": "number"
+      }
+    },
+    "NoticeNo": {
+      "name": "NoticeNo",
+      "type": {
+        "dataType": "string"
+      }
+    },
+    "ItrFilingDueDate": {
+      "name": "ItrFilingDueDate",
+      "type": {
+        "dataType": "string"
+      }
+    },
+    "clauseiv7provisio139iDtls": {
+      "name": "clauseiv7provisio139iDtls",
+      "type": {
+        "dataType": "array",
+        "typeDefinition": "FilingStatus__clauseiv7provisio139iDtls"
+      }
+    },
+    "ReturnFileSec": {
+      "name": "ReturnFileSec",
+      "type": {
+        "dataType": "enum",
+        "typeDefinition": "FilingStatus__ReturnFileSec"
+      }
+    },
+    "clauseiv7provisio139i": {
+      "name": "clauseiv7provisio139i",
+      "type": {
+        "dataType": "string"
+      }
+    },
+    "ReceiptNo": {
+      "name": "ReceiptNo",
+      "type": {
+        "dataType": "string"
+      }
+    },
+    "NoticeDateUnderSec": {
+      "name": "NoticeDateUnderSec",
+      "type": {
+        "dataType": "string"
+      }
+    }
+  },
+  "ITR1_IncomeDeductions__AllwncExemptUs10": {
+    "TotalAllwncExemptUs10": {
+      "name": "TotalAllwncExemptUs10",
+      "type": {
+        "dataType": "number"
+      }
+    },
+    "AllwncExemptUs10Dtls": {
+      "name": "AllwncExemptUs10Dtls",
+      "type": {
+        "dataType": "array",
+        "typeDefinition": "ITR1_IncomeDeductions__AllwncExemptUs10__AllwncExemptUs10Dtls"
+      }
+    }
+  },
+  "ITR1_IncomeDeductions__OthersInc": {
+    "OthersIncDtlsOthSrc": {
+      "name": "OthersIncDtlsOthSrc",
+      "type": {
+        "dataType": "array",
+        "typeDefinition": "ITR1_IncomeDeductions__OthersInc__OthersIncDtlsOthSrc"
+      }
+    }
+  },
+  "UsrDeductUndChapVIAType": {
+    "Section80EE": {
+      "name": "Section80EE",
+      "type": {
+        "dataType": "number"
+      }
+    },
+    "Section80GG": {
+      "name": "Section80GG",
+      "type": {
+        "dataType": "number"
+      }
+    },
+    "Section80EEA": {
+      "name": "Section80EEA",
+      "type": {
+        "dataType": "number"
+      }
+    },
+    "Section80GGA": {
+      "name": "Section80GGA",
+      "type": {
+        "dataType": "number"
+      }
+    },
+    "Section80EEB": {
+      "name": "Section80EEB",
+      "type": {
+        "dataType": "number"
+      }
+    },
+    "Section80CCC": {
+      "name": "Section80CCC",
+      "type": {
+        "dataType": "number"
+      }
+    },
+    "Section80GGC": {
+      "name": "Section80GGC",
+      "type": {
+        "dataType": "number"
+      }
+    },
+    "Section80U": {
+      "name": "Section80U",
+      "type": {
+        "dataType": "number"
+      }
+    },
+    "PRANNum": {
+      "name": "PRANNum",
+      "type": {
+        "dataType": "string"
+      }
+    },
+    "TotalChapVIADeductions": {
+      "name": "TotalChapVIADeductions",
+      "type": {
+        "dataType": "number"
+      }
+    },
+    "Section80C": {
+      "name": "Section80C",
+      "type": {
+        "dataType": "number"
+      }
+    },
+    "Section80D": {
+      "name": "Section80D",
+      "type": {
+        "dataType": "number"
+      }
+    },
+    "NameOfSpecDisease80DDB": {
+      "name": "NameOfSpecDisease80DDB",
+      "type": {
+        "dataType": "enum",
+        "typeDefinition": "UsrDeductUndChapVIAType__NameOfSpecDisease80DDB"
+      }
+    },
+    "Section80G": {
+      "name": "Section80G",
+      "type": {
+        "dataType": "number"
+      }
+    },
+    "Section80E": {
+      "name": "Section80E",
+      "type": {
+        "dataType": "number"
+      }
+    },
+    "Section80DD": {
+      "name": "Section80DD",
+      "type": {
+        "dataType": "number"
+      }
+    },
+    "Section80TTA": {
+      "name": "Section80TTA",
+      "type": {
+        "dataType": "number"
+      }
+    },
+    "Section80DDB": {
+      "name": "Section80DDB",
+      "type": {
+        "dataType": "number"
+      }
+    },
+    "Section80TTB": {
+      "name": "Section80TTB",
+      "type": {
+        "dataType": "number"
+      }
+    },
+    "Section80DDBUsrType": {
+      "name": "Section80DDBUsrType",
+      "type": {
+        "dataType": "enum",
+        "typeDefinition": "UsrDeductUndChapVIAType__Section80DDBUsrType"
+      }
+    },
+    "Section80CCDEmployer": {
+      "name": "Section80CCDEmployer",
+      "type": {
+        "dataType": "number"
+      }
+    },
+    "Section80CCD1B": {
+      "name": "Section80CCD1B",
+      "type": {
+        "dataType": "number"
+      }
+    },
+    "AnyOthSec80CCH": {
+      "name": "AnyOthSec80CCH",
+      "type": {
+        "dataType": "number"
+      }
+    },
+    "Form10BAAckNum": {
+      "name": "Form10BAAckNum",
+      "type": {
+        "dataType": "string"
+      }
+    },
+    "Section80CCDEmployeeOrSE": {
+      "name": "Section80CCDEmployeeOrSE",
+      "type": {
+        "dataType": "number"
+      }
+    }
+  },
+  "DeductUndChapVIAType": {
+    "Section80DD": {
+      "name": "Section80DD",
+      "type": {
+        "dataType": "number"
+      }
+    },
+    "Section80EE": {
+      "name": "Section80EE",
+      "type": {
+        "dataType": "number"
+      }
+    },
+    "Section80GG": {
+      "name": "Section80GG",
+      "type": {
+        "dataType": "number"
+      }
+    },
+    "Section80EEA": {
+      "name": "Section80EEA",
+      "type": {
+        "dataType": "number"
+      }
+    },
+    "Section80GGA": {
+      "name": "Section80GGA",
+      "type": {
+        "dataType": "number"
+      }
+    },
+    "Section80TTA": {
+      "name": "Section80TTA",
+      "type": {
+        "dataType": "number"
+      }
+    },
+    "Section80DDB": {
+      "name": "Section80DDB",
+      "type": {
+        "dataType": "number"
+      }
+    },
+    "Section80EEB": {
+      "name": "Section80EEB",
+      "type": {
+        "dataType": "number"
+      }
+    },
+    "Section80TTB": {
+      "name": "Section80TTB",
+      "type": {
+        "dataType": "number"
+      }
+    },
+    "Section80CCC": {
+      "name": "Section80CCC",
+      "type": {
+        "dataType": "number"
+      }
+    },
+    "Section80GGC": {
+      "name": "Section80GGC",
+      "type": {
+        "dataType": "number"
+      }
+    },
+    "Section80U": {
+      "name": "Section80U",
+      "type": {
+        "dataType": "number"
+      }
+    },
+    "Section80CCDEmployer": {
+      "name": "Section80CCDEmployer",
+      "type": {
+        "dataType": "number"
+      }
+    },
+    "TotalChapVIADeductions": {
+      "name": "TotalChapVIADeductions",
+      "type": {
+        "dataType": "number"
+      }
+    },
+    "Section80C": {
+      "name": "Section80C",
+      "type": {
+        "dataType": "number"
+      }
+    },
+    "Section80D": {
+      "name": "Section80D",
+      "type": {
+        "dataType": "number"
+      }
+    },
+    "Section80CCD1B": {
+      "name": "Section80CCD1B",
+      "type": {
+        "dataType": "number"
+      }
+    },
+    "Section80G": {
+      "name": "Section80G",
+      "type": {
+        "dataType": "number"
+      }
+    },
+    "AnyOthSec80CCH": {
+      "name": "AnyOthSec80CCH",
+      "type": {
+        "dataType": "number"
+      }
+    },
+    "Section80E": {
+      "name": "Section80E",
+      "type": {
+        "dataType": "number"
+      }
+    },
+    "Section80CCDEmployeeOrSE": {
+      "name": "Section80CCDEmployeeOrSE",
+      "type": {
+        "dataType": "number"
+      }
+    }
+  },
+  "ITR1_IncomeDeductions__ExemptIncAgriOthUs10": {
+    "ExemptIncAgriOthUs10Total": {
+      "name": "ExemptIncAgriOthUs10Total",
+      "type": {
+        "dataType": "number"
+      }
+    },
+    "ExemptIncAgriOthUs10Dtls": {
+      "name": "ExemptIncAgriOthUs10Dtls",
+      "type": {
+        "dataType": "array",
+        "typeDefinition": "ITR1_IncomeDeductions__ExemptIncAgriOthUs10__ExemptIncAgriOthUs10Dtls"
+      }
+    }
+  },
+  "ITR1_IncomeDeductions": {
+    "Increliefus89A": {
+      "name": "Increliefus89A",
+      "type": {
+        "dataType": "number"
+      }
+    },
+    "Salary": {
+      "name": "Salary",
+      "type": {
+        "dataType": "number"
+      }
+    },
+    "GrossSalary": {
+      "name": "GrossSalary",
+      "type": {
+        "dataType": "number"
+      }
+    },
+    "NetSalary": {
+      "name": "NetSalary",
+      "type": {
+        "dataType": "number"
+      }
+    },
+    "ProfessionalTaxUs16iii": {
+      "name": "ProfessionalTaxUs16iii",
+      "type": {
+        "dataType": "number"
+      }
+    },
+    "GrossTotIncome": {
+      "name": "GrossTotIncome",
+      "type": {
+        "dataType": "number"
+      }
+    },
+    "UsrDeductUndChapVIA": {
+      "name": "UsrDeductUndChapVIA",
+      "type": {
+        "dataType": "object",
+        "typeDefinition": "UsrDeductUndChapVIAType"
+      }
+    },
+    "IncomeFromSal": {
+      "name": "IncomeFromSal",
+      "type": {
+        "dataType": "number"
+      }
+    },
+    "TaxPaidlocalAuth": {
+      "name": "TaxPaidlocalAuth",
+      "type": {
+        "dataType": "number"
+      }
+    },
+    "TotalIncome": {
+      "name": "TotalIncome",
+      "type": {
+        "dataType": "number"
+      }
+    },
+    "AnnualValue": {
+      "name": "AnnualValue",
+      "type": {
+        "dataType": "number"
+      }
+    },
+    "TypeOfHP": {
+      "name": "TypeOfHP",
+      "type": {
+        "dataType": "string"
+      }
+    },
+    "DeductionUs57iia": {
+      "name": "DeductionUs57iia",
+      "type": {
+        "dataType": "number"
+      }
+    },
+    "GrossTotIncomeIncLTCG112A": {
+      "name": "GrossTotIncomeIncLTCG112A",
+      "type": {
+        "dataType": "number"
+      }
+    },
+    "OthersInc": {
+      "name": "OthersInc",
+      "type": {
+        "dataType": "object",
+        "typeDefinition": "ITR1_IncomeDeductions__OthersInc"
+      }
+    },
+    "DeductUndChapVIA": {
+      "name": "DeductUndChapVIA",
+      "type": {
+        "dataType": "object",
+        "typeDefinition": "DeductUndChapVIAType"
+      }
+    },
+    "InterestPayable": {
+      "name": "InterestPayable",
+      "type": {
+        "dataType": "number"
+      }
+    },
+    "TotalIncomeOfHP": {
+      "name": "TotalIncomeOfHP",
+      "type": {
+        "dataType": "number"
+      }
+    },
+    "IncomeNotified89AType": {
+      "name": "IncomeNotified89AType",
+      "type": {
+        "dataType": "array",
+        "typeDefinition": "ITR1_IncomeDeductions__IncomeNotified89AType"
+      }
+    },
+    "AllwncExemptUs10": {
+      "name": "AllwncExemptUs10",
+      "type": {
+        "dataType": "object",
+        "typeDefinition": "ITR1_IncomeDeductions__AllwncExemptUs10"
+      }
+    },
+    "ExemptIncAgriOthUs10": {
+      "name": "ExemptIncAgriOthUs10",
+      "type": {
+        "dataType": "object",
+        "typeDefinition": "ITR1_IncomeDeductions__ExemptIncAgriOthUs10"
+      }
+    },
+    "IncomeNotifiedOther89A": {
+      "name": "IncomeNotifiedOther89A",
+      "type": {
+        "dataType": "number"
+      }
+    },
+    "StandardDeduction": {
+      "name": "StandardDeduction",
+      "type": {
+        "dataType": "number"
+      }
+    },
+    "ProfitsInSalary": {
+      "name": "ProfitsInSalary",
+      "type": {
+        "dataType": "number"
+      }
+    },
+    "DeductionUs16": {
+      "name": "DeductionUs16",
+      "type": {
+        "dataType": "number"
+      }
+    },
+    "IncomeNotified89A": {
+      "name": "IncomeNotified89A",
+      "type": {
+        "dataType": "number"
+      }
+    },
+    "GrossRentReceived": {
+      "name": "GrossRentReceived",
+      "type": {
+        "dataType": "number"
+      }
+    },
+    "EntertainmentAlw16ii": {
+      "name": "EntertainmentAlw16ii",
+      "type": {
+        "dataType": "number"
+      }
+    },
+    "ArrearsUnrealizedRentRcvd": {
+      "name": "ArrearsUnrealizedRentRcvd",
+      "type": {
+        "dataType": "number"
+      }
+    },
+    "DeductionUs16ia": {
+      "name": "DeductionUs16ia",
+      "type": {
+        "dataType": "number"
+      }
+    },
+    "Increliefus89AOS": {
+      "name": "Increliefus89AOS",
+      "type": {
+        "dataType": "number"
+      }
+    },
+    "PerquisitesValue": {
+      "name": "PerquisitesValue",
+      "type": {
+        "dataType": "number"
+      }
+    },
+    "IncomeOthSrc": {
+      "name": "IncomeOthSrc",
+      "type": {
+        "dataType": "number"
+      }
+    }
+  },
+  "IntrstPay": {
+    "IntrstPayUs234C": {
+      "name": "IntrstPayUs234C",
+      "type": {
+        "dataType": "number"
+      }
+    },
+    "IntrstPayUs234A": {
+      "name": "IntrstPayUs234A",
+      "type": {
+        "dataType": "number"
+      }
+    },
+    "LateFilingFee234F": {
+      "name": "LateFilingFee234F",
+      "type": {
+        "dataType": "number"
+      }
+    },
+    "IntrstPayUs234B": {
+      "name": "IntrstPayUs234B",
+      "type": {
+        "dataType": "number"
+      }
+    }
+  },
+  "ITR1_TaxComputation": {
+    "TotTaxPlusIntrstPay": {
+      "name": "TotTaxPlusIntrstPay",
+      "type": {
+        "dataType": "number"
+      }
+    },
+    "Rebate87A": {
+      "name": "Rebate87A",
+      "type": {
+        "dataType": "number"
+      }
+    },
+    "TotalIntrstPay": {
+      "name": "TotalIntrstPay",
+      "type": {
+        "dataType": "number"
+      }
+    },
+    "EducationCess": {
+      "name": "EducationCess",
+      "type": {
+        "dataType": "number"
+      }
+    },
+    "TaxPayableOnRebate": {
+      "name": "TaxPayableOnRebate",
+      "type": {
+        "dataType": "number"
+      }
+    },
+    "GrossTaxLiability": {
+      "name": "GrossTaxLiability",
+      "type": {
+        "dataType": "number"
+      }
+    },
+    "NetTaxLiability": {
+      "name": "NetTaxLiability",
+      "type": {
+        "dataType": "number"
+      }
+    },
+    "Section89": {
+      "name": "Section89",
+      "type": {
+        "dataType": "number"
+      }
+    },
+    "TotalTaxPayable": {
+      "name": "TotalTaxPayable",
+      "type": {
+        "dataType": "number"
+      }
+    },
+    "IntrstPay": {
+      "name": "IntrstPay",
+      "type": {
+        "dataType": "object",
+        "typeDefinition": "IntrstPay"
+      }
+    }
+  },
+  "TaxesPaid": {
+    "TDS": {
+      "name": "TDS",
+      "type": {
+        "dataType": "number"
+      }
+    },
+    "TCS": {
+      "name": "TCS",
+      "type": {
+        "dataType": "number"
+      }
+    },
+    "AdvanceTax": {
+      "name": "AdvanceTax",
+      "type": {
+        "dataType": "number"
+      }
+    },
+    "SelfAssessmentTax": {
+      "name": "SelfAssessmentTax",
+      "type": {
+        "dataType": "number"
+      }
+    },
+    "TotalTaxesPaid": {
+      "name": "TotalTaxesPaid",
+      "type": {
+        "dataType": "number"
+      }
+    }
+  },
+  "TaxPaid": {
+    "BalTaxPayable": {
+      "name": "BalTaxPayable",
+      "type": {
+        "dataType": "number"
+      }
+    },
+    "TaxesPaid": {
+      "name": "TaxesPaid",
+      "type": {
+        "dataType": "object",
+        "typeDefinition": "TaxesPaid"
+      }
+    }
+  },
+  "BankAccountDtls": {
+    "AddtnlBankDetails": {
+      "name": "AddtnlBankDetails",
+      "type": {
+        "dataType": "array",
+        "typeDefinition": "BankAccountDtls__AddtnlBankDetails"
+      }
+    }
+  },
+  "Refund": {
+    "BankAccountDtls": {
+      "name": "BankAccountDtls",
+      "type": {
+        "dataType": "object",
+        "typeDefinition": "BankAccountDtls"
+      }
+    },
+    "RefundDue": {
+      "name": "RefundDue",
+      "type": {
+        "dataType": "number"
+      }
+    }
+  },
+  "Schedule80G__Don100Percent": {
+    "DoneeWithPan": {
+      "name": "DoneeWithPan",
+      "type": {
+        "dataType": "array",
+        "typeDefinition": "Schedule80G__Don100Percent__DoneeWithPan"
+      }
+    },
+    "TotDon100PercentOtherMode": {
+      "name": "TotDon100PercentOtherMode",
+      "type": {
+        "dataType": "number"
+      }
+    },
+    "TotDon100PercentCash": {
+      "name": "TotDon100PercentCash",
+      "type": {
+        "dataType": "number"
+      }
+    },
+    "TotDon100Percent": {
+      "name": "TotDon100Percent",
+      "type": {
+        "dataType": "number"
+      }
+    },
+    "TotEligibleDon100Percent": {
+      "name": "TotEligibleDon100Percent",
+      "type": {
+        "dataType": "number"
+      }
+    }
+  },
+  "Schedule80G__Don50PercentNoApprReqd": {
+    "TotEligibleDon50Percent": {
+      "name": "TotEligibleDon50Percent",
+      "type": {
+        "dataType": "number"
+      }
+    },
+    "DoneeWithPan": {
+      "name": "DoneeWithPan",
+      "type": {
+        "dataType": "array",
+        "typeDefinition": "Schedule80G__Don50PercentNoApprReqd__DoneeWithPan"
+      }
+    },
+    "TotDon50PercentNoApprReqdCash": {
+      "name": "TotDon50PercentNoApprReqdCash",
+      "type": {
+        "dataType": "number"
+      }
+    },
+    "TotDon50PercentNoApprReqdOtherMode": {
+      "name": "TotDon50PercentNoApprReqdOtherMode",
+      "type": {
+        "dataType": "number"
+      }
+    },
+    "TotDon50PercentNoApprReqd": {
+      "name": "TotDon50PercentNoApprReqd",
+      "type": {
+        "dataType": "number"
+      }
+    }
+  },
+  "Schedule80G__Don100PercentApprReqd": {
+    "TotEligibleDon100PercentApprReqd": {
+      "name": "TotEligibleDon100PercentApprReqd",
+      "type": {
+        "dataType": "number"
+      }
+    },
+    "TotDon100PercentApprReqdCash": {
+      "name": "TotDon100PercentApprReqdCash",
+      "type": {
+        "dataType": "number"
+      }
+    },
+    "TotDon100PercentApprReqdOtherMode": {
+      "name": "TotDon100PercentApprReqdOtherMode",
+      "type": {
+        "dataType": "number"
+      }
+    },
+    "DoneeWithPan": {
+      "name": "DoneeWithPan",
+      "type": {
+        "dataType": "array",
+        "typeDefinition": "Schedule80G__Don100PercentApprReqd__DoneeWithPan"
+      }
+    },
+    "TotDon100PercentApprReqd": {
+      "name": "TotDon100PercentApprReqd",
+      "type": {
+        "dataType": "number"
+      }
+    }
+  },
+  "Schedule80G__Don50PercentApprReqd": {
+    "DoneeWithPan": {
+      "name": "DoneeWithPan",
+      "type": {
+        "dataType": "array",
+        "typeDefinition": "Schedule80G__Don50PercentApprReqd__DoneeWithPan"
+      }
+    },
+    "TotDon50PercentApprReqd": {
+      "name": "TotDon50PercentApprReqd",
+      "type": {
+        "dataType": "number"
+      }
+    },
+    "TotDon50PercentApprReqdCash": {
+      "name": "TotDon50PercentApprReqdCash",
+      "type": {
+        "dataType": "number"
+      }
+    },
+    "TotEligibleDon50PercentApprReqd": {
+      "name": "TotEligibleDon50PercentApprReqd",
+      "type": {
+        "dataType": "number"
+      }
+    },
+    "TotDon50PercentApprReqdOtherMode": {
+      "name": "TotDon50PercentApprReqdOtherMode",
+      "type": {
+        "dataType": "number"
+      }
+    }
+  },
+  "Schedule80G": {
+    "Don100PercentApprReqd": {
+      "name": "Don100PercentApprReqd",
+      "type": {
+        "dataType": "object",
+        "typeDefinition": "Schedule80G__Don100PercentApprReqd"
+      }
+    },
+    "Don100Percent": {
+      "name": "Don100Percent",
+      "type": {
+        "dataType": "object",
+        "typeDefinition": "Schedule80G__Don100Percent"
+      }
+    },
+    "TotalDonationsUs80GOtherMode": {
+      "name": "TotalDonationsUs80GOtherMode",
+      "type": {
+        "dataType": "number"
+      }
+    },
+    "Don50PercentApprReqd": {
+      "name": "Don50PercentApprReqd",
+      "type": {
+        "dataType": "object",
+        "typeDefinition": "Schedule80G__Don50PercentApprReqd"
+      }
+    },
+    "TotalDonationsUs80G": {
+      "name": "TotalDonationsUs80G",
+      "type": {
+        "dataType": "number"
+      }
+    },
+    "TotalDonationsUs80GCash": {
+      "name": "TotalDonationsUs80GCash",
+      "type": {
+        "dataType": "number"
+      }
+    },
+    "TotalEligibleDonationsUs80G": {
+      "name": "TotalEligibleDonationsUs80G",
+      "type": {
+        "dataType": "number"
+      }
+    },
+    "Don50PercentNoApprReqd": {
+      "name": "Don50PercentNoApprReqd",
+      "type": {
+        "dataType": "object",
+        "typeDefinition": "Schedule80G__Don50PercentNoApprReqd"
+      }
+    }
+  },
+  "Schedule80GGA": {
+    "DonationDtlsSciRsrchRuralDev": {
+      "name": "DonationDtlsSciRsrchRuralDev",
+      "type": {
+        "dataType": "array",
+        "typeDefinition": "Schedule80GGA__DonationDtlsSciRsrchRuralDev"
+      }
+    },
+    "TotalEligibleDonationAmt80GGA": {
+      "name": "TotalEligibleDonationAmt80GGA",
+      "type": {
+        "dataType": "number"
+      }
+    },
+    "TotalDonationAmtCash80GGA": {
+      "name": "TotalDonationAmtCash80GGA",
+      "type": {
+        "dataType": "number"
+      }
+    },
+    "TotalDonationsUs80GGA": {
+      "name": "TotalDonationsUs80GGA",
+      "type": {
+        "dataType": "number"
+      }
+    },
+    "TotalDonationAmtOtherMode80GGA": {
+      "name": "TotalDonationAmtOtherMode80GGA",
+      "type": {
+        "dataType": "number"
+      }
+    }
+  },
+  "Schedule80GGC": {
+    "TotalDonationsUs80GGC": {
+      "name": "TotalDonationsUs80GGC",
+      "type": {
+        "dataType": "number"
+      }
+    },
+    "TotalEligibleDonationAmt80GGC": {
+      "name": "TotalEligibleDonationAmt80GGC",
+      "type": {
+        "dataType": "number"
+      }
+    },
+    "TotalDonationAmtOtherMode80GGC": {
+      "name": "TotalDonationAmtOtherMode80GGC",
+      "type": {
+        "dataType": "number"
+      }
+    },
+    "Schedule80GGCDetails": {
+      "name": "Schedule80GGCDetails",
+      "type": {
+        "dataType": "array",
+        "typeDefinition": "Schedule80GGC__Schedule80GGCDetails"
+      }
+    },
+    "TotalDonationAmtCash80GGC": {
+      "name": "TotalDonationAmtCash80GGC",
+      "type": {
+        "dataType": "number"
+      }
+    }
+  },
+  "Schedule80D__Sec80DSelfFamSrCtznHealth__Sec80DSelfFamHIDtls": {
+    "Sch80DInsDtls": {
+      "name": "Sch80DInsDtls",
+      "type": {
+        "dataType": "array",
+        "typeDefinition": "Schedule80D__Sec80DSelfFamSrCtznHealth__Sec80DSelfFamHIDtls__Sch80DInsDtls"
+      }
+    },
+    "TotalPayments": {
+      "name": "TotalPayments",
+      "type": {
+        "dataType": "number"
+      }
+    }
+  },
+  "Schedule80D__Sec80DSelfFamSrCtznHealth__Sec80DSelfFamSrCtznHIDtls": {
+    "Sch80DInsDtls": {
+      "name": "Sch80DInsDtls",
+      "type": {
+        "dataType": "array",
+        "typeDefinition": "Schedule80D__Sec80DSelfFamSrCtznHealth__Sec80DSelfFamSrCtznHIDtls__Sch80DInsDtls"
+      }
+    },
+    "TotalPayments": {
+      "name": "TotalPayments",
+      "type": {
+        "dataType": "number"
+      }
+    }
+  },
+  "Schedule80D__Sec80DSelfFamSrCtznHealth__Sec80DParentsHIDtls": {
+    "Sch80DInsDtls": {
+      "name": "Sch80DInsDtls",
+      "type": {
+        "dataType": "array",
+        "typeDefinition": "Schedule80D__Sec80DSelfFamSrCtznHealth__Sec80DParentsHIDtls__Sch80DInsDtls"
+      }
+    },
+    "TotalPayments": {
+      "name": "TotalPayments",
+      "type": {
+        "dataType": "number"
+      }
+    }
+  },
+  "Schedule80D__Sec80DSelfFamSrCtznHealth__Sec80DParentsSrCtznHIDtls": {
+    "Sch80DInsDtls": {
+      "name": "Sch80DInsDtls",
+      "type": {
+        "dataType": "array",
+        "typeDefinition": "Schedule80D__Sec80DSelfFamSrCtznHealth__Sec80DParentsSrCtznHIDtls__Sch80DInsDtls"
+      }
+    },
+    "TotalPayments": {
+      "name": "TotalPayments",
+      "type": {
+        "dataType": "number"
+      }
+    }
+  },
+  "Schedule80D__Sec80DSelfFamSrCtznHealth": {
+    "SelfAndFamilySeniorCitizen": {
+      "name": "SelfAndFamilySeniorCitizen",
+      "type": {
+        "dataType": "number"
+      }
+    },
+    "Sec80DParentsHIDtls": {
+      "name": "Sec80DParentsHIDtls",
+      "type": {
+        "dataType": "object",
+        "typeDefinition": "Schedule80D__Sec80DSelfFamSrCtznHealth__Sec80DParentsHIDtls"
+      }
+    },
+    "HealthInsPremSlfFam": {
+      "name": "HealthInsPremSlfFam",
+      "type": {
+        "dataType": "number"
+      }
+    },
+    "ParentsSeniorCitizenFlag": {
+      "name": "ParentsSeniorCitizenFlag",
+      "type": {
+        "dataType": "string"
+      }
+    },
+    "SeniorCitizenFlag": {
+      "name": "SeniorCitizenFlag",
+      "type": {
+        "dataType": "string"
+      }
+    },
+    "Parents": {
+      "name": "Parents",
+      "type": {
+        "dataType": "number"
+      }
+    },
+    "HlthInsPremParents": {
+      "name": "HlthInsPremParents",
+      "type": {
+        "dataType": "number"
+      }
+    },
+    "MedicalExpSlfFamSrCtzn": {
+      "name": "MedicalExpSlfFamSrCtzn",
+      "type": {
+        "dataType": "number"
+      }
+    },
+    "MedicalExpParentsSrCtzn": {
+      "name": "MedicalExpParentsSrCtzn",
+      "type": {
+        "dataType": "number"
+      }
+    },
+    "HlthInsPremSlfFamSrCtzn": {
+      "name": "HlthInsPremSlfFamSrCtzn",
+      "type": {
+        "dataType": "number"
+      }
+    },
+    "ParentsSeniorCitizen": {
+      "name": "ParentsSeniorCitizen",
+      "type": {
+        "dataType": "number"
+      }
+    },
+    "HlthInsPremParentsSrCtzn": {
+      "name": "HlthInsPremParentsSrCtzn",
+      "type": {
+        "dataType": "number"
+      }
+    },
+    "Sec80DParentsSrCtznHIDtls": {
+      "name": "Sec80DParentsSrCtznHIDtls",
+      "type": {
+        "dataType": "object",
+        "typeDefinition": "Schedule80D__Sec80DSelfFamSrCtznHealth__Sec80DParentsSrCtznHIDtls"
+      }
+    },
+    "EligibleAmountOfDedn": {
+      "name": "EligibleAmountOfDedn",
+      "type": {
+        "dataType": "number"
+      }
+    },
+    "PrevHlthChckUpSlfFamSrCtzn": {
+      "name": "PrevHlthChckUpSlfFamSrCtzn",
+      "type": {
+        "dataType": "number"
+      }
+    },
+    "SelfAndFamily": {
+      "name": "SelfAndFamily",
+      "type": {
+        "dataType": "number"
+      }
+    },
+    "Sec80DSelfFamHIDtls": {
+      "name": "Sec80DSelfFamHIDtls",
+      "type": {
+        "dataType": "object",
+        "typeDefinition": "Schedule80D__Sec80DSelfFamSrCtznHealth__Sec80DSelfFamHIDtls"
+      }
+    },
+    "Sec80DSelfFamSrCtznHIDtls": {
+      "name": "Sec80DSelfFamSrCtznHIDtls",
+      "type": {
+        "dataType": "object",
+        "typeDefinition": "Schedule80D__Sec80DSelfFamSrCtznHealth__Sec80DSelfFamSrCtznHIDtls"
+      }
+    },
+    "PrevHlthChckUpParentsSrCtzn": {
+      "name": "PrevHlthChckUpParentsSrCtzn",
+      "type": {
+        "dataType": "number"
+      }
+    },
+    "PrevHlthChckUpParents": {
+      "name": "PrevHlthChckUpParents",
+      "type": {
+        "dataType": "number"
+      }
+    },
+    "PrevHlthChckUpSlfFam": {
+      "name": "PrevHlthChckUpSlfFam",
+      "type": {
+        "dataType": "number"
+      }
+    }
+  },
+  "Schedule80D": {
+    "Sec80DSelfFamSrCtznHealth": {
+      "name": "Sec80DSelfFamSrCtznHealth",
+      "type": {
+        "dataType": "object",
+        "typeDefinition": "Schedule80D__Sec80DSelfFamSrCtznHealth"
+      }
+    }
+  },
+  "Schedule80DD": {
+    "TypeOfDisability": {
+      "name": "TypeOfDisability",
+      "type": {
+        "dataType": "enum",
+        "typeDefinition": "Schedule80DD__TypeOfDisability"
+      }
+    },
+    "DependentAadhaar": {
+      "name": "DependentAadhaar",
+      "type": {
+        "dataType": "string"
+      }
+    },
+    "Form10IAAckNum": {
+      "name": "Form10IAAckNum",
+      "type": {
+        "dataType": "string"
+      }
+    },
+    "DependentType": {
+      "name": "DependentType",
+      "type": {
+        "dataType": "enum",
+        "typeDefinition": "Schedule80DD__DependentType"
+      }
+    },
+    "DependentPan": {
+      "name": "DependentPan",
+      "type": {
+        "dataType": "string"
+      }
+    },
+    "NatureOfDisability": {
+      "name": "NatureOfDisability",
+      "type": {
+        "dataType": "enum",
+        "typeDefinition": "Schedule80DD__NatureOfDisability"
+      }
+    },
+    "UDIDNum": {
+      "name": "UDIDNum",
+      "type": {
+        "dataType": "string"
+      }
+    },
+    "DeductionAmount": {
+      "name": "DeductionAmount",
+      "type": {
+        "dataType": "number"
+      }
+    }
+  },
+  "Schedule80U": {
+    "TypeOfDisability": {
+      "name": "TypeOfDisability",
+      "type": {
+        "dataType": "enum",
+        "typeDefinition": "Schedule80U__TypeOfDisability"
+      }
+    },
+    "Form10IAAckNum": {
+      "name": "Form10IAAckNum",
+      "type": {
+        "dataType": "string"
+      }
+    },
+    "NatureOfDisability": {
+      "name": "NatureOfDisability",
+      "type": {
+        "dataType": "enum",
+        "typeDefinition": "Schedule80U__NatureOfDisability"
+      }
+    },
+    "UDIDNum": {
+      "name": "UDIDNum",
+      "type": {
+        "dataType": "string"
+      }
+    },
+    "DeductionAmount": {
+      "name": "DeductionAmount",
+      "type": {
+        "dataType": "number"
+      }
+    }
+  },
+  "Schedule80E": {
+    "TotalInterest80E": {
+      "name": "TotalInterest80E",
+      "type": {
+        "dataType": "number"
+      }
+    },
+    "Schedule80EDtls": {
+      "name": "Schedule80EDtls",
+      "type": {
+        "dataType": "array",
+        "typeDefinition": "Schedule80E__Schedule80EDtls"
+      }
+    }
+  },
+  "Schedule80EE": {
+    "TotalInterest80EE": {
+      "name": "TotalInterest80EE",
+      "type": {
+        "dataType": "number"
+      }
+    },
+    "Schedule80EEDtls": {
+      "name": "Schedule80EEDtls",
+      "type": {
+        "dataType": "array",
+        "typeDefinition": "Schedule80EE__Schedule80EEDtls"
+      }
+    }
+  },
+  "Schedule80EEA": {
+    "PropStmpDtyVal": {
+      "name": "PropStmpDtyVal",
+      "type": {
+        "dataType": "number"
+      }
+    },
+    "TotalInterest80EEA": {
+      "name": "TotalInterest80EEA",
+      "type": {
+        "dataType": "number"
+      }
+    },
+    "Schedule80EEADtls": {
+      "name": "Schedule80EEADtls",
+      "type": {
+        "dataType": "array",
+        "typeDefinition": "Schedule80EEA__Schedule80EEADtls"
+      }
+    }
+  },
+  "Schedule80EEB": {
+    "TotalInterest80EEB": {
+      "name": "TotalInterest80EEB",
+      "type": {
+        "dataType": "number"
+      }
+    },
+    "Schedule80EEBDtls": {
+      "name": "Schedule80EEBDtls",
+      "type": {
+        "dataType": "array",
+        "typeDefinition": "Schedule80EEB__Schedule80EEBDtls"
+      }
+    }
+  },
+  "Schedule80C": {
+    "Schedule80CDtls": {
+      "name": "Schedule80CDtls",
+      "type": {
+        "dataType": "array",
+        "typeDefinition": "Schedule80C__Schedule80CDtls"
+      }
+    },
+    "TotalAmt": {
+      "name": "TotalAmt",
+      "type": {
+        "dataType": "number"
+      }
+    }
+  },
+  "ScheduleUs24B": {
+    "TotalInterestUs24B": {
+      "name": "TotalInterestUs24B",
+      "type": {
+        "dataType": "number"
+      }
+    },
+    "ScheduleUs24BDtls": {
+      "name": "ScheduleUs24BDtls",
+      "type": {
+        "dataType": "array",
+        "typeDefinition": "ScheduleUs24B__ScheduleUs24BDtls"
+      }
+    }
+  },
+  "ScheduleEA10_13A": {
+    "DearnessAllwnc": {
+      "name": "DearnessAllwnc",
+      "type": {
+        "dataType": "number"
+      }
+    },
+    "ActlHRARecv": {
+      "name": "ActlHRARecv",
+      "type": {
+        "dataType": "number"
+      }
+    },
+    "Sal40Or50Per": {
+      "name": "Sal40Or50Per",
+      "type": {
+        "dataType": "number"
+      }
+    },
+    "Placeofwork": {
+      "name": "Placeofwork",
+      "type": {
+        "dataType": "enum",
+        "typeDefinition": "ScheduleEA10_13A__Placeofwork"
+      }
+    },
+    "ActlRentPaid": {
+      "name": "ActlRentPaid",
+      "type": {
+        "dataType": "number"
+      }
+    },
+    "DtlsSalUsSec171": {
+      "name": "DtlsSalUsSec171",
+      "type": {
+        "dataType": "number"
+      }
+    },
+    "ActlRentPaid10Per": {
+      "name": "ActlRentPaid10Per",
+      "type": {
+        "dataType": "number"
+      }
+    },
+    "EligbleExmpAllwncUs13A": {
+      "name": "EligbleExmpAllwncUs13A",
+      "type": {
+        "dataType": "number"
+      }
+    },
+    "BasicSalary": {
+      "name": "BasicSalary",
+      "type": {
+        "dataType": "number"
+      }
+    }
+  },
+  "TDSonSalaries": {
+    "TDSonSalary": {
+      "name": "TDSonSalary",
+      "type": {
+        "dataType": "array",
+        "typeDefinition": "TDSonSalaries__TDSonSalary"
+      }
+    },
+    "TotalTDSonSalaries": {
+      "name": "TotalTDSonSalaries",
+      "type": {
+        "dataType": "number"
+      }
+    }
+  },
+  "TDSonOthThanSals": {
+    "TotalTDSonOthThanSals": {
+      "name": "TotalTDSonOthThanSals",
+      "type": {
+        "dataType": "number"
+      }
+    },
+    "TDSonOthThanSal": {
+      "name": "TDSonOthThanSal",
+      "type": {
+        "dataType": "array",
+        "typeDefinition": "TDSonOthThanSals__TDSonOthThanSal"
+      }
+    }
+  },
+  "ScheduleTDS3Dtls": {
+    "TDS3Details": {
+      "name": "TDS3Details",
+      "type": {
+        "dataType": "array",
+        "typeDefinition": "ScheduleTDS3Dtls__TDS3Details"
+      }
+    },
+    "TotalTDS3Details": {
+      "name": "TotalTDS3Details",
+      "type": {
+        "dataType": "number"
+      }
+    }
+  },
+  "ScheduleTCS": {
+    "TCS": {
+      "name": "TCS",
+      "type": {
+        "dataType": "array",
+        "typeDefinition": "ScheduleTCS__TCS"
+      }
+    },
+    "TotalSchTCS": {
+      "name": "TotalSchTCS",
+      "type": {
+        "dataType": "number"
+      }
+    }
+  },
+  "TaxPayments": {
+    "TaxPayment": {
+      "name": "TaxPayment",
+      "type": {
+        "dataType": "array",
+        "typeDefinition": "TaxPayments__TaxPayment"
+      }
+    },
+    "TotalTaxPayments": {
+      "name": "TotalTaxPayments",
+      "type": {
+        "dataType": "number"
+      }
+    }
+  },
+  "LTCG112A": {
+    "TotCstAcqisn": {
+      "name": "TotCstAcqisn",
+      "type": {
+        "dataType": "number"
+      }
+    },
+    "LongCap112A": {
+      "name": "LongCap112A",
+      "type": {
+        "dataType": "number"
+      }
+    },
+    "TotSaleCnsdrn": {
+      "name": "TotSaleCnsdrn",
+      "type": {
+        "dataType": "number"
+      }
+    }
+  },
+  "Verification__Declaration": {
+    "AssesseeVerName": {
+      "name": "AssesseeVerName",
+      "type": {
+        "dataType": "string"
+      }
+    },
+    "AssesseeVerPAN": {
+      "name": "AssesseeVerPAN",
+      "type": {
+        "dataType": "string"
+      }
+    },
+    "FatherName": {
+      "name": "FatherName",
+      "type": {
+        "dataType": "string"
+      }
+    }
+  },
+  "Verification": {
+    "Capacity": {
+      "name": "Capacity",
+      "type": {
+        "dataType": "enum",
+        "typeDefinition": "Verification__Capacity"
+      }
+    },
+    "Declaration": {
+      "name": "Declaration",
+      "type": {
+        "dataType": "object",
+        "typeDefinition": "Verification__Declaration"
+      }
+    },
+    "Place": {
+      "name": "Place",
+      "type": {
+        "dataType": "string"
+      }
+    }
+  },
+  "TaxReturnPreparer": {
+    "IdentificationNoOfTRP": {
+      "name": "IdentificationNoOfTRP",
+      "type": {
+        "dataType": "string"
+      }
+    },
+    "NameOfTRP": {
+      "name": "NameOfTRP",
+      "type": {
+        "dataType": "string"
+      }
+    },
+    "ReImbFrmGov": {
+      "name": "ReImbFrmGov",
+      "type": {
+        "dataType": "number"
+      }
+    }
+  },
+  "ITR1": {
+    "CreationInfo": {
+      "name": "CreationInfo",
+      "type": {
+        "dataType": "object",
+        "typeDefinition": "CreationInfo"
+      }
+    },
+    "Schedule80EEB": {
+      "name": "Schedule80EEB",
+      "type": {
+        "dataType": "object",
+        "typeDefinition": "Schedule80EEB"
+      }
+    },
+    "TDSonOthThanSals": {
+      "name": "TDSonOthThanSals",
+      "type": {
+        "dataType": "object",
+        "typeDefinition": "TDSonOthThanSals"
+      }
+    },
+    "TaxReturnPreparer": {
+      "name": "TaxReturnPreparer",
+      "type": {
+        "dataType": "object",
+        "typeDefinition": "TaxReturnPreparer"
+      }
+    },
+    "Schedule80GGA": {
+      "name": "Schedule80GGA",
+      "type": {
+        "dataType": "object",
+        "typeDefinition": "Schedule80GGA"
+      }
+    },
+    "Schedule80EEA": {
+      "name": "Schedule80EEA",
+      "type": {
+        "dataType": "object",
+        "typeDefinition": "Schedule80EEA"
+      }
+    },
+    "ScheduleTCS": {
+      "name": "ScheduleTCS",
+      "type": {
+        "dataType": "object",
+        "typeDefinition": "ScheduleTCS"
+      }
+    },
+    "Schedule80EE": {
+      "name": "Schedule80EE",
+      "type": {
+        "dataType": "object",
+        "typeDefinition": "Schedule80EE"
+      }
+    },
+    "Schedule80GGC": {
+      "name": "Schedule80GGC",
+      "type": {
+        "dataType": "object",
+        "typeDefinition": "Schedule80GGC"
+      }
+    },
+    "Schedule80E": {
+      "name": "Schedule80E",
+      "type": {
+        "dataType": "object",
+        "typeDefinition": "Schedule80E"
+      }
+    },
+    "Schedule80D": {
+      "name": "Schedule80D",
+      "type": {
+        "dataType": "object",
+        "typeDefinition": "Schedule80D"
+      }
+    },
+    "Schedule80C": {
+      "name": "Schedule80C",
+      "type": {
+        "dataType": "object",
+        "typeDefinition": "Schedule80C"
+      }
+    },
+    "Schedule80G": {
+      "name": "Schedule80G",
+      "type": {
+        "dataType": "object",
+        "typeDefinition": "Schedule80G"
+      }
+    },
+    "Schedule80U": {
+      "name": "Schedule80U",
+      "type": {
+        "dataType": "object",
+        "typeDefinition": "Schedule80U"
+      }
+    },
+    "TDSonSalaries": {
+      "name": "TDSonSalaries",
+      "type": {
+        "dataType": "object",
+        "typeDefinition": "TDSonSalaries"
+      }
+    },
+    "LTCG112A": {
+      "name": "LTCG112A",
+      "type": {
+        "dataType": "object",
+        "typeDefinition": "LTCG112A"
+      }
+    },
+    "ITR1_IncomeDeductions": {
+      "name": "ITR1_IncomeDeductions",
+      "type": {
+        "dataType": "object",
+        "typeDefinition": "ITR1_IncomeDeductions"
+      }
+    },
+    "TaxPaid": {
+      "name": "TaxPaid",
+      "type": {
+        "dataType": "object",
+        "typeDefinition": "TaxPaid"
+      }
+    },
+    "FilingStatus": {
+      "name": "FilingStatus",
+      "type": {
+        "dataType": "object",
+        "typeDefinition": "FilingStatus"
+      }
+    },
+    "ITR1_TaxComputation": {
+      "name": "ITR1_TaxComputation",
+      "type": {
+        "dataType": "object",
+        "typeDefinition": "ITR1_TaxComputation"
+      }
+    },
+    "Verification": {
+      "name": "Verification",
+      "type": {
+        "dataType": "object",
+        "typeDefinition": "Verification"
+      }
+    },
+    "ScheduleTDS3Dtls": {
+      "name": "ScheduleTDS3Dtls",
+      "type": {
+        "dataType": "object",
+        "typeDefinition": "ScheduleTDS3Dtls"
+      }
+    },
+    "Schedule80DD": {
+      "name": "Schedule80DD",
+      "type": {
+        "dataType": "object",
+        "typeDefinition": "Schedule80DD"
+      }
+    },
+    "TaxPayments": {
+      "name": "TaxPayments",
+      "type": {
+        "dataType": "object",
+        "typeDefinition": "TaxPayments"
+      }
+    },
+    "Refund": {
+      "name": "Refund",
+      "type": {
+        "dataType": "object",
+        "typeDefinition": "Refund"
+      }
+    },
+    "PersonalInfo": {
+      "name": "PersonalInfo",
+      "type": {
+        "dataType": "object",
+        "typeDefinition": "PersonalInfo"
+      }
+    },
+    "ScheduleEA10_13A": {
+      "name": "ScheduleEA10_13A",
+      "type": {
+        "dataType": "object",
+        "typeDefinition": "ScheduleEA10_13A"
+      }
+    },
+    "Form_ITR1": {
+      "name": "Form_ITR1",
+      "type": {
+        "dataType": "object",
+        "typeDefinition": "Form_ITR1"
+      }
+    },
+    "ScheduleUs24B": {
+      "name": "ScheduleUs24B",
+      "type": {
+        "dataType": "object",
+        "typeDefinition": "ScheduleUs24B"
+      }
+    }
+  },
+  "ITR": {
+    "ITR1": {
+      "name": "ITR1",
+      "type": {
+        "dataType": "object",
+        "typeDefinition": "ITR1"
+      }
+    }
+  },
+  "clauseiv7provisio139iType": {
+    "clauseiv7provisio139iAmount": {
+      "name": "clauseiv7provisio139iAmount",
+      "type": {
+        "dataType": "number"
+      }
+    },
+    "clauseiv7provisio139iNature": {
+      "name": "clauseiv7provisio139iNature",
+      "type": {
+        "dataType": "enum",
+        "typeDefinition": "clauseiv7provisio139iType__clauseiv7provisio139iNature"
+      }
+    }
+  },
+  "Sch80DInsDtls": {
+    "PolicyNo": {
+      "name": "PolicyNo",
+      "type": {
+        "dataType": "string"
+      }
+    },
+    "InsurerName": {
+      "name": "InsurerName",
+      "type": {
+        "dataType": "string"
+      }
+    },
+    "HealthInsAmt": {
+      "name": "HealthInsAmt",
+      "type": {
+        "dataType": "number"
+      }
+    }
+  },
+  "AddressDetail": {
+    "StateCode": {
+      "name": "StateCode",
+      "type": {
+        "dataType": "enum",
+        "typeDefinition": "AddressDetail__StateCode"
+      }
+    },
+    "AddrDetail": {
+      "name": "AddrDetail",
+      "type": {
+        "dataType": "string"
+      }
+    },
+    "CityOrTownOrDistrict": {
+      "name": "CityOrTownOrDistrict",
+      "type": {
+        "dataType": "string"
+      }
+    },
+    "PinCode": {
+      "name": "PinCode",
+      "type": {
+        "dataType": "number"
+      }
+    }
+  },
+  "DoneeWithPan": {
+    "DonationAmtOtherMode": {
+      "name": "DonationAmtOtherMode",
+      "type": {
+        "dataType": "number"
+      }
+    },
+    "AddressDetail": {
+      "name": "AddressDetail",
+      "type": {
+        "dataType": "object",
+        "typeDefinition": "AddressDetail"
+      }
+    },
+    "ArnNbr": {
+      "name": "ArnNbr",
+      "type": {
+        "dataType": "string"
+      }
+    },
+    "DonationAmt": {
+      "name": "DonationAmt",
+      "type": {
+        "dataType": "number"
+      }
+    },
+    "DoneeWithPanName": {
+      "name": "DoneeWithPanName",
+      "type": {
+        "dataType": "string"
+      }
+    },
+    "EligibleDonationAmt": {
+      "name": "EligibleDonationAmt",
+      "type": {
+        "dataType": "number"
+      }
+    },
+    "DoneePAN": {
+      "name": "DoneePAN",
+      "type": {
+        "dataType": "string"
+      }
+    },
+    "DonationAmtCash": {
+      "name": "DonationAmtCash",
+      "type": {
+        "dataType": "number"
+      }
+    }
+  },
+  "EmployerOrDeductorOrCollectDetl": {
+    "TAN": {
+      "name": "TAN",
+      "type": {
+        "dataType": "string"
+      }
+    },
+    "EmployerOrDeductorOrCollecterName": {
+      "name": "EmployerOrDeductorOrCollecterName",
+      "type": {
+        "dataType": "string"
+      }
+    }
+  },
+  "TDSonSalary": {
+    "EmployerOrDeductorOrCollectDetl": {
+      "name": "EmployerOrDeductorOrCollectDetl",
+      "type": {
+        "dataType": "object",
+        "typeDefinition": "EmployerOrDeductorOrCollectDetl"
+      }
+    },
+    "IncChrgSal": {
+      "name": "IncChrgSal",
+      "type": {
+        "dataType": "number"
+      }
+    },
+    "TotalTDSSal": {
+      "name": "TotalTDSSal",
+      "type": {
+        "dataType": "number"
+      }
+    }
+  },
+  "TDSonOthThanSal": {
+    "TDSSection": {
+      "name": "TDSSection",
+      "type": {
+        "dataType": "enum",
+        "typeDefinition": "TDSonOthThanSal__TDSSection"
+      }
+    },
+    "AmtForTaxDeduct": {
+      "name": "AmtForTaxDeduct",
+      "type": {
+        "dataType": "number"
+      }
+    },
+    "EmployerOrDeductorOrCollectDetl": {
+      "name": "EmployerOrDeductorOrCollectDetl",
+      "type": {
+        "dataType": "object",
+        "typeDefinition": "EmployerOrDeductorOrCollectDetl"
+      }
+    },
+    "TotTDSOnAmtPaid": {
+      "name": "TotTDSOnAmtPaid",
+      "type": {
+        "dataType": "number"
+      }
+    },
+    "ClaimOutOfTotTDSOnAmtPaid": {
+      "name": "ClaimOutOfTotTDSOnAmtPaid",
+      "type": {
+        "dataType": "number"
+      }
+    },
+    "DeductedYr": {
+      "name": "DeductedYr",
+      "type": {
+        "dataType": "enum",
+        "typeDefinition": "TDSonOthThanSal__DeductedYr"
+      }
+    }
+  },
+  "TDS3Details": {
+    "PANofTenant": {
+      "name": "PANofTenant",
+      "type": {
+        "dataType": "string"
+      }
+    },
+    "TDSSection": {
+      "name": "TDSSection",
+      "type": {
+        "dataType": "enum",
+        "typeDefinition": "TDS3Details__TDSSection"
+      }
+    },
+    "NameOfTenant": {
+      "name": "NameOfTenant",
+      "type": {
+        "dataType": "string"
+      }
+    },
+    "TDSDeducted": {
+      "name": "TDSDeducted",
+      "type": {
+        "dataType": "number"
+      }
+    },
+    "TDSClaimed": {
+      "name": "TDSClaimed",
+      "type": {
+        "dataType": "number"
+      }
+    },
+    "AadhaarofTenant": {
+      "name": "AadhaarofTenant",
+      "type": {
+        "dataType": "string"
+      }
+    },
+    "DeductedYr": {
+      "name": "DeductedYr",
+      "type": {
+        "dataType": "enum",
+        "typeDefinition": "TDS3Details__DeductedYr"
+      }
+    },
+    "GrsRcptToTaxDeduct": {
+      "name": "GrsRcptToTaxDeduct",
+      "type": {
+        "dataType": "number"
+      }
+    }
+  },
+  "TaxPayment": {
+    "Amt": {
+      "name": "Amt",
+      "type": {
+        "dataType": "number"
+      }
+    },
+    "SrlNoOfChaln": {
+      "name": "SrlNoOfChaln",
+      "type": {
+        "dataType": "number"
+      }
+    },
+    "DateDep": {
+      "name": "DateDep",
+      "type": {
+        "dataType": "string"
+      }
+    },
+    "BSRCode": {
+      "name": "BSRCode",
+      "type": {
+        "dataType": "string"
+      }
+    }
+  },
+  "BankDetailType": {
+    "BankName": {
+      "name": "BankName",
+      "type": {
+        "dataType": "string"
+      }
+    },
+    "IFSCCode": {
+      "name": "IFSCCode",
+      "type": {
+        "dataType": "string"
+      }
+    },
+    "UseForRefund": {
+      "name": "UseForRefund",
+      "type": {
+        "dataType": "enum",
+        "typeDefinition": "BankDetailType__UseForRefund"
+      }
+    },
+    "BankAccountNo": {
+      "name": "BankAccountNo",
+      "type": {
+        "dataType": "string"
+      }
+    },
+    "AccountType": {
+      "name": "AccountType",
+      "type": {
+        "dataType": "enum",
+        "typeDefinition": "BankDetailType__AccountType"
+      }
+    }
+  },
+  "AllwncExemptUs10DtlsType": {
+    "SalOthNatOfInc": {
+      "name": "SalOthNatOfInc",
+      "type": {
+        "dataType": "string"
+      }
+    },
+    "SalOthAmount": {
+      "name": "SalOthAmount",
+      "type": {
+        "dataType": "number"
+      }
+    },
+    "SalNatureDesc": {
+      "name": "SalNatureDesc",
+      "type": {
+        "dataType": "enum",
+        "typeDefinition": "AllwncExemptUs10DtlsType__SalNatureDesc"
+      }
+    }
+  },
+  "DateRangeType__DateRange": {
+    "Upto15Of6": {
+      "name": "Upto15Of6",
+      "type": {
+        "dataType": "number"
+      }
+    },
+    "Upto15Of9": {
+      "name": "Upto15Of9",
+      "type": {
+        "dataType": "number"
+      }
+    },
+    "Up16Of3To31Of3": {
+      "name": "Up16Of3To31Of3",
+      "type": {
+        "dataType": "number"
+      }
+    },
+    "Up16Of12To15Of3": {
+      "name": "Up16Of12To15Of3",
+      "type": {
+        "dataType": "number"
+      }
+    },
+    "Up16Of9To15Of12": {
+      "name": "Up16Of9To15Of12",
+      "type": {
+        "dataType": "number"
+      }
+    }
+  },
+  "DateRangeType": {
+    "DateRange": {
+      "name": "DateRange",
+      "type": {
+        "dataType": "object",
+        "typeDefinition": "DateRangeType__DateRange"
+      }
+    }
+  },
+  "OtherSourceIncome": {
+    "OthSrcNatureDesc": {
+      "name": "OthSrcNatureDesc",
+      "type": {
+        "dataType": "enum",
+        "typeDefinition": "OtherSourceIncome__OthSrcNatureDesc"
+      }
+    },
+    "NOT89AInc": {
+      "name": "NOT89AInc",
+      "type": {
+        "dataType": "object",
+        "typeDefinition": "DateRangeType"
+      }
+    },
+    "DividendInc": {
+      "name": "DividendInc",
+      "type": {
+        "dataType": "object",
+        "typeDefinition": "DateRangeType"
+      }
+    },
+    "NOT89A": {
+      "name": "NOT89A",
+      "type": {
+        "dataType": "array",
+        "typeDefinition": "OtherSourceIncome__NOT89A"
+      }
+    },
+    "OthSrcOthNatOfInc": {
+      "name": "OthSrcOthNatOfInc",
+      "type": {
+        "dataType": "string"
+      }
+    },
+    "OthSrcOthAmount": {
+      "name": "OthSrcOthAmount",
+      "type": {
+        "dataType": "number"
+      }
+    }
+  },
+  "NOT89AType": {
+    "NOT89AAmount": {
+      "name": "NOT89AAmount",
+      "type": {
+        "dataType": "number"
+      }
+    },
+    "NOT89ACountrycode": {
+      "name": "NOT89ACountrycode",
+      "type": {
+        "dataType": "enum",
+        "typeDefinition": "NOT89AType__NOT89ACountrycode"
+      }
+    }
+  },
+  "ExemptIncAgriOthUs10Type": {
+    "NatureDesc": {
+      "name": "NatureDesc",
+      "type": {
+        "dataType": "enum",
+        "typeDefinition": "ExemptIncAgriOthUs10Type__NatureDesc"
+      }
+    },
+    "OthNatOfInc": {
+      "name": "OthNatOfInc",
+      "type": {
+        "dataType": "string"
+      }
+    },
+    "OthAmount": {
+      "name": "OthAmount",
+      "type": {
+        "dataType": "number"
+      }
+    }
+  },
+  "Root": {
+    "ITR": {
+      "name": "ITR",
+      "type": {
+        "dataType": "object",
+        "typeDefinition": "ITR"
+      }
+    }
+  }
+}
